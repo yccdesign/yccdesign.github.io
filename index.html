@@ -16,10 +16,158 @@
   <meta name="application-name" content="Phoebe Chen"/>
   <meta name="msapplication-TileColor" content="#E8E8E8" />
   <meta name="msapplication-TileImage" content="img/logo/mstile-144x144.png" />
+<!--bootstrap-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<!--GoogleFonts-->
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Lato|Source+Sans+Pro" rel="stylesheet">
+
+<!--CSS-->
+<style>
+*{padding: 0px; margin: 0px; box-sizing: border-box}
+
+      /* CSS for topnav */
+
+      .topnav {
+          width:100%;
+          box-sizing: border-box;
+          background-color: #FFFCFF;
+          overflow: hidden;
+          text-decoration: none;
+          list-style-type: none;
+          font-family: 'Alegreya Sans', sans-serif; font-size: 24px;
+      }
+      /* CSS for topnav items */
+      .topnav a{
+          float:left;
+          display: inline-block;
+          color:#50514F;
+          text-align: center;
+          text-decoration: none;
+      }
+      .topnav .rightnavitem{
+          float:right;
+      }
+      .topnav .rightnavitem a{
+          float:left;
+          width: 130px;
+          margin: 0px 10px;
+          line-height: 55px;
+          padding-top: 45px;
+      }
+
+
+      .topnav a:hover{
+          background-color: #f6eff6;
+          box-sizing: border-box;
+      }
+
+      /* CSS for active class on topnav */
+      .active {
+          background-color: #f6eff6;
+
+      }
+
+      /* hide topnav button */
+      .topnav .icon {
+          display: none;
+      }
+
+      /* topnav media query */
+      @media screen and (max-width: 810px) {
+        .topnav a:not(.logo) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: inline-block;
+          margin: 0px;
+          width: 100px;
+          line-height: 55px;
+          padding-top: 45px;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+      }
+
+      /* vertical topnav on small screens*/
+      @media screen and (max-width: 810px) {
+        .topnav.responsive {position: relative;}
+
+        .topnav .rightnavitem {
+          float:left;
+          width: 100%;
+        }
+        .topnav.responsive a.icon {
+          float: right;
+          text-align: center;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive .rightnavitem a{
+          float: none;
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+        }
+        .topnav.responsive .logo {
+          float:left;
+          text-align: left;
+          width: 100%;
+        }
+        .topnav .rightnavitem a{
+          float:left;
+          width: 100%;
+          margin: 0px;
+          line-height: 100px;
+          padding: 0px;
+        }
+      }
+
+
+</style>
+
+</head>
 
 <body>
 
+
+<header>
+
+<!--topnavbar-->
+  <div class="topnav" id="myTopnav">
+    <ul>
+    <a href="#myTopnav" class="logo"><img src="img/logo/logo_wide_animated.svg"/></a>
+    <span class="rightnavitem">
+    <a href="#research">Research</a>
+    <a href="#artwork">Artwork</a>
+    <a href="#resume">Resume</a>
+    <a href="#contacts">Contacts</a>
+    </span>
+    <a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a>
+   </ul>
+  </div>
+  <!--JS for topnavbar-->
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+  <script>
+  $('ul a').click(function(){ $('a').removeClass("active"); $(this).addClass("active"); });
+  </script>
+
+
+</header>
 
 </body>
 </html>
