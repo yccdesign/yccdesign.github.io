@@ -23,19 +23,39 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!--Google Fonts & Icon-->
-<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Lato|Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Roboto|Source+Sans+Pro" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <!--CSS-->
 <style>
 *{padding: 0px; margin: 0px; box-sizing: border-box}
 
+/*CSS for text*/
+
+h1{
+  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 700; font-size: 4em;
+}
+
+h2{
+  font-family: 'Alegreya Sans', sans-serif; font-weight: 500; font-size: 3em;
+}
+
+h3{
+  font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: 2em;
+}
+
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+}
+
       /*CSS for top button*/
       .top_btn>a{
-        width: 50px; height: 50px; border-radius:50%; background: rgba(239,100,97,0.4); text-align: center; line-height: 50px; position: fixed; bottom: 5%; right: 5%; color: #FFFCFF; font-size:2em; text-decoration: none;
+        width: 50px; height: 50px; border-radius:50%; background: rgba(239,100,97,0.5); text-align: center; line-height: 50px; position: fixed; bottom: 5%; right: 5%; color: #FFFCFF; font-size:2em; text-decoration: none;
       }
 
       .top_btn>a:hover{
-        color:#fffcff; background: rgba(239,100,97,0.1)
+        color:#fffcff; background: rgba(239,100,97,1);
+        transition:background 0.25s ease-in;
       }
 
       /* CSS for topnav */
@@ -47,36 +67,43 @@
           overflow: hidden;
           text-decoration: none;
           list-style-type: none;
-          font-family: 'Alegreya Sans', sans-serif; font-size: 24px;
+          font-family: 'Alegreya Sans SC', sans-serif; font-size: 24px;
       }
       /* CSS for topnav items */
       .topnav a{
           float:left;
           display: inline-block;
-          font-family: 'Alegreya Sans', sans-serif; font-size: 24px;
+          font-family: 'Alegreya Sans SC', sans-serif; font-size: 24px;
           color:#50514F;
           text-align: center;
           text-decoration: none;
       }
+      .topnav .logo{
+        margin-left: 2%;
+      }
       .topnav .rightnavitem{
           float:right;
+          margin-right: 2%
       }
       .topnav .rightnavitem a{
           float:left;
           margin: 0px;
-          line-height: 55px;
-          padding: 45px 20px 0px 20px;
+          line-height: 50px;
+          padding: 50px 20px 0px 20px;
       }
 
 
       .topnav a:hover{
           background-color: #f6eff6;
           box-sizing: border-box;
+          color:#ef6461;
+          transition:background-color 0.25s ease-in; color 0.25 ease-in;
       }
 
       /* CSS for active class on topnav */
       .active:not(.logo) {
           background-color: #f6eff6;
+          color:#ef6461;
 
       }
 
@@ -84,17 +111,38 @@
       .topnav .icon {
           display: none;
       }
+      /*CSS for center body*/
+      .center_body{
+        background-color: #FFFCFF;
+        width: 100%;
+      }
+
+      /*CSS for section*/
+      section{
+        margin:20px auto;
+        width: 96%;
+        background-color: #000;
+      }
+
       /*CSS for footer*/
       footer{
         width:100%;
         background-color: #fffcff;
+        text-align: center;
+        border-bottom: solid 1.5px rgba(111,105,105,1)
         }
       footer p{
         line-height:2em;
         text-align: center;
-        font-family: font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
         color:#50514F;
+
         }
+      footer #bottom_logo{
+        text-align: center;
+        margin:auto;
+      }
 
 
       /* topnav media query */
@@ -103,10 +151,10 @@
         .topnav a.icon {
           float: right;
           display: inline-block;
-          margin: 0px;
+          margin: 0% 2% 0% 0%;
           width: 100px;
-          line-height: 55px;
-          padding-top: 45px;
+          line-height: 65px;
+          padding-top: 35px;
           position: absolute;
           right: 0;
           top: 0;
@@ -164,10 +212,10 @@
     <ul>
     <a href="index.html" class="logo"><img src="img/logo/logo_wide_animated.svg"/></a>
     <span class="rightnavitem">
-    <a href="#research">Research</a>
-    <a href="#artwork">Artwork & Design</a>
-    <a href="#resume">Resume</a>
-    <a href="#contacts">Contacts</a>
+    <a href="#research">research</a>
+    <a href="#artwork&design">artwork & design</a>
+    <a href="#resume">resume</a>
+    <a href="#contacts">contacts</a>
     </span>
     <a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a>
    </ul>
@@ -190,13 +238,40 @@
 
 
 <!--fixed top button-->
-<div class="top_btn"><a href="index.html"><i class="material-icons">arrow_upward</i></a></div>
+<div class="top_btn"><a href="#myTopnav"><i class="material-icons">arrow_upward</i></a></div>
+
+<!--center body-->
+<div class="center_body">
+<!--top banner-->
+<section id="top_banner">
+<p>welcome</p>
+</section>
+<!--research-->
+<section id="research">
+<p>welcome</p>
+</section>
+<!--artwork & design-->
+<section id="artwork&design">
+<p>welcome</p>
+</section>
+<!--artwork & design-->
+<section id="resume">
+<p>welcome</p>
+</section>
+<!--artwork & design-->
+<section id="contacts">
+<p>welcome</p>
+</section>
+</div>
+
+
 
 
 <!--footer-->
 
 <footer>
-	<p>Made by Phoebe Chen © 2018</p>
+	<p>Copyright © Phoebe Chen 2018</p>
+  <img id="bottom_logo" src="img/logo/logo_small.svg" height="24" width="24">
 </footer>
 
 </body>
