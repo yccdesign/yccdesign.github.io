@@ -22,12 +22,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!--GoogleFonts-->
+<!--Google Fonts & Icon-->
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Lato|Source+Sans+Pro" rel="stylesheet">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <!--CSS-->
 <style>
 *{padding: 0px; margin: 0px; box-sizing: border-box}
+
+      /*CSS for top button*/
+      .top_btn>a{
+        width: 50px; height: 50px; border-radius:50%; background: rgba(239,100,97,0.4); text-align: center; line-height: 50px; position: fixed; bottom: 5%; right: 5%; color: #FFFCFF; font-size:2em; text-decoration: none;
+      }
+
+      .top_btn>a:hover{
+        color:#fffcff; background: rgba(239,100,97,0.1)
+      }
 
       /* CSS for topnav */
 
@@ -44,6 +53,7 @@
       .topnav a{
           float:left;
           display: inline-block;
+          font-family: 'Alegreya Sans', sans-serif; font-size: 24px;
           color:#50514F;
           text-align: center;
           text-decoration: none;
@@ -53,10 +63,9 @@
       }
       .topnav .rightnavitem a{
           float:left;
-          width: 130px;
-          margin: 0px 10px;
+          margin: 0px;
           line-height: 55px;
-          padding-top: 45px;
+          padding: 45px 20px 0px 20px;
       }
 
 
@@ -75,6 +84,18 @@
       .topnav .icon {
           display: none;
       }
+      /*CSS for footer*/
+      footer{
+        width:100%;
+        background-color: #fffcff;
+        }
+      footer p{
+        line-height:2em;
+        text-align: center;
+        font-family: font-family: 'Source Sans Pro', sans-serif;
+        color:#50514F;
+        }
+
 
       /* topnav media query */
       @media screen and (max-width: 810px) {
@@ -89,9 +110,8 @@
           position: absolute;
           right: 0;
           top: 0;
+          background-color: #f6eff6;
         }
-
-      }
 
       /* vertical topnav on small screens*/
       @media screen and (max-width: 810px) {
@@ -129,6 +149,7 @@
       }
 
 
+
 </style>
 
 </head>
@@ -141,10 +162,10 @@
 <!--topnavbar-->
   <div class="topnav" id="myTopnav">
     <ul>
-    <a href="#myTopnav" class="logo"><img src="img/logo/logo_wide_animated.svg"/></a>
+    <a href="index.html" class="logo"><img src="img/logo/logo_wide_animated.svg"/></a>
     <span class="rightnavitem">
     <a href="#research">Research</a>
-    <a href="#artwork">Artwork</a>
+    <a href="#artwork">Artwork & Design</a>
     <a href="#resume">Resume</a>
     <a href="#contacts">Contacts</a>
     </span>
@@ -165,9 +186,18 @@
   <script>
   $('ul a').click(function(){ $('a').removeClass("active"); $(this).addClass("active"); });
   </script>
-
-
 </header>
+
+
+<!--fixed top button-->
+<div class="top_btn"><a href="index.html"><i class="material-icons">arrow_upward</i></a></div>
+
+
+<!--footer-->
+
+<footer>
+	<p>Made by Phoebe Chen © 2018</p>
+</footer>
 
 </body>
 </html>
