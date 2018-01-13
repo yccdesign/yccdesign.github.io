@@ -18,39 +18,49 @@
   <meta name="msapplication-TileImage" content="img/logo/mstile-144x144.png" />
 <!--bootstrap-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<!-- custom styles for 3-col research item template -->
+<link href="css/3-col-portfolio.css" rel="stylesheet">
 
-<!--Google Fonts & Icon-->
+<!--Google fonts & icon-->
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Roboto|Source+Sans+Pro" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <!--CSS-->
 <style>
-*{padding: 0px; margin: 0px; box-sizing: border-box}
+*{padding: 0px; margin: 0px; box-sizing: border-box; text-decoration: none;}
 
 /*CSS for text*/
 
 h1{
-  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 700; font-size: 4em;
+  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 700; font-size: 32px;
 }
 
 h2{
-  font-family: 'Alegreya Sans', sans-serif; font-weight: 500; font-size: 3em;
+  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 400; font-size: 32px;
 }
 
 h3{
-  font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: 2em;
+  font-family: 'Alegreya Sans', sans-serif; font-weight: 500; font-size: 32px;
+}
+
+h4{
+  font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: 24px;
 }
 
 p{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1em;
+  font-size: 16px;
 }
 
       /*CSS for top button*/
       .top_btn>a{
-        width: 50px; height: 50px; border-radius:50%; background: rgba(239,100,97,0.5); text-align: center; line-height: 50px; position: fixed; bottom: 5%; right: 5%; color: #FFFCFF; font-size:2em; text-decoration: none;
+        width: 50px; height: 50px; border-radius:50%;
+        background: rgba(239,100,97,0.5); text-align: center;
+        line-height: 50px; position: fixed; z-index:1000;
+        bottom: 5%; right: 5%; color: #FFFCFF; font-size:2em;
       }
 
       .top_btn>a:hover{
@@ -89,7 +99,7 @@ p{
           float:left;
           margin: 0px;
           line-height: 50px;
-          padding: 50px 20px 0px 20px;
+          padding: 50px 15px 0px 15px;
       }
 
 
@@ -121,7 +131,46 @@ p{
       section{
         margin:20px auto;
         width: 96%;
-        background-color: #000;
+      }
+      /*CSS for top baner*/
+      #top_banner{
+        background: url(img/photos/leaves_1920x1275.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+
+      #top_banner_text{
+        background-color:rgba(172, 123, 115, 0.8);
+        color:rgb(251, 251, 247);
+        padding:10px;
+        margin:25px 0px 25px 0px;
+        line-height: normal;
+        width: 400px;
+      }
+      /*CSS for buttons*/
+      .btn{
+        background-color: rgba(160, 155, 164, 0.77);
+        border: rgba(160,155,164,0.77);
+
+      }
+      .btn:hover{
+        background-color: rgba(160, 155, 164, 1);
+        border: rgba(160,155,164,1);
+
+      }
+
+      /*CSS for research*/
+      #research{
+        background-color: #b5c9c3;
+        padding:10px;
+        text-align: center;
+        color:#505e4f;
+      }
+      .research_card33{
+        width: 29%;
+        margin: 20px auto;
+        display: inline;
       }
 
       /*CSS for footer*/
@@ -163,8 +212,11 @@ p{
 
       /* vertical topnav on small screens*/
       @media screen and (max-width: 810px) {
-        .topnav.responsive {position: relative;}
 
+        #top_banner_text{
+          width: 85%;
+        }
+        .topnav.responsive {position: relative;}
         .topnav .rightnavitem {
           float:left;
           width: 100%;
@@ -186,13 +238,19 @@ p{
           float:left;
           text-align: left;
           width: 100%;
+          margin-left: 0%;
+          padding-left: 2%;
+          }
         }
         .topnav .rightnavitem a{
           float:left;
           width: 100%;
           margin: 0px;
-          line-height: 100px;
+          line-height: 70px;
           padding: 0px;
+        }
+        .research_card33{
+          width: 96%;
         }
       }
 
@@ -244,21 +302,59 @@ p{
 <div class="center_body">
 <!--top banner-->
 <section id="top_banner">
-<p>welcome</p>
+<div id="top_banner_text">
+<h3>Hello! I am Phoebe,</h3>
+<p>a marketer at an IT company aspiring to become a UX architect in her net phase of career.</p>
+</div>
 </section>
 <!--research-->
 <section id="research">
-<p>welcome</p>
+<h1>Research</h1>
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="research_card33">
+        <div class="card bg-dark text-white">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+          <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text.</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+        </div>
+    </div>
+    <div class="research_card33">
+        <div class="card bg-dark text-white">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+          <div class="card-body">
+          <h4 class="card-title">Jane Doe</h4>
+          <p class="card-text">Some example text.</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+        </div>
+    </div>
+    <div class="research_card33">
+        <div class="card bg-dark text-white">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+          <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text.</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
 </section>
+
 <!--artwork & design-->
 <section id="artwork&design">
-<p>welcome</p>
+
 </section>
-<!--artwork & design-->
+<!--resume-->
 <section id="resume">
 <p>welcome</p>
 </section>
-<!--artwork & design-->
+<!--contacts-->
 <section id="contacts">
 <p>welcome</p>
 </section>
