@@ -22,8 +22,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-<!-- custom styles for 3-col research item template -->
-<link href="css/3-col-portfolio.css" rel="stylesheet">
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!-- Custom scripts for template -->
+<script src="js/stylish-portfolio.min.js"></script>
+<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
 <!--Google fonts & icon-->
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Roboto|Source+Sans+Pro" rel="stylesheet">
@@ -129,8 +134,9 @@ p{
 
       /*CSS for section*/
       section{
-        margin:20px auto;
+        margin:0px auto;
         width: 96%;
+        padding: 10px 0px
       }
       /*CSS for top baner*/
       #top_banner{
@@ -157,25 +163,141 @@ p{
       .btn:hover{
         background-color: rgba(160, 155, 164, 1);
         border: rgba(160,155,164,1);
-
+        cursor: pointer;
       }
 
       /*CSS for research*/
       #research{
-        background-color: #b5c9c3;
+        background-color: rgba(209, 223, 220, 0.87);
         padding:10px;
         text-align: center;
         color:#505e4f;
       }
       .research_card33{
-        width: 29%;
-        margin: 20px auto;
+        width: 31%;
+        margin: 10px auto;
         display: inline;
       }
+
+      .research_card33:hover{
+        opacity: 0.9;
+      }
+
+      /*CSS for resume*/
+      #resume{
+        background-color:rgba(233, 230, 226, 0.91);
+        padding:10px;
+      }
+      #resume h1{
+        text-align: center;
+        color:#505e4f;
+      }
+
+
+
+      /*CSS for contacts*/
+      #contacts{
+        clear: both;
+        background-color: rgba(242, 204, 195, 0.77);
+        padding:10px;
+        text-align: center;
+        color:#505e4f;
+        text-decoration: none;
+      }
+      #contacts> a{
+        color:#505e4f;
+      }
+
+      #contacts> a:link{
+        color:#505e4f;
+      }
+      #contacts a:hover{
+        color: #e4b363;
+        text-decoration: none;
+      }
+
+      /*CSS for Artwork & Design*/
+      #artwork_design{
+        background-color: #fffcff;
+        padding:10px;
+        text-align: center;
+        color:#505e4f;
+      }
+      #artwork_design > a{
+          color: #1D809F; }
+      #artwork_design a:hover, a:focus, a:active {
+            color: #155d74;
+            cursor: pointer;
+      }
+      #artwork_design .portfolio-item {
+       max-width: none;
+       margin: 0; }
+      #artwork_design .portfolio-item .caption {
+         display: flex;
+         height: 100%;
+         width: 100%;
+         background-color: rgba(33, 37, 41, 0.2);
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         z-index: 1;
+         -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+         -webkit-clip-path: inset(0px);
+         clip-path: inset(0px); }
+        #artwork_design .portfolio-item .caption .caption-content {
+            color: #fff;
+            transition: opacity 0.25s;
+            padding-left: 2em;
+            position: absolute; bottom: 2em;
+            float: left;
+            text-align: left;
+            margin-right: 5em;
+        }
+        #artwork_design .portfolio-item .caption .caption-content h2 {
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-transform: uppercase; }
+        #artwork_design .portfolio-item .caption .caption-content p {
+          font-weight: 300;
+          font-size: 1.2rem; }
+        #artwork_design .portfolio-item img {
+          -webkit-transition: -webkit-clip-path 0.25s ease-out;
+          -webkit-clip-path: inset(-1px);
+          clip-path: inset(-1px); }
+        #artwork_design .portfolio-item:hover img {
+          -webkit-clip-path: inset(2rem);
+          clip-path: inset(2rem); }
+        #artwork_design .portfolio-item:hover .caption {
+          background-color: rgba(29, 128, 159, 0.9);
+          -webkit-clip-path: inset(2rem);
+          clip-path: inset(2rem); } }
+
+
+
+
+      /*CSS for research modals*/
+      .modal-header{
+        border: none;
+      }
+      .modal-body{
+        background-color: #fffcff;
+      }
+      .modal-footer{
+        width: 100%;
+        background-color: #fffcff;
+        text-align: center;
+        margin: 1px auto;
+      }
+      .modal-footer button{
+        margin: 1px auto;
+      }
+
+
 
       /*CSS for footer*/
       footer{
         width:100%;
+        padding-top:10px;
         background-color: #fffcff;
         text-align: center;
         border-bottom: solid 1.5px rgba(111,105,105,1)
@@ -189,8 +311,9 @@ p{
 
         }
       footer #bottom_logo{
+        display:block;
         text-align: center;
-        margin:auto;
+        margin:1px auto;
       }
 
 
@@ -252,6 +375,30 @@ p{
         .research_card33{
           width: 96%;
         }
+        #artwork_design .portfolio-item {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        max-width: 530px;
+        margin: auto auto 1rem; }
+        #artwork_design .portfolio-item .caption {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(33, 37, 41, 0.2);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          z-index: 1; }
+      #artwork_design .portfolio-item .caption .caption-content {
+        color: #fff;
+        margin: auto 2rem 2rem; }
+      #artwork_design .portfolio-item .caption .caption-content h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase; }
+      #artwork_design .portfolio-item .caption .caption-content p {
+        font-weight: 300;
+        font-size: 1.2rem; }
       }
 
 
@@ -271,7 +418,7 @@ p{
     <a href="index.html" class="logo"><img src="img/logo/logo_wide_animated.svg"/></a>
     <span class="rightnavitem">
     <a href="#research">research</a>
-    <a href="#artwork&design">artwork & design</a>
+    <a href="#artwork_design">artwork & design</a>
     <a href="#resume">resume</a>
     <a href="#contacts">contacts</a>
     </span>
@@ -313,32 +460,32 @@ p{
 <div class="container-fluid text-center">
   <div class="row">
     <div class="research_card33">
-        <div class="card bg-dark text-white">
+        <div style="background-color:rgba(239, 242, 236, 0.9)" class="card text-muted">
           <img class="card-img-top" src="img_avatar1.png" alt="Card image">
           <div class="card-body">
           <h4 class="card-title">John Doe</h4>
           <p class="card-text">Some example text.</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_1">Read abstract</button>
+         </div>
         </div>
     </div>
     <div class="research_card33">
-        <div class="card bg-dark text-white">
+        <div style="background-color:rgba(239, 249, 240, 0.9)" class="card text-muted">
           <img class="card-img-top" src="img_avatar1.png" alt="Card image">
           <div class="card-body">
           <h4 class="card-title">Jane Doe</h4>
           <p class="card-text">Some example text.</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_2">Read abstract</button>
         </div>
         </div>
     </div>
     <div class="research_card33">
-        <div class="card bg-dark text-white">
+        <div style="background-color:rgba(239, 249, 226, 0.9)" class="card text-muted">
           <img class="card-img-top" src="img_avatar1.png" alt="Card image">
           <div class="card-body">
           <h4 class="card-title">John Doe</h4>
           <p class="card-text">Some example text.</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_3">Read abstract</button>
         </div>
         </div>
     </div>
@@ -347,26 +494,247 @@ p{
 </section>
 
 <!--artwork & design-->
-<section id="artwork&design">
-
+<section id="artwork_design">
+<h1>Artwork & Design</h1>
+  <div class="container-fluid text-center">
+    <div class="row no-gutters">
+      <div class="col-lg-6">
+        <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_1">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Stationary</h2>
+              <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_2">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Ice Cream</h2>
+              <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_3">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Strawberries</h2>
+              <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_4">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Workspace</h2>
+              <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!--resume-->
 <section id="resume">
-<p>welcome</p>
+  <h1>Resume</h1>
+  <div class="container-fluid">
+    <p>test test test</p>
+  </div>
 </section>
 <!--contacts-->
 <section id="contacts">
-<p>welcome</p>
+  <h1>Contacts</h1>
+  <img style="display:inline margin-right:10px" src="img/mail.png"/> <a href="mailto:chenyichun7979@gmail.com"><p style="display:inline;">chenyichun7979@gmail.com</p></br></a>
+  <img style="display:inline margin-right:10px" src="img/github.png" width="36" height="36"/> <a href="https://github.com/phoebe7979"><p style="display:inline">phoebe7979</p></a>
 </section>
 </div>
 
+
+<!--research modals-->
+
+<div class="modal fade" id="research_modal_1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="research_modal_2">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="research_modal_3">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--artwork & design modals-->
+<div class="modal fade" id="artwork_design_modal_1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="artwork_design_modal_2">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="artwork_design_modal_3">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="artwork_design_modal_4">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 
 <!--footer-->
 
 <footer>
-	<p>Copyright © Phoebe Chen 2018</p>
+
+  <p>Copyright © Phoebe Chen 2018</p>
   <img id="bottom_logo" src="img/logo/logo_small.svg" height="24" width="24">
 </footer>
 
