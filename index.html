@@ -202,6 +202,15 @@ p{
         text-decoration: none;
         background-color: #e4b363;
       }
+      /*CSS for artwork_design*/
+      #artwork_design_modal_1 .modal-body {
+      text-align:center;
+      }
+      #artwork_design_modal_1 img{
+        margin: 10px auto;
+        text-align: center;
+        float:none;
+      }
 
       /*CSS for photography*/
       #photography{
@@ -273,6 +282,7 @@ p{
       #artwork_design{
         background-color: #fffcff;
         padding:20px 10px;
+        margin: 0px auto;
         text-align: center;
         color:#505e4f;
       }
@@ -289,7 +299,7 @@ p{
          display: flex;
          height: 100%;
          width: 100%;
-         background-color: rgba(255, 252, 255, 0.8);
+         background-color: rgba(255, 252, 255, 0.6);
          position: absolute;
          top: 0;
          bottom: 0;
@@ -433,7 +443,7 @@ p{
         display: block;
         position: relative;
         overflow: hidden;
-        max-width: 530px;
+        max-width: 500px;
         margin: auto auto 1rem; }
         #artwork_design .portfolio-item .caption {
           display: flex;
@@ -454,11 +464,20 @@ p{
         font-weight: 300;
         font-size: 1.2rem; }
       #photography_row img{
-          width: 80%;
+          width: 83%;
           opacity: 1;
           text-align: center;
           margin: 10px auto;
           float: none;
+      }
+      #about_photo{
+        width:84%
+        border-radius:48%;
+      }
+      #about_text{
+        display: inline-block;
+        vertical-align: text-bottom;
+        width: 90%;
       }
       }
 
@@ -571,22 +590,22 @@ p{
         <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_1">
           <span class="caption">
             <span class="caption-content">
-              <h2>Portrait</h2>
+              <h2>Self-Portrait</h2>
               <p class="mb-0">A series of self-portrait.</p>
             </span>
           </span>
           <img class="img-fluid" src="img/artwork/portrait_2.jpg" alt="portrait">
         </a>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_2">
           <span class="caption">
             <span class="caption-content">
-              <h2>Ice Cream</h2>
-              <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+              <h2>Illustration</h2>
+              <p class="mb-0">A greeting card that I made with a friend. </p>
             </span>
           </span>
-          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+          <img class="img-fluid" src="img/artwork/card_small.jpg" alt="">
         </a>
       </div>
       <div class="col-lg-6">
@@ -752,13 +771,15 @@ p{
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">Self-Portrait</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+      <img src="img/artwork/portrait_1.jpg" width="80%"/>
+      <img src="img/artwork/portrait_2.jpg" width="80%"/>
+      <img src="img/artwork/portrait_3.jpg" width="80%"/>
       </div>
 
       <!-- Modal footer -->
@@ -775,13 +796,17 @@ p{
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">Illustration</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        <h5>Collaboration with a friend</h5>
+        <p>I made this card with a friend for our mutal friend who was going to have a baby named Max.</br>
+        I was in charge of drawing the baby, while my friend took care of the burger-hat.</p>
+        <img src="img/artwork/card.jpg" width="80%"/>
+
       </div>
 
       <!-- Modal footer -->
