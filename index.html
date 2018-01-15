@@ -29,7 +29,6 @@
 <!-- Custom scripts for template -->
 <script src="js/stylish-portfolio.min.js"></script>
 <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
 <!--Google fonts & icon-->
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Roboto|Source+Sans+Pro" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -40,21 +39,25 @@
 /*CSS for text*/
 
 h1{
-  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 700; font-size: 32px;
+  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 700; font-size: 24px;
 }
 
 h2{
-  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 400; font-size: 32px;
+  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 400; font-size: 24px;
 }
 
 h3{
-  font-family: 'Alegreya Sans', sans-serif; font-weight: 500; font-size: 32px;
+  font-family: 'Alegreya Sans', sans-serif; font-weight: 600; font-size: 18px;
 }
 
 h4{
   font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: 24px;
 }
 
+h5{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700; font-size: 16px;
+}
 p{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -168,7 +171,7 @@ p{
 
       /*CSS for research*/
       #research{
-        background-color: rgba(209, 223, 220, 0.87);
+        background-color: rgba(242, 237, 236, 0.83);
         padding:10px;
         text-align: center;
         color:#505e4f;
@@ -177,56 +180,106 @@ p{
         width: 31%;
         margin: 10px auto;
         display: inline;
+        border:none;
       }
 
       .research_card33:hover{
-        opacity: 0.9;
+        opacity: 0.8;
       }
-
-      /*CSS for resume*/
-      #resume{
-        background-color:rgba(233, 230, 226, 0.91);
-        padding:10px;
+      .card_highlights{
+        text-align: left;
       }
-      #resume h1{
-        text-align: center;
-        color:#505e4f;
-      }
-
-
-
-      /*CSS for contacts*/
-      #contacts{
-        clear: both;
-        background-color: rgba(242, 204, 195, 0.77);
-        padding:10px;
-        text-align: center;
-        color:#505e4f;
+      #research_poster{
         text-decoration: none;
       }
-      #contacts> a{
-        color:#505e4f;
+      #research_poster p{
+         color:#e26d5c;
+         font-size: 15px;
+         font-weight: 600;
+         display:inline-block;
       }
-
-      #contacts> a:link{
-        color:#505e4f;
-      }
-      #contacts a:hover{
-        color: #e4b363;
+      #research_poster>a>p:hover{
         text-decoration: none;
+        background-color: #e4b363;
       }
 
-      /*CSS for Artwork & Design*/
-      #artwork_design{
+      /*CSS for photography*/
+      #photography{
         background-color: #fffcff;
         padding:10px;
         text-align: center;
         color:#505e4f;
       }
+      #photography_row{
+        width:90%;
+        margin: 2px auto;
+      }
+      #photography_row img{
+        display: inline-block;
+        opacity: 0.8;
+        margin: 10px 20px;
+        vertical-align: middle;
+      }
+      #photography_row img:hover{
+        opacity: 1;
+      }
+
+
+      /*CSS for about*/
+      #about{
+        clear: both;
+        background-color: rgba(231, 212, 198, 0.4);
+        padding:10px;
+        text-align: center;
+        color:#505e4f;
+        text-decoration: none;
+      }
+      #about a{
+        color:#505e4f;
+      }
+
+      #about a:link{
+        color:#505e4f;
+      }
+      #about a:hover{
+        color: #e4b363;
+        text-decoration: none;
+      }
+      #about #resume_pdf{
+        border-bottom:9px solid rgba(184, 158, 149, 0.78);
+        margin-bottom:-15px;
+        padding-bottom:-15px;
+      }
+      #about_row{
+        width:90%
+        margin: 2px auto;
+      }
+      #about_photo{
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 200px;
+        opacity:0.5;
+      }
+      #about_text{
+        display: inline-block;
+        height: 400px;
+        vertical-align: text-bottom;
+        width: 550px;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+      /*CSS for Artwork & Design*/
+      #artwork_design{
+        background-color: #fffcff;
+        padding:20px 10px;
+        text-align: center;
+        color:#505e4f;
+      }
       #artwork_design > a{
-          color: #1D809F; }
+          color: #db7f67; }
       #artwork_design a:hover, a:focus, a:active {
-            color: #155d74;
+            color: #db7f67;
             cursor: pointer;
       }
       #artwork_design .portfolio-item {
@@ -236,10 +289,11 @@ p{
          display: flex;
          height: 100%;
          width: 100%;
-         background-color: rgba(33, 37, 41, 0.2);
+         background-color: rgba(255, 252, 255, 0.8);
          position: absolute;
          top: 0;
          bottom: 0;
+         text-align: center;
          z-index: 1;
          -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
          -webkit-clip-path: inset(0px);
@@ -247,11 +301,11 @@ p{
         #artwork_design .portfolio-item .caption .caption-content {
             color: #fff;
             transition: opacity 0.25s;
-            padding-left: 2em;
+            padding-left: 3em;
             position: absolute; bottom: 2em;
             float: left;
             text-align: left;
-            margin-right: 5em;
+            margin:1em auto;
         }
         #artwork_design .portfolio-item .caption .caption-content h2 {
         font-size: 0.9rem;
@@ -268,7 +322,7 @@ p{
           -webkit-clip-path: inset(2rem);
           clip-path: inset(2rem); }
         #artwork_design .portfolio-item:hover .caption {
-          background-color: rgba(29, 128, 159, 0.9);
+          background-color: rgba(219, 159, 103, 1);
           -webkit-clip-path: inset(2rem);
           clip-path: inset(2rem); } }
 
@@ -399,6 +453,13 @@ p{
       #artwork_design .portfolio-item .caption .caption-content p {
         font-weight: 300;
         font-size: 1.2rem; }
+      #photography_row img{
+          width: 80%;
+          opacity: 1;
+          text-align: center;
+          margin: 10px auto;
+          float: none;
+      }
       }
 
 
@@ -419,8 +480,8 @@ p{
     <span class="rightnavitem">
     <a href="#research">research</a>
     <a href="#artwork_design">artwork & design</a>
-    <a href="#resume">resume</a>
-    <a href="#contacts">contacts</a>
+    <a href="#photography">photography</a>
+    <a href="#about">about</a>
     </span>
     <a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a>
    </ul>
@@ -447,44 +508,52 @@ p{
 
 <!--center body-->
 <div class="center_body">
-<!--top banner-->
-<section id="top_banner">
-<div id="top_banner_text">
-<h3>Hello! I am Phoebe,</h3>
-<p>a marketer at an IT company aspiring to become a UX architect in her net phase of career.</p>
-</div>
-</section>
+
 <!--research-->
 <section id="research">
 <h1>Research</h1>
 <div class="container-fluid text-center">
   <div class="row">
     <div class="research_card33">
-        <div style="background-color:rgba(239, 242, 236, 0.9)" class="card text-muted">
-          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div style="background-color:rgba(247, 250, 245, 0.9); border:none;" class="card text-muted">
+          <img class="card-img-top" data-toggle="modal" data-target="#research_modal_1" src="img/research/research_title_1.svg" alt="img/research/research_title_1.jpg">
           <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text.</p>
+          <div class="card-text">
+            <p>How do humans procss ambiguous homophones?</br>
+               What is the role of contextual clues during the resolution process?</p>
+            <div class="card_highlights">
+            <h5>Keywords:</h5><p>Ambiguity resolution, biased heterographic homophone, contextual effects, local context, global context</p>
+            <h5>Methods:</h5><p>5 norming studies, 2 cross-modal naming tasks, three-way Repeated Measures ANOVA</p>
+           </div>
+          </div>
           <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_1">Read abstract</button>
          </div>
         </div>
     </div>
     <div class="research_card33">
-        <div style="background-color:rgba(239, 249, 240, 0.9)" class="card text-muted">
-          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div style="background-color:rgba(247, 250, 245, 0.9); border:none;" class="card text-muted">
+          <img class="card-img-top" data-toggle="modal" data-target="#research_modal_2" src="img/research/research_title_2.svg" alt="img/research/research_title_2.jpg">
           <div class="card-body">
-          <h4 class="card-title">Jane Doe</h4>
-          <p class="card-text">Some example text.</p>
+          <p class="card-text ">Do senses of a polysemous word share a common psychological representation? </br>
+                               Does the relatedness between different senses affect how humans process them?
+          </p>
+          <div class="card_highlights">
+          <h5>Keywords:</h5><p>Lexical ambiguity, polysemy, semantic priming, sense relatedness</p>
+          <h5>Methods:</h5><p>Semantic judgement priming task, two-way ANCOVA</p>
+         </div>
           <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_2">Read abstract</button>
         </div>
         </div>
     </div>
     <div class="research_card33">
-        <div style="background-color:rgba(239, 249, 226, 0.9)" class="card text-muted">
-          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div style="background-color:rgba(247, 250, 245, 0.9); border:none;" class="card text-muted">
+          <img class="card-img-top" data-toggle="modal" data-target="#research_modal_3" src="img/research/research_title_3.svg" alt="img/research/research_title_3.jpg">
           <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text.</p>
+            <p class="card-text">Does explicitly teaching and highlighting the mechanism of metaphors facilitates short- and long-term memory retension and aquisition of these words?</p></br>
+          <div class="card_highlights">
+          <h5>Keywords:</h5><p>Conceptual metaphor, vocabulary learning, TCSL, business Chinese</p>
+          <h5>Methods:</h5><p>Learning experiment, nonparametric analysis</p>
+         </div>
           <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_3">Read abstract</button>
         </div>
         </div>
@@ -498,15 +567,15 @@ p{
 <h1>Artwork & Design</h1>
   <div class="container-fluid text-center">
     <div class="row no-gutters">
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_1">
           <span class="caption">
             <span class="caption-content">
-              <h2>Stationary</h2>
-              <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+              <h2>Portrait</h2>
+              <p class="mb-0">A series of self-portrait.</p>
             </span>
           </span>
-          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+          <img class="img-fluid" src="img/artwork/portrait_2.jpg" alt="portrait">
         </a>
       </div>
       <div class="col-lg-6">
@@ -546,18 +615,40 @@ p{
   </div>
 </section>
 
-<!--resume-->
-<section id="resume">
-  <h1>Resume</h1>
-  <div class="container-fluid">
-    <p>test test test</p>
-  </div>
+<!--photography-->
+<section id="photography">
+    <h1>Photography</h1>
+    <div id="photography_row">
+    <img src="img/photos/P1090193_700x700.jpg" width="31%" />
+    <img src="img/photos/P1080127_700x395.jpg" width="55%"/>
+    <img src="img/photos/P1210264_1200x796.jpg" width="43%"/>
+    <img src="img/photos/P1210262_1200x796.jpg" width="43%"/>
+    <img src="img/photos/P1080085_700x700.jpg" width="31%"/>
+    <img src="img/photos/P1210138_700x395.jpg" width="55%"/>
+    <img src="img/photos/P1210285_800x600.jpg" width="43%"/>
+    <img src="img/photos/1200x900.jpg" width="43%"/>
+    <img src="img/photos/P1120347_700x395.jpg" width="50%"/>
+    </div>
 </section>
-<!--contacts-->
-<section id="contacts">
-  <h1>Contacts</h1>
-  <img style="display:inline margin-right:10px" src="img/mail.png"/> <a href="mailto:chenyichun7979@gmail.com"><p style="display:inline;">chenyichun7979@gmail.com</p></br></a>
-  <img style="display:inline margin-right:10px" src="img/github.png" width="36" height="36"/> <a href="https://github.com/phoebe7979"><p style="display:inline">phoebe7979</p></a>
+
+<!--about-->
+<section id="about">
+  <h1>About</h1>
+  <h3>Hi, I'm Phoebe.</h3>
+
+  <div id="about_row">
+    <img id="about_photo" src="img/about.jpg" alt="about_photo"/>
+    <div id="about_text">
+    </br>
+    <p>Formerly a language teacher and a cognitive linguistics research assistant.</br>
+       Currently a marketing specialist at a technology company.</br>
+       And now, I am looking forward to becoming a UX architect.</p>
+    <p>I aspire to create technology solutions that bridge the gaps between different culture groups.</p>
+    <p>If you would like to know more about me, feel free to <span id="resume_pdf"><a href="yichunchen_resume.pdf" target="_blank">download my resume</a></span> or find me using the contacts below.</p>
+    <img style="display:inline margin-left:10px; margin-right:10px" src="img/mail.png" width="16" height="16"/> <a href="mailto:chenyichun7979@gmail.com"><p style="display:inline;">chenyichun7979@gmail.com</p></br></a>
+    <img style="display:inline margin-left:10px; margin-right:10px; opacity:0.7" src="img/github.png" width="16" height="16"/> <a href="https://github.com/phoebe7979"><p style="display:inline">phoebe7979</p></a>
+    </div>
+  </div>
 </section>
 </div>
 
@@ -570,13 +661,20 @@ p{
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">Contextual Effects on Mandarin Biased Heterographic Homophone Resolution</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        <h5>Abstract</h5>
+        <p>
+          The present study aims at exploring the effects of contextual constraints on the resolution of Mandarin biased heterographic homophones. Through two cross-modal naming tasks, we purported to answer the following research questions: (1) Does relative frequency affect meaning activation in a neutral context? (2) Do local contextual constraints influence meaning activation at the early stage of biased heterographic homophone resolution? (3) Does the inclusion of a global context have an early effect during ambiguity resolution? </p>
+        <p>The results indicated that relative meaning frequency does not affect meaning activation. In the neutral context, naming times for both the dominant and the subordinate meanings did not differ significantly. Secondly, strong local contextual constraints could lead to selective activation of the correct meaning, while inhibiting the activation of improper meanings. Without contextual support, even the dominant meaning of a biased heterographic homophone could not be successfully activated. Thirdly, providing discourse constraints did not facilitate activation of the correct meaning, but rather led to an overall latency in naming times.</p>
+        <p>The results of the study disconfirm the Modular Hypothesis, which opposes an early effect of contextual constraints. Additionally, the results cannot be explained by the Reordered Access Model, which argues against selective access of the correct meaning by contextual information. Our results are most compatible with the Context Sensitive Model (e.g., Vu et al., 2000). According to this model, a strong context can activate the single meaning it supports. Nevertheless, our results suggest that global context does not yield additional effects when local constraints are sufficient. This may be caused by the fact that global context does not have an early effect at all, or that global constraints do not exert extra effects when there are enough constraints in the local context.
+        </p>
+        <h5>Graduate Thesis</h5>
+        <p>Yi-Chun Chen (2017). <i>Contextual Effects on Mandarin Biased Heterographic Homophone Resolution </i> (Master’s thesis). National Taiwan Normal University, Taipei, Taiwan.</p>
       </div>
 
       <!-- Modal footer -->
@@ -593,13 +691,20 @@ p{
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">The Representation of Polysemy in Mandarin Verbs: Chī, Dǎ, and Xǐ</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        <h5>Abstract</h5>
+        <p>
+          This paper reports the findings from a semantic judgment priming task aimed at examining how senses of three semantically complex Mandarin verbs chī ‘eat’, dǎ ‘hit’, and xǐ ‘wash’ are stored in the mental lexicon. Although the prime stimuli belonged to the basic senses of the three critical polysemous verbs, three conditions of targets, that is, verb phrases with the basic sense (e.g., chī niúpái ‘to eat steak’), closely related senses (e.g., chī wěiyá ‘to attend a year-end party’), and distantly related senses (e.g., chī lǎoběn ‘to live on one’s own fat’), were prepared to test whether processing patterns varied for different types of extended senses within a polysemous verb. The results indicate linearly decreasing priming effects for senses moving from the core senses, through the closely related senses, to the distantly related senses. These effects conflict with the separate-entry view and provide evidence for a shared core representation among polysemous senses.
+        </p>
+        <h5>Journal Article</h5>
+        <p>Hsiao, Huichen S., Yi-Chun, Chen and Ying-Chen Wu. (2016) The Representation of Polysemy in Mandarin Verbs: Chī, Dǎ, and Xǐ. Concentric: Studies in Linguistics, 42(1), 1-30.</p>
+        <h5 style="display:inline;">Conference Poster</h5> <a id="research_poster" href="research_poster.pdf" target="_blank"><p>PDF <i style="font-size:15px; color:#e26d5c; display:inline; text-align:text-bottom" class="material-icons">launch</i></p></a>
+        <p>Hsiao, S. H., & Chen, Y. The Representation of Polysemy in Mandarin Verbs: Chī, Dǎ, and Xǐ. Presented at the Ninth International Conference on the Mental Lexicon in Niagara-on-the-Lake, Ontario, Canada. (Sep 30 to Oct 2, 2014)</p>
       </div>
 
       <!-- Modal footer -->
@@ -616,13 +721,19 @@ p{
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">Effects of Metaphorical Awareness on Reading Comprehension and Vocabulary Retention</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        <h5>Abstract</h5>
+        <p>
+          The present study takes vocabulary from the metaphor “BUSINESS IS WAR” as an example to explore the effects of metaphor as supplemented learning strategy on learning. Previous studies have indicated the facilitation effects of metaphor awareness on short-term and long-term vocabulary and idiom acquisition (Boers, 2000b; Guo, 2007). Still, some researches have shown that learners are not able to utilize the enhanced awareness of conceptual metaphor for the comprehension of newly encountered words and expressions (Boers, 2000a; Condon, 2008), or to categorize new vocabulary into existed principles (Beréndi et al., 2008). Our research reports a learning experiment that examines whether enhancing metaphoric awareness facilitates reading comprehension of business-related passages and learning outcomes of Mandarin business vocabulary.</p></br>
+          <p>The results showed that (i) overally, the experimental group outperformed the control group in the posttest; (ii) after the learning phase, both the experimental group and the control group have demonstrated significant growth in terms of the vocabulary knowledge of the target words, but no significant difference was found between the two groups; (iii) in the blank-filling task in the delayed-posttest, the experimental group had significantly more corrected answers than the controls, and this advantage was also found for the new metaphoric nouns. The results indicated that awareness of cognitive metaphor cannot immediately enhance reading comprehension of the learners, but can be facilitative for the learning and memory of metaphoric vocabulary.
+        </p>
+        <h5>Conference Paper</h5>
+        <p>Hsiao, S. H., & Chen, Y. Effects of Metaphorical Awareness on Reading Comprehension and Vocabulary Retention. Presented at the 2015 International Annual Conference of Teaching Chinese as a Second Language in Taitung, Taiwan. (Dec 25 to Dec 27, 2015)</p>
       </div>
 
       <!-- Modal footer -->
