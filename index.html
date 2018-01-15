@@ -211,6 +211,18 @@ p{
         text-align: center;
         float:none;
       }
+      #artwork_design_modal_2 #card{
+        display:block;
+        margin: 10px auto;
+        float:none;
+      }
+      #artwork_design_modal_3 img{
+        display:block;
+        width: 80%;
+        margin: 10px auto;
+        float:none;
+      }
+
 
       /*CSS for photography*/
       #photography{
@@ -260,13 +272,14 @@ p{
         padding-bottom:-15px;
       }
       #about_row{
-        width:90%
+        width:90%;
+        padding-bottom: 20px;
         margin: 2px auto;
       }
       #about_photo{
         display: inline-block;
         vertical-align: top;
-        border-radius: 200px;
+        border-radius: 50%;
         opacity:0.5;
       }
       #about_text{
@@ -471,13 +484,13 @@ p{
           float: none;
       }
       #about_photo{
-        width:84%
+        width:84%;
         border-radius:48%;
       }
       #about_text{
         display: inline-block;
-        vertical-align: text-bottom;
         width: 90%;
+        margin-bottom: 40px;
       }
       }
 
@@ -608,26 +621,15 @@ p{
           <img class="img-fluid" src="img/artwork/card_small.jpg" alt="">
         </a>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_3">
           <span class="caption">
             <span class="caption-content">
-              <h2>Strawberries</h2>
-              <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+              <h2>Event Design</h2>
+              <p class="mb-0">I designed the exhibition layout of my company's Sydney annual user event.</p>
             </span>
           </span>
-          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-        </a>
-      </div>
-      <div class="col-lg-6">
-        <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_4">
-          <span class="caption">
-            <span class="caption-content">
-              <h2>Workspace</h2>
-              <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-            </span>
-          </span>
-          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+          <img class="img-fluid" src="img/artwork/layout_small.jpg" alt="">
         </a>
       </div>
     </div>
@@ -805,7 +807,7 @@ p{
         <h5>Collaboration with a friend</h5>
         <p>I made this card with a friend for our mutal friend who was going to have a baby named Max.</br>
         I was in charge of drawing the baby, while my friend took care of the burger-hat.</p>
-        <img src="img/artwork/card.jpg" width="80%"/>
+        <img id="card" src="img/artwork/card.jpg" width="80%"/>
 
       </div>
 
@@ -823,13 +825,21 @@ p{
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">Event Design</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        <h5>Responsibility</h5>
+        <p>As the marketing speciliast loking after the ANZ market, I was the main organizer of Synology 2018 Syndey, the company's Sydney annual user event. My job was to design the whole event, including the show schedule, logistics, event venue planning. I do work with a local event agency which was in charge of coordination and communication with the venue, the AV team, as well as printing vendors. </p>
+        <h5>Challenges</h5>
+        <p>For this event, I would need to plan and design a space that is able to accomodate up to 400 people, as well as retaining them throughout the whole event. Additionally, the design should be able to demonstrate sponsor booths from four different external brans, hands-on experience booth of five various solution themes, new hardware products for the company, three food stations, as well as an activity area.</br></p>
+        </p>
+        <h5>Solution</h5>
+        <p>In order to keep as many attendees as possible until the last minute of the show, I have opted for a extremely spacious hotel venue capable of accommodating all activity spaces.</p>
+        <img src="img/artwork/floorplan.JPG">
+        
       </div>
 
       <!-- Modal footer -->
