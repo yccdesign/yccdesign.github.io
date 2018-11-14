@@ -290,10 +290,12 @@ main p{
   display:block;
   padding:20px;
 }
+
 .project-content-section-name{
   padding:10px 0px 10px 0px;
   text-align: center;
 }
+
 .project-content-text h4{
   text-align: left;
 }
@@ -303,6 +305,9 @@ main p{
   text-align: left;
 }
 
+#coming-up{
+  color: rgb(200,200,200);
+}
 
 /*Graphics page - modal*/
 .modal {
@@ -437,6 +442,9 @@ a .fab:hover{
   }
   .project-content img{
     width:auto;
+    display: inline-block;
+    max-height: 400px;
+    padding:10px 20px 10px 0px;
   }
 
   .project-content-text{
@@ -447,7 +455,6 @@ a .fab:hover{
   .project-content-section-name{
     text-align: left;
   }
-
   /*flex-box for graphics page*/
   .flex-row>.graphics-img{
     height:300px;
