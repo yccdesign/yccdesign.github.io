@@ -1,911 +1,196 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Phoebe Chen</title>
-<!-- favicon -->
-  <link type="image/x-icon" rel="shortcut icon" href="img/logo/favicon.ico">
-  <link rel="icon" type="image/png" href="img/logo/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="img/logo/favicon-16x16.png" sizes="16x16" />
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/logo/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logo/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logo/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/logo/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/logo/apple-touch-icon-152x152.png" />
-  <meta name="application-name" content="Phoebe Chen"/>
-  <meta name="msapplication-TileColor" content="#E8E8E8" />
-  <meta name="msapplication-TileImage" content="img/logo/mstile-144x144.png" />
-<!--bootstrap-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<!-- Custom scripts for template -->
-<script src="js/stylish-portfolio.min.js"></script>
-<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-<!--Google fonts & icon-->
-<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Roboto|Source+Sans+Pro" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<!--CSS-->
-<style>
-*{padding: 0px; margin: 0px; box-sizing: border-box; text-decoration: none;}
-
-/*CSS for text*/
-
-h1{
-  line-height: 3.8; font-family: 'Alegreya Sans SC', sans-serif; font-size: 24px;
-}
-
-h2{
-  font-family: 'Alegreya Sans SC', sans-serif; font-weight: 400; font-size: 24px;
-}
-
-h3{
-  font-family: 'Alegreya Sans', sans-serif; font-weight: 600; font-size: 18px;
-}
-
-h4{
-  font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: 24px;
-}
-
-h5{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700; font-size: 16px;
-}
-p{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-}
-
-      /*CSS for top button*/
-      .top_btn>a{
-        width: 50px; height: 50px; border-radius:50%;
-        background: rgba(239,100,97,0.5); text-align: center;
-        line-height: 50px; position: fixed; z-index:1000;
-        bottom: 5%; right: 5%; color: #FFFCFF; font-size:2em;
-      }
-
-      .top_btn>a:hover{
-        color:#fffcff; background: rgba(239,100,97,1);
-        transition:background 0.25s ease-in;
-      }
-
-      /* CSS for topnav */
-
-      .topnav {
-          width:100%;
-          box-sizing: border-box;
-          background-color: #FFFCFF;
-          overflow: hidden;
-          text-decoration: none;
-          list-style-type: none;
-          font-family: 'Alegreya Sans SC', sans-serif; font-size: 24px;
-      }
-      /* CSS for topnav items */
-      .topnav a{
-          float:left;
-          display: inline-block;
-          font-family: 'Alegreya Sans SC', sans-serif; font-size: 24px;
-          color:#50514F;
-          text-align: center;
-          text-decoration: none;
-      }
-      .topnav .logo{
-        margin-left: 2%;
-      }
-      .topnav .rightnavitem{
-          float:right;
-          margin-right: 2%
-      }
-      .topnav .rightnavitem a{
-          float:left;
-          margin: 0px;
-          line-height: 50px;
-          padding: 50px 15px 0px 15px;
-      }
-
-
-      .topnav a:hover{
-          background-color: #f6eff6;
-          box-sizing: border-box;
-          color:#ef6461;
-          transition:background-color 0.25s ease-in; color 0.25 ease-in;
-      }
-
-      /* CSS for active class on topnav */
-      .active:not(.logo) {
-          background-color: #f6eff6;
-          color:#ef6461;
-
-      }
-
-      /* hide topnav button */
-      .topnav .icon {
-          display: none;
-      }
-      /*CSS for center body*/
-      .center_body{
-        background-color: #FFFCFF;
-        width: 100%;
-      }
-
-      /*CSS for section*/
-      section{
-        margin:0px auto;
-        width: 96%;
-        padding: 10px 0px
-      }
-      /*CSS for top baner*/
-      #top_banner{
-        background: url(img/photos/leaves_1920x1275.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 10px;
-      }
-
-      #top_banner_text{
-        background-color:rgba(172, 123, 115, 0.8);
-        color:rgb(251, 251, 247);
-        padding:10px;
-        margin:25px 0px 25px 0px;
-        line-height: normal;
-        width: 400px;
-      }
-      /*CSS for buttons*/
-      .btn{
-        background-color: rgba(160, 155, 164, 0.77);
-        border: rgba(160,155,164,0.77);
-
-      }
-      .btn:hover{
-        background-color: rgba(160, 155, 164, 1);
-        border: rgba(160,155,164,1);
-        cursor: pointer;
-      }
-
-      /*CSS for research*/
-      #research{
-        background-color: rgba(242, 237, 236, 0.83);
-        padding:10px;
-        text-align: center;
-        color:#505e4f;
-      }
-      .research_card33{
-        width: 31%;
-        margin: 10px auto;
-        display: inline;
-        border:none;
-      }
-
-      .research_card33:hover{
-        opacity: 0.8;
-      }
-      .card_highlights{
-        text-align: left;
-      }
-      #research_poster{
-        text-decoration: none;
-      }
-      #research_poster p{
-         color:#e26d5c;
-         font-size: 15px;
-         font-weight: 600;
-         display:inline-block;
-      }
-      #research_poster>a>p:hover{
-        text-decoration: none;
-        background-color: #e4b363;
-      }
-      /*CSS for artwork_design*/
-      #artwork_design_modal_1 .modal-body {
-      text-align:center;
-      }
-      #artwork_design_modal_1 img{
-        margin: 10px auto;
-        text-align: center;
-        float:none;
-      }
-      #artwork_design_modal_2 #card{
-        display:block;
-        margin: 10px auto;
-        float:none;
-      }
-      #artwork_design_modal_3 img{
-        display:block;
-        width: 80%;
-        margin: 10px auto;
-        float:none;
-      }
-      #event_area{
-        padding-left: 5px;
-      }
-
-      /*CSS for photography*/
-      #photography{
-        background-color: #fffcff;
-        padding:10px;
-        text-align: center;
-        color:#505e4f;
-      }
-      #photography_row{
-        width:90%;
-        margin: 2px auto;
-      }
-      #photography_row img{
-        display: inline-block;
-        opacity: 0.8;
-        margin: 10px 20px;
-        vertical-align: middle;
-      }
-      #photography_row img:hover{
-        opacity: 1;
-      }
-
-
-      /*CSS for about*/
-      #about{
-        clear: both;
-        background-color: rgba(231, 212, 198, 0.4);
-        padding:10px;
-        text-align: center;
-        color:#505e4f;
-        text-decoration: none;
-      }
-      #about a{
-        color:#505e4f;
-      }
-
-      #about a:link{
-        color:#505e4f;
-      }
-      #about a:hover{
-        color: #e4b363;
-        text-decoration: none;
-      }
-      #about li{
-        font-size: 11pt;
-
-      }
-      #about #resume_pdf{
-        border-bottom:9px solid rgba(184, 158, 149, 0.78);
-        margin-bottom:-15px;
-        padding-bottom:-15px;
-      }
-      #about_row{
-        width:90%;
-        padding-bottom: 20px;
-        margin: 2px auto;
-      }
-      #about_photo{
-        display: inline-block;
-        height: 330px;
-        width: 330px;
-        vertical-align: top;
-        border-radius: 50%;
-        opacity:0.8;
-      }
-      #about_text{
-        display: inline-block;
-        height: 400px;
-        vertical-align: text-bottom;
-        width: 600px;
-        text-align: left;
-        padding-left: 20px;
-        padding-top: 20px;
-      }
-      /*CSS for Artwork & Design*/
-      #artwork_design{
-        background-color: #fffcff;
-        padding:20px 10px;
-        margin: 0px auto;
-        text-align: center;
-        color:#505e4f;
-      }
-      #artwork_design > a{
-          color: #db7f67; }
-      #artwork_design a:hover, a:focus, a:active {
-            color: rgba(219, 127, 103, 0.83);
-            cursor: pointer;
-      }
-      #artwork_design .portfolio-item {
-       max-width: none;
-       margin: 0; }
-      #artwork_design .portfolio-item .caption {
-         display: flex;
-         height: 100%;
-         width: 100%;
-         background-color: rgba(255, 252, 255, 0.6);
-         position: absolute;
-         top: 0;
-         bottom: 0;
-         text-align: center;
-         z-index: 1;
-         -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-         -webkit-clip-path: inset(0px);
-         clip-path: inset(0px); }
-        #artwork_design .portfolio-item .caption .caption-content {
-            color: #fff;
-            transition: opacity 0.25s;
-            padding-left: 3em;
-            position: absolute; bottom: 2em;
-            float: left;
-            text-align: left;
-            margin:1em auto;
-        }
-        #artwork_design .portfolio-item .caption .caption-content h2 {
-        font-size: 0.9rem;
-        font-weight: bold;
-        text-transform: uppercase; }
-        #artwork_design .portfolio-item .caption .caption-content p {
-          font-weight: 300;
-          font-size: 1.2rem; }
-        #artwork_design .portfolio-item img {
-          -webkit-transition: -webkit-clip-path 0.25s ease-out;
-          -webkit-clip-path: inset(-1px);
-          clip-path: inset(-1px); }
-        #artwork_design .portfolio-item:hover img {
-          -webkit-clip-path: inset(2rem);
-          clip-path: inset(2rem); }
-        #artwork_design .portfolio-item:hover .caption {
-          background-color: rgba(219, 159, 103, 0.9);
-          -webkit-clip-path: inset(2rem);
-          clip-path: inset(2rem); } }
-
-
-
-
-      /*CSS for research modals*/
-      .modal-header{
-        border: none;
-      }
-      .modal-body{
-        background-color: #fffcff;
-      }
-      .modal-footer{
-        width: 100%;
-        background-color: #fffcff;
-        text-align: center;
-        margin: 1px auto;
-      }
-      .modal-footer button{
-        margin: 1px auto;
-      }
-
-
-
-      /*CSS for footer*/
-      footer{
-        width:100%;
-        padding-top:10px;
-        background-color: #fffcff;
-        text-align: center;
-        border-bottom: solid 1.5px rgba(111,105,105,1)
-        }
-      footer p{
-        line-height:2em;
-        text-align: center;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        color:#50514F;
-
-        }
-      footer #bottom_logo{
-        display:block;
-        text-align: center;
-        margin:1px auto;
-      }
-
-
-      /* topnav media query */
-      @media screen and (max-width: 810px) {
-        .topnav a:not(.logo) {display: none;}
-        .topnav a.icon {
-          float: right;
-          display: inline-block;
-          margin: 0% 2% 0% 0%;
-          width: 100px;
-          line-height: 65px;
-          padding-top: 35px;
-          position: absolute;
-          right: 0;
-          top: 0;
-          background-color: #f6eff6;
-        }
-
-      /* vertical topnav on small screens*/
-      @media screen and (max-width: 810px) {
-
-        #top_banner_text{
-          width: 85%;
-        }
-        .topnav.responsive {position: relative;}
-        .topnav .rightnavitem {
-          float:left;
-          width: 100%;
-        }
-        .topnav.responsive a.icon {
-          float: right;
-          text-align: center;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .topnav.responsive .rightnavitem a{
-          float: none;
-          display: inline-block;
-          text-align: center;
-          width: 100%;
-        }
-        .topnav.responsive .logo {
-          float:left;
-          text-align: left;
-          width: 100%;
-          margin-left: 0%;
-          padding-left: 2%;
-          }
-        }
-        .topnav .rightnavitem a{
-          float:left;
-          width: 100%;
-          margin: 0px;
-          line-height: 70px;
-          padding: 0px;
-        }
-        .research_card33{
-          width: 96%;
-        }
-        #artwork_design .portfolio-item {
-        display: block;
-        position: relative;
-        overflow: hidden;
-        max-width: 500px;
-        margin: auto auto 1rem; }
-        #artwork_design .portfolio-item .caption {
-          display: flex;
-          height: 100%;
-          width: 100%;
-          background-color: rgba(33, 37, 41, 0.2);
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          z-index: 1; }
-      #artwork_design .portfolio-item .caption .caption-content {
-        color: #fff;
-        margin: auto 2rem 2rem; }
-      #artwork_design .portfolio-item .caption .caption-content h2 {
-        font-size: 0.8rem;
-        text-transform: uppercase; }
-      #artwork_design .portfolio-item .caption .caption-content p {
-        font-weight: 300;
-        font-size: 1.2rem; }
-      #photography_row img{
-          width: 83%;
-          opacity: 1;
-          text-align: center;
-          margin: 10px auto;
-          float: none;
-      }
-      #about_photo{
-        width:84%;
-        border-radius:48%;
-      }
-      #about_text{
-        display: inline-block;
-        width: 90%;
-        margin-bottom: 40px;
-      }
-      }
-
-
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="imgs/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="imgs/favicon-32x32.png" sizes="32x32" />
+  <!--css -->
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Yi-Chun Chen | Projects</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
 </head>
 
+
 <body>
 
-
+<!--header includes logo and navigation bar, the default tab is projects-->
 <header>
+  <nav class="topnav" id="nav-tabs">
+      <a class="logo" href="index.html"><img src="imgs/logo-170x90.svg" alt="logo image" title="yi-chun chen"></a>
+      <a href = "javascript:void(0);" class = "nav-icon" onclick="navIconClick()" aria-label="menu"><i class="fas fa-bars" ></i></a>
+      <li class="current-nav-tab"><a href="index.html">Projects</a></li>
+      <li class="other-nav-tab"><a href="graphics.html">Graphics</a></li>
+      <li class="other-nav-tab"><a href="more.html">...and More</a></li>
+      <li class="other-nav-tab"><a href="about.html">About</a></li>
+  </nav>
 
-<!--topnavbar-->
-  <div class="topnav" id="myTopnav">
-    <ul>
-    <a href="index.html" class="logo"><img src="img/logo/logo_wide_animated.svg"/></a>
-    <span class="rightnavitem">
-    <a href="#research">research</a>
-    <a href="#artwork_design">artwork & design</a>
-    <a href="#photography">photography</a>
-    <a href="#about">about</a>
-    </span>
-    <a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a>
-   </ul>
-  </div>
-  <!--JS for topnavbar-->
-  <script>
-  function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-          x.className += " responsive";
-      } else {
-          x.className = "topnav";
-      }
-  }
-  </script>
-  <script>
-  $('ul a').click(function(){ $('a').removeClass("active"); $(this).addClass("active"); });
-  </script>
 </header>
 
+<!-- main content -->
+<main>
+<h2 class="page-title">Projects</h2>
+<p class = "page-description">Select projects in user experience, event experience design, and psycholinguistics.<p>
 
-<!--fixed top button-->
-<div class="top_btn"><a href="#myTopnav"><i class="material-icons">arrow_upward</i></a></div>
 
-<!--center body-->
-<div class="center_body">
 
-<!--research-->
-<section id="research">
-<h1>RESEARCH</h1>
-<div class="container-fluid text-center">
-  <div class="row">
-    <div class="research_card33">
-        <div style="background-color:rgba(247, 250, 245, 0.9); border:none;" class="card text-muted">
-          <img class="card-img-top" data-toggle="modal" data-target="#research_modal_1" src="img/research/research_title_1.svg" alt="img/research/research_title_1.jpg">
-          <div class="card-body">
-          <div class="card-text">
-            <p>How do humans process ambiguous homophones?</br>
-               What is the role of contextual clues during the resolution process?</p>
-            <div class="card_highlights">
-            <h5>Keywords:</h5><p>Ambiguity resolution, biased heterographic homophone, contextual effects, local context, global context</p>
-            <h5>Methods:</h5><p>5 norming studies, 2 cross-modal naming tasks, three-way Repeated Measures ANOVA</p>
-           </div>
-          </div>
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_1">Read abstract</button>
-         </div>
+<!-- UX project row-->
+
+<br>
+<div id="ux"><h3>UX</h3></div>
+<div class=" flex-row">
+<!--start of each project-->
+<!-- FG project-->
+  <div class="project-box">
+    <a href="food-gatherers.html">
+      <div class = "project-box-img">
+        <img src="imgs/index/food-gatherers-logo-300x250.jpg">
+      </div>
+      <div class="project-box-description">
+        <h4>Food Gatherers</h4>
+        <p>Improving a local food bank's recall food handling procedure.</p>
+        <div class = "project-box-keyword">
+          <pre>User research</pre>
+          <pre>Affinity wall</pre>
+          <pre>Qualitative analysis</pre>
         </div>
+      </div>
+    </a>
+  </div>
+<!-- groGo project-->
+<div class="project-box">
+  <a href="groGo.html">
+    <div class = "project-box-img">
+      <img src="imgs/index/grogo-logo-300x250.jpg">
     </div>
-    <div class="research_card33">
-        <div style="background-color:rgba(247, 250, 245, 0.9); border:none;" class="card text-muted">
-          <img class="card-img-top" data-toggle="modal" data-target="#research_modal_2" src="img/research/research_title_2.svg" alt="img/research/research_title_2.jpg">
-          <div class="card-body">
-          <p class="card-text ">Do senses of a polysemous word share a common psychological representation? </br>
-                               Does the relatedness between different senses affect how humans process them?
-          </p>
-          <div class="card_highlights">
-          <h5>Keywords:</h5><p>Lexical ambiguity, polysemy, semantic priming, sense relatedness</p>
-          <h5>Methods:</h5><p>Semantic judgement priming task, two-way ANCOVA</p>
-          </br>
-         </div>
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_2">Read abstract</button>
+    <div class="project-box-description">
+      <h4>groGo</h4>
+      <p>Designing mobile experience to streamline grocery shopping trips.</p>
+      <div class = "project-box-keyword">
+        <pre>UX research & prototyping</pre>
+        <pre>Interaction design</pre>
+        <pre>AR</pre>
+      </div>
+    </div>
+  </a>
+</div>
+<!--Dynamo Metrics project-->
+<div class="project-box">
+  <a href="ppp.html">
+    <div class = "project-box-img">
+      <img src="imgs/index/dynamo-metrics-300x250.jpg">
+    </div>
+    <div class="project-box-description">
+      <h4>Dynamo Metrics &<br>City of Jackson</h4>
+      <p>Providing UX consulting for a public-private project.</p>
+      <div class = "project-box-keyword">
+        <pre>UX research</pre>
+        <pre>Data visualization</pre>
+      </div>
+    </div>
+  </a>
+</div>
+
+</div>
+<!-- Marketing project row-->
+<br>
+<br>
+<div id="marketing"><h3>Marketing</h3></div>
+<div class=" flex-row">
+<!-- Synology2018 project-->
+  <div class="project-box">
+    <a href="synology2018.html">
+      <div class = "project-box-img">
+        <img src="imgs/index/synology2018-300x250.jpg">
+      </div>
+      <div class="project-box-description">
+        <h4>Synology 2018 Sydney</h4>
+        <p>Strategizing and executing one of the company's largest event series.</p>
+        <div class = "project-box-keyword">
+          <pre>Marketing</pre>
+          <pre>Experience design</pre>
+          <pre>Project management</pre>
         </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- psycholinguistics project row-->
+<br>
+<br>
+<div id="psycholinguistics"><h3>Psycholinguistics Research</h3></div>
+<div class=" flex-row">
+<!-- homophone project-->
+  <div class="project-box">
+    <a href="homophone.html">
+      <div class="project-box-description">
+        <h4>Contextual Effects on Mandarin Biased Heterographic Homophone Resolution</h4>
+        <p>Examining the role of contextual clues during homophone resolution process.</p>
+        <div class = "project-box-keyword">
+          <pre>Ambiguity resolution</pre>
+          <pre>Biased heterographic homophone</pre>
+          <pre>Contextual effects</pre>
+          <pre>Local context</pre>
+          <pre>Global context</pre>
         </div>
-    </div>
-    <div class="research_card33">
-        <div style="background-color:rgba(247, 250, 245, 0.9); border:none;" class="card text-muted">
-          <img class="card-img-top" data-toggle="modal" data-target="#research_modal_3" src="img/research/research_title_3.svg" alt="img/research/research_title_3.jpg">
-          <div class="card-body">
-            <p class="card-text">Does explicitly teaching and highlighting the mechanism of metaphors facilitates short- and long-term memory retention and acquisition of these words?</p></br>
-          <div class="card_highlights">
-          <h5>Keywords:</h5><p>Conceptual metaphor, vocabulary learning, TCSL, business Chinese</p>
-          <h5>Methods:</h5><p>Learning experiment, nonparametric analysis</p>
+      </div>
+    </a>
+  </div>
+  <!-- polysemy project-->
+  <div class="project-box">
+    <a href="polysemy.html">
+      <div class="project-box-description">
+        <h4>The Representation of Polysemy in Mandarin Verbs: Chi, Da, and Xi</h4>
+        <p>Evaluating the psychological represenation of three Mandarin polysemy verbs: chi 'eat', da 'hit', and xi 'wash'.</p>
+        <div class = "project-box-keyword">
+          <pre>Lexical ambiguity</pre>
+          <pre>Polysemy</pre>
+          <pre>Semantic priming</pre>
+          <pre>Sense relatedness</pre>
         </div>
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#research_modal_3">Read abstract</button>
+      </div>
+    </a>
+  </div>
+  <!-- metaphor project-->
+  <div class="project-box">
+    <a href="metaphor.html">
+      <div class="project-box-description">
+        <h4>Effects of Metaphorical Awareness on Reading Comprehension and Vocabulary Retention</h4>
+        <p>Assessing the effects of explicit metaphor awareness in vocabulary acquisition.</p>
+        <div class = "project-box-keyword">
+          <pre>Conceptual metaphor</pre>
+          <pre>Vocabulary learning</pre>
+          <pre>Chinese as a Second Language</pre>
+          <pre>Business Chinese</pre>
         </div>
-        </div>
-    </div>
+      </div>
+    </a>
   </div>
+
 </div>
-</section>
-
-<!--artwork & design-->
-<section id="artwork_design">
-<h1>ARTWORK & DESIGN</h1>
-  <div class="container-fluid text-center">
-    <div class="row no-gutters">
-      <div class="col-lg-4">
-        <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_1">
-          <span class="caption">
-            <span class="caption-content">
-              <h2>Self-Portrait</h2>
-              <p class="mb-0">A series of self-portrait.</p>
-            </span>
-          </span>
-          <img class="img-fluid" src="img/artwork/portrait_2.JPG" alt="portrait">
-        </a>
-      </div>
-      <div class="col-lg-4">
-        <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_2">
-          <span class="caption">
-            <span class="caption-content">
-              <h2>Illustration</h2>
-              <p class="mb-0">A greeting card that I made with a friend. </p>
-            </span>
-          </span>
-          <img class="img-fluid" src="img/artwork/card_small.jpg" alt="">
-        </a>
-      </div>
-      <div class="col-lg-4">
-        <a class="portfolio-item" data-toggle="modal" data-target="#artwork_design_modal_3">
-          <span class="caption">
-            <span class="caption-content">
-              <h2>Event Design</h2>
-              <p class="mb-0">I designed the exhibition layout of my company's Sydney annual user event.</p>
-            </span>
-          </span>
-          <img class="img-fluid" src="img/artwork/layout_small.jpg" alt="">
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--photography-->
-<section id="photography">
-    <h1>PHOTOGRAPHY</h1>
-    <div id="photography_row">
-    <img src="img/photos/P1090193_700x700.JPG" width="31%" />
-    <img src="img/photos/P1080127_700x395.JPG" width="55%"/>
-    <img src="img/photos/P1210264_1200x796.JPG" width="43%"/>
-    <img src="img/photos/P1210262_1200x796.JPG" width="43%"/>
-    <img src="img/photos/P1080085_700x700.JPG" width="31%"/>
-    <img src="img/photos/P1210138_700x395.JPG" width="55%"/>
-    <img src="img/photos/P1210285_800x600.JPG" width="43%"/>
-    <img src="img/photos/1200x900.JPG" width="43%"/>
-    <img src="img/photos/P1120347_700x395.JPG" width="50%"/>
-    </div>
-</section>
-
-<!--about-->
-<section id="about">
-  <h1>ABOUT</h1>
-
-  <div id="about_row">
-    <img id="about_photo" src="img/about.jpg" alt="personal photo"/>
-    <div id="about_text">
-    </br>
-    <p>Hi, I'm Phoebe, an aspiring product experience designer based in Michigan.</p>
-    <p>My goal is to transform the way we live and work into streamlined experience solution.</br>
-      Some fast facts about me:</br>
-    </p>
-    <li>First year master’s student at University of Michigan School of Information Science</li>
-    <li>Former marketer, language instructor, and cognitive linguistics research assistant</li>
-    <li>My other goals: cook & eat well + learn skateboarding.</li>
-    <br>
-    <p>If you would like to know more, feel free to <span id="resume_pdf"><a href="yichunchen_resume.pdf" target="_blank">download my resume</a></span> or find me using the contacts below.</p>
-    <img style="display:inline margin-left:10px; margin-right:10px" src="img/mail.png" width="16" height="16"/> <a href="mailto:chenyichun7979@gmail.com"><p style="display:inline;">chenyichun7979@gmail.com</p></br></a>
-    <img style="display:inline margin-left:10px; margin-right:10px; opacity:0.7" src="img/github.png" width="16" height="16"/> <a href="https://github.com/phoebe7979"><p style="display:inline">phoebe7979</p></a>
-    </div>
-  </div>
-</section>
-</div>
-
-
-<!--research modals-->
-
-<div class="modal fade" id="research_modal_1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Contextual Effects on Mandarin Biased Heterographic Homophone Resolution</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <h5>Abstract</h5>
-        <p>
-          The present study aims at exploring the effects of contextual constraints on the resolution of Mandarin biased heterographic homophones. Through two cross-modal naming tasks, we purported to answer the following research questions: (1) Does relative frequency affect meaning activation in a neutral context? (2) Do local contextual constraints influence meaning activation at the early stage of biased heterographic homophone resolution? (3) Does the inclusion of a global context have an early effect during ambiguity resolution? </p>
-        <p>The results indicated that relative meaning frequency does not affect meaning activation. In the neutral context, naming times for both the dominant and the subordinate meanings did not differ significantly. Secondly, strong local contextual constraints could lead to selective activation of the correct meaning, while inhibiting the activation of improper meanings. Without contextual support, even the dominant meaning of a biased heterographic homophone could not be successfully activated. Thirdly, providing discourse constraints did not facilitate activation of the correct meaning, but rather led to an overall latency in naming times.</p>
-        <p>The results of the study disconfirm the Modular Hypothesis, which opposes an early effect of contextual constraints. Additionally, the results cannot be explained by the Reordered Access Model, which argues against selective access of the correct meaning by contextual information. Our results are most compatible with the Context Sensitive Model (e.g., Vu et al., 2000). According to this model, a strong context can activate the single meaning it supports. Nevertheless, our results suggest that global context does not yield additional effects when local constraints are sufficient. This may be caused by the fact that global context does not have an early effect at all, or that global constraints do not exert extra effects when there are enough constraints in the local context.
-        </p>
-        <h5>Graduate Thesis</h5>
-        <p>Yi-Chun Chen (2017). <i>Contextual Effects on Mandarin Biased Heterographic Homophone Resolution </i> (Master’s thesis). National Taiwan Normal University, Taipei, Taiwan.</p>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="research_modal_2">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">The Representation of Polysemy in Mandarin Verbs: Chī, Dǎ, and Xǐ</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <h5>Abstract</h5>
-        <p>
-          This paper reports the findings from a semantic judgment priming task aimed at examining how senses of three semantically complex Mandarin verbs chī ‘eat’, dǎ ‘hit’, and xǐ ‘wash’ are stored in the mental lexicon. Although the prime stimuli belonged to the basic senses of the three critical polysemous verbs, three conditions of targets, that is, verb phrases with the basic sense (e.g., chī niúpái ‘to eat steak’), closely related senses (e.g., chī wěiyá ‘to attend a year-end party’), and distantly related senses (e.g., chī lǎoběn ‘to live on one’s own fat’), were prepared to test whether processing patterns varied for different types of extended senses within a polysemous verb. The results indicate linearly decreasing priming effects for senses moving from the core senses, through the closely related senses, to the distantly related senses. These effects conflict with the separate-entry view and provide evidence for a shared core representation among polysemous senses.
-        </p>
-        <h5>Journal Article</h5>
-        <p>Hsiao, Huichen S., Yi-Chun, Chen and Ying-Chen Wu. (2016) The Representation of Polysemy in Mandarin Verbs: Chī, Dǎ, and Xǐ. Concentric: Studies in Linguistics, 42(1), 1-30.</p>
-        <h5 style="display:inline;">Conference Poster</h5> <a id="research_poster" href="research_poster.pdf" target="_blank"><p>PDF <i style="font-size:15px; color:#e26d5c; display:inline; text-align:text-bottom" class="material-icons">launch</i></p></a>
-        <p>Hsiao, S. H., & Chen, Y. The Representation of Polysemy in Mandarin Verbs: Chī, Dǎ, and Xǐ. Presented at the Ninth International Conference on the Mental Lexicon in Niagara-on-the-Lake, Ontario, Canada. (Sep 30 to Oct 2, 2014)</p>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="research_modal_3">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Effects of Metaphorical Awareness on Reading Comprehension and Vocabulary Retention</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <h5>Abstract</h5>
-        <p>
-          The present study takes vocabulary from the metaphor “BUSINESS IS WAR” as an example to explore the effects of metaphor as supplemented learning strategy on learning. Previous studies have indicated the facilitation effects of metaphor awareness on short-term and long-term vocabulary and idiom acquisition (Boers, 2000b; Guo, 2007). Still, some researches have shown that learners are not able to utilize the enhanced awareness of conceptual metaphor for the comprehension of newly encountered words and expressions (Boers, 2000a; Condon, 2008), or to categorize new vocabulary into existed principles (Beréndi et al., 2008). Our research reports a learning experiment that examines whether enhancing metaphoric awareness facilitates reading comprehension of business-related passages and learning outcomes of Mandarin business vocabulary.</p></br>
-          <p>The results showed that (i) overall, the experimental group outperformed the control group in the posttest; (ii) after the learning phase, both the experimental group and the control group have demonstrated significant growth in terms of the vocabulary knowledge of the target words, but no significant difference was found between the two groups; (iii) in the blank-filling task in the delayed-posttest, the experimental group had significantly more corrected answers than the controls, and this advantage was also found for the new metaphoric nouns. The results indicated that awareness of cognitive metaphor cannot immediately enhance reading comprehension of the learners, but can be facilitative for the learning and memory of metaphoric vocabulary.
-        </p>
-        <h5>Conference Paper</h5>
-        <p>Hsiao, S. H., & Chen, Y. Effects of Metaphorical Awareness on Reading Comprehension and Vocabulary Retention. Presented at the 2015 International Annual Conference of Teaching Chinese as a Second Language in Taitung, Taiwan. (Dec 25 to Dec 27, 2015)</p>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!--artwork & design modals-->
-<div class="modal fade" id="artwork_design_modal_1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Self-Portrait</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-      <img src="img/artwork/portrait_1.JPG" width="80%"/>
-      <img src="img/artwork/portrait_2.JPG" width="80%"/>
-      <img src="img/artwork/portrait_3.JPG" width="80%"/>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="artwork_design_modal_2">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Illustration</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <h5>Collaboration with a friend</h5>
-        <p>I made this card with a friend for our mutal friend who was going to have a baby named Max.</br>
-        I was in charge of drawing the baby, while my friend took care of the burger-hat.</p>
-        <img id="card" src="img/artwork/card.jpg" width="80%"/>
-
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="artwork_design_modal_3">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Event Design</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <h5>Responsibility</h5>
-        <p>As the marketing speciliast loking after the ANZ market, I was the main organizer of Synology 2018 Syndey, the company's Sydney annual user event. My job was to design the whole event, including the show schedule, logistics, event venue planning. I do work with a local event agency which was in charge of coordination and communication with the venue, the AV team, as well as printing vendors. </p>
-        <h5>Challenges</h5>
-        <p>For this event, I would need to plan and design a space that is able to accomodate up to 400 people, as well as retaining them throughout the whole event. Additionally, the design should be able to demonstrate sponsor booths from four different external brans, hands-on experience booth of five various solution themes, new hardware products for the company, three food stations, as well as an activity area.</br></p>
-        </p>
-        <h5>Solution</h5>
-        <p>In order to keep every attendee interested until the last minute of the show, I have opted for an extremely spacious hotel venue capable of accommodating all activity spaces.</p>
-        <img src="img/artwork/floorplan.JPG">
-        <img src="img/artwork/overview.jpg">
-        <p>The whole event space was divided into 6 areas:</p>
-        <div id="event_area">
-        <p><span style="border-left: 5px solid rgb(214, 139, 160); padding-left: 3px;"><strong>Registration: </strong></span>The registration was located ourside of the event center, facing the main entrance of the hotel building. With pull-up banners explicitly indicating its function and badges displayed on the table, attendees would proactively come over to register. To provide smooth experience for the attendees, an electronic check-in mobile app was adopted to quickly scan the QR-Code on each ticket.  </p>
-        <p><span style="border-left: 5px solid rgb(180, 125, 191); padding-left: 3px;"><strong>Audio & Visual Control Area: </strong></span>Since the presentaions required a complicated streaming system to switch between different display modes, the A/V area was set up at the side of the stage so the coworker in charge could see both the presenter's laptop and the screens to ensure correct display.</p>
-        <p><span style="border-left: 5px solid rgb(202, 210, 106); padding-left: 3px;"><strong>Activity Area & New Product Area: </strong></span>Serving as room divider, a double-sided media wall was displayed at the back of the auditorium. One side was purported to engage attendees in some fun activities during the break, while the other side served as statis display for new products. </p>
-        <p><span style="border-left: 5px solid rgb(106, 182, 210); padding-left: 3px;"><strong>Sponsor Area: </strong></span>This was an area of four booths for sponsors to display their products. To provide an aligned visual image, the design team has made a template for all sponsor booth backdrops.</p>
-        <p><span style="border-left: 5px solid rgb(133, 210, 106); padding-left: 3px;"><strong>Demo Area: </strong></span>This was an area of five booths to display the company's new solutions. Each booth features a theme, with dedicated coworkers standing by to provide guidance on hands-on demonstration.</p>
-        <p><span style="border-left: 5px solid rgb(210, 181, 106); padding-left: 3px;"><strong>Food Area: </strong></span>The food area consisted of three food stations. It was located at the very back of the space after discussion with the hotel and event agency. This arrangement offered sufficient space for guests to line up for food, while providing equal visibility of both sponsor and demo areas. </p>
-        </div>
-
-
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="artwork_design_modal_4">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
+  <!--end of project rows-->
+</main>
 
 
 
-<!--footer-->
 
+
+
+
+<!--footer area-->
 <footer>
-
-  <p>Copyright © Phoebe Chen 2018</p>
-  <img id="bottom_logo" src="img/logo/logo_small.svg" height="24" width="24">
+  <p>© Yi-Chun Chen 2018</p>
+  <a href = "https://phoebe7979.github.io" aria-label="link to github" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+  <a href = "https://www.linkedin.com/in/yi-chun-phoebe-chen" aria-label="link to linkedin" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+  <a href = "https://www.facebook.com/chenyichun7979" aria-label="link to facebook" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
 </footer>
 
+<script src="scripts/main.js"></script>
 </body>
 </html>
