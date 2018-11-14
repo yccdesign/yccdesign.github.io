@@ -305,6 +305,7 @@ main p{
   text-align: left;
 }
 
+
 #coming-up{
   color: rgb(200,200,200);
 }
@@ -459,7 +460,10 @@ a .fab:hover{
   .flex-row>.graphics-img{
     height:300px;
   }
-
+  iframe{
+    width: 80%;
+    height: 500px;
+  }
 
   #about-content{
     padding:20px;
