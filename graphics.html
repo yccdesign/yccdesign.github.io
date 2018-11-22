@@ -10,9 +10,12 @@
   <!--css -->
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type = "text/css" href="lightbox/dist/css/lightbox.min.css">
   <title>Yi-Chun Chen | Graphics</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 
@@ -37,16 +40,14 @@
   <p class = "page-description">An eveolving collection of my artwork.</p>
 <!--Below are thumbnails-->
   <div class = "flex-row">
-    <img src="imgs/graphics/portrait-542x588.JPG" class = "graphics-img" id = "thumbnail-portrait" alt="self portrait"/>
-    <img src="imgs/graphics/card-441x588.jpg" class = "graphics-img" id = "thumbnail-card" alt="card illustration"/>
-    <img src="imgs/graphics/banners-1600x570.jpg" class = "graphics-img" id = "thumbnail-banners" alt="website banners for a fictious faculty talk event"/>
-    <img src="imgs/graphics/postcard-1252x400.jpg" class = "graphics-img" id = "thumbnail-banners" alt="postcard designed for a fictious conference"/>
-    <img src="imgs/graphics/alphabets-800x522.jpg" class = "graphics-img" id = "thumbnail-banners" alt="designing an alphabets poster for low GI food reference"/>
-    <img src="imgs/graphics/infographics-700x1824.jpg" class = "graphics-img" id = "thumbnail-banners" alt="designing an infographic poster for a technology product"/>
+    <a href="imgs/graphics/portrait-542x588.JPG" class = "graphics-img" data-lightbox="graphics" data-title="Self portrait"><img src="imgs/graphics/portrait-542x588.JPG" class = "graphics-img" alt="self portrait"/></a>
+    <a href="imgs/graphics/card-441x588.jpg" class = "graphics-img" data-lightbox="graphics" data-title="Self portrait"><img src="imgs/graphics/card-441x588.jpg" class = "graphics-img" alt="illustration"/></a>
+    <a href="imgs/graphics/banners-1000x340.gif" class = "graphics-img" data-lightbox="graphics" data-title="Web banner design"><img src="imgs/graphics/thumbnails/banners-343x343.jpg" class = "graphics-img" alt="website banners design"/></a>
+    <a href="imgs/graphics/postcard-1252x400.jpg" class = "graphics-img" data-lightbox="graphics" data-title="Post card design"><img src="imgs/graphics/thumbnails/postcard1-343x343.jpg" class = "graphics-img" alt="Post card design"/></a>
+    <a href="imgs/graphics/alphabets-800x522.jpg" class = "graphics-img" data-lightbox="graphics" data-title="Poster design"><img src="imgs/graphics/alphabets-800x522.jpg" class = "graphics-img" alt="Poster design"/></a>
+    <a href="imgs/graphics/infographics-700x1824.jpg" class = "graphics-img" data-lightbox="graphics" data-title="Infographic design"><img src="imgs/graphics/thumbnails/infographics-343x343.jpg" class = "graphics-img" alt="Infographic design"/></a>
 
-
-
-</div>
+  </div>
 
 <!--Below are the modals-->
 <div class = "modal" id="modal-self-portrait">
@@ -70,5 +71,6 @@
 </footer>
 
 <script src="scripts/main.js"></script>
+<script src="lightbox/dist/js/lightbox.min.js"></script>
 </body>
 </html>
