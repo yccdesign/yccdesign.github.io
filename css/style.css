@@ -165,13 +165,17 @@ main p{
 }
 
 /*flex-box for and more page*/
-.flex-row>img{
-  margin: 5pt 10pt;
+.graphics-img{
+  width:120px;
+  height:120px;
+  margin: 10pt 10pt;
+  object-fit: cover;
   opacity: 0.7;
   transition: 0.5s ease-in;
 }
 
-.flex-row>img:hover{
+
+.graphics-img:hover{
   opacity: 1;
 }
 
@@ -457,8 +461,9 @@ a .fab:hover{
     text-align: left;
   }
   /*flex-box for graphics page*/
-  .flex-row>.graphics-img{
-    height:300px;
+  .graphics-img{
+    width:250px;
+    height:250px;
   }
   iframe{
     width: 80%;
@@ -485,5 +490,8 @@ a .fab:hover{
     flex:25%;
     max-width: 25%;
   }
-
+  .graphics-img{
+    width:300px;
+    height:300px;
+  }
 }

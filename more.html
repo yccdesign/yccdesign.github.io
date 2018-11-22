@@ -10,9 +10,12 @@
   <!--css -->
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type = "text/css" href="lightbox/dist/css/lightbox.min.css">
   <title>Yi-Chun Chen | ...and More</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 
@@ -34,19 +37,13 @@
   <h2 class="page-title">Snapshots</h2>
   <p class = "page-description">Photography capturing unforgettable moments</p>
   <div class="flex-row">
-    <img src="imgs/more/photo_s/photo-1-350x350.jpg" alt="karaoke at mauerpark">
-    <img src="imgs/more/photo_s/photo-2-350x350.jpg" alt="from the front of a jet">
-  </div>
-  <div class="flex-row">
-    <img src="imgs/more/photo_s/photo-3-350x232.jpg" alt="chicago city">
-    <img src="imgs/more/photo_s/photo-6-350x232.jpg" alt="chicago skyline">
-  </div>
-  <div class="flex-row">
-    <img src="imgs/more/photo_s/photo-4-350x197.jpg" alt="oslo harbor">
-    <img src="imgs/more/photo_s/photo-7-350x197.jpg" alt="niagra lake">
-  </div>
-  <div class="flex-row">
-    <img src="imgs/more/photo_s/photo-5-350x262.jpg" alt="chicago sky">
+    <a href="imgs/more/photo-1-700x700.JPG" class = "graphics-img" data-lightbox="snapshot" data-title="Karaoke at the Mauerpark"><img src="imgs/more/photo-1-700x700.JPG"class = "graphics-img" alt="karaoke at mauerpark"/></a>
+    <a href="imgs/more/photo-2-700x700.JPG" class = "graphics-img" data-lightbox="snapshot" data-title="Nose of a fighter plane"><img src="imgs/more/photo-2-700x700.JPG" class = "graphics-img" alt="from the front of a jet"/></a>
+    <a href="imgs/more/photo-3-1200x796.JPG" class = "graphics-img" data-lightbox="snapshot" data-title="Chicago"><img src="imgs/more/photo-3-1200x796.JPG" class = "graphics-img" alt="chicago city"/></a>
+    <a href="imgs/more/photo-6-1200x796.JPG" class = "graphics-img" data-lightbox="snapshot" data-title="Chicago"><img src="imgs/more/photo-6-1200x796.JPG" class = "graphics-img" alt="chicago skyline"/></a>
+    <a href="imgs/more/photo-4-700x395.JPG" class = "graphics-img" data-lightbox="snapshot" data-title="Oslo harbor"><img src="imgs/more/photo-4-700x395.JPG" class = "graphics-img" alt="oslo harbor"/></a>
+    <a href="imgs/more/photo-7-700x395.JPG" class = "graphics-img" data-lightbox="snapshot" data-title="Oslo harbor"><img src="imgs/more/photo-7-700x395.JPG" class = "graphics-img" alt="niagra lake"/></a>
+    <a href="imgs/more/photo-5-1200x900.JPG" class = "graphics-img" data-lightbox="snapshot" data-title="Oslo harbor"><img src="imgs/more/photo-5-1200x900.JPG" class = "graphics-img" alt="chicago sky"/></a>
   </div>
 </main>
 
@@ -65,5 +62,6 @@
 </footer>
 
 <script src="scripts/main.js"></script>
+<script src="lightbox/dist/js/lightbox.min.js"></script>
 </body>
 </html>
