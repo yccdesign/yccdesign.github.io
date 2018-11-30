@@ -170,7 +170,7 @@ main p{
   height:120px;
   margin: 10pt 10pt;
   object-fit: cover;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: 0.5s ease-in;
 }
 
@@ -271,7 +271,7 @@ main p{
 .project-topimg{
   padding: 20px;
   display: block;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .project-content{
@@ -439,7 +439,7 @@ a .fab:hover{
   }
   .project-topimg{
     display: inline-block;
-    opacity: 0.7;
+    opacity: 0.8;
     width:48%;
   }
   .project-content{
