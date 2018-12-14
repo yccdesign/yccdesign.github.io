@@ -22,7 +22,7 @@
 .line {
 }
 .heading_1 {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Medium', 'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:20px;
@@ -75,6 +75,8 @@
   color:rgba(10, 18, 42, 0.498039215686275);
   text-align:left;
 }
+.arrow {
+}
 .form_hint {
   color:#999999;
 }
@@ -99,7 +101,7 @@
 .connector {
 }
 .flow_shape {
-  font-family:'Roboto Bold', 'Roboto';
+  font-family:'Roboto Bold', 'Roboto Regular', 'Roboto';
   font-weight:700;
   font-style:normal;
   font-size:16px;
@@ -137,7 +139,7 @@
   text-align:left;
 }
 .title {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Medium', 'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:20px;
@@ -159,14 +161,14 @@
   color:rgba(0, 0, 0, 0.537254901960784);
 }
 .flat_button {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Medium', 'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
   color:#2196F3;
 }
 .modal_text {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Medium', 'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:16px;
@@ -174,7 +176,7 @@
   text-align:center;
 }
 .menu_title {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Medium', 'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
