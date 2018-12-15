@@ -164,6 +164,21 @@ main p{
   justify-content: center;
 }
 
+
+
+#marketing-row{
+  display:none;
+  text-align: center;
+}
+
+#psycholinguistics-row{
+  display:none;
+  vertical-align: top;
+  align-items: flex-start;
+}
+
+
+
 /*flex-box for and more page*/
 .graphics-img{
   width:120px;
@@ -184,19 +199,24 @@ main p{
 
 /*project rows*/
 
-
-
+.project-type-title{
+  display:inline-block;
+  color: rgb(110,110,110);
+  background: #ffffff;
+  border: solid 1px rgb(110, 110, 110);
+  border-radius: 20px;
+  padding:7px;
+  margin: 10px;
+}
 
 /*index project cards*/
 .project-box{
   display:block;
   padding:20px;
-  width:300px;
-  margin: 20px;
-  vertical-align: bottom;
+  width:90%;
+  margin: auto;
   opacity: 1;
   position: relative;
-  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
   transition:0.2s ease-in;
 }
 
@@ -204,9 +224,8 @@ main p{
   color: rgb(110,110,110);
 }
 
-.project-box:hover,.project:active{
-  box-shadow: none;
-  opacity: 0.9;
+.project-box:hover, .project-box:active{
+  box-shadow: 0px 0px 5px 2px rgb(180, 180, 180);
 }
 
 
@@ -367,7 +386,7 @@ a .fab:hover{
 /*About page*/
 #about-img{
   display: block;
-  opacity:0.7;
+  opacity:0.8;
 }
 
 #about-content{
@@ -406,8 +425,23 @@ a .fab:hover{
     display:none;
   }
 
+  #ux-row{
+    justify-content: flex-start;
+  }
+
   .project-box{
-    opacity:0.7;
+    width: 45%;
+    padding:15px;
+  }
+  .project-box-img{
+    display:block;
+    margin:auto;
+    width: 95%;
+  }
+  .project-box-description{
+    display: block;
+    width:95%;
+    vertical-align: top;
   }
   .project-top{
     display:flex;
@@ -489,6 +523,13 @@ a .fab:hover{
   .flex-column{
     flex:25%;
     max-width: 25%;
+  }
+
+  .project-box{
+    width: 30%;
+    padding:10px;
+    margin: auto;
+    display:inline-block;
   }
   .graphics-img{
     width:300px;

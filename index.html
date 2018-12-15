@@ -13,6 +13,7 @@
   <title>Yi-Chun Chen | Projects</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -37,19 +38,25 @@
 <h2 class="page-title">Projects</h2>
 <p class = "page-description">Select projects in user experience, event experience design, and psycholinguistics.<p>
 
-
+<!-- portfolio selection-->
+<br>
+<div class = "flex-row">
+  <button class = "project-type-title" id="ux-btn"><h5>UX</h5></button>
+  <button class = "project-type-title" id="marketing-btn"><h5>Marketing</h5></button>
+  <button class = "project-type-title"id="psycholinguistics-btn"><h5>Psycholinguistics</h5></button>
+</div>
 
 <!-- UX project row-->
 
-<br>
-<div id="ux"><h3>UX</h3></div>
-<div class=" flex-row">
+
+
+<div class="flex-row" id = "ux-row">
 <!--start of each project-->
 <!-- FG project-->
   <div class="project-box">
     <a href="food-gatherers.html">
       <div class = "project-box-img">
-        <img src="imgs/index/food-gatherers-logo-300x250.jpg">
+        <img src="imgs/index/food-gatherers-banner.jpg">
       </div>
       <div class="project-box-description">
         <h4>Food Gatherers</h4>
@@ -66,7 +73,7 @@
 <div class="project-box">
   <a href="groGo.html">
     <div class = "project-box-img">
-      <img src="imgs/index/grogo-logo-300x250.jpg">
+      <img src="imgs/index/grogo-banner.jpg">
     </div>
     <div class="project-box-description">
       <h4>groGo</h4>
@@ -83,11 +90,11 @@
 <div class="project-box">
   <a href="ppp.html">
     <div class = "project-box-img">
-      <img src="imgs/index/dynamo-metrics-300x250.jpg">
+      <img src="imgs/index/ppp-banner.jpg">
     </div>
     <div class="project-box-description">
-      <h4>Dynamo Metrics &<br>City of Jackson</h4>
-      <p>Providing UX consulting for a public-private project.</p>
+      <h4>Urban Data Visualization</h4>
+      <p>UX redesigned for a web application of urban data repository.</p>
       <div class = "project-box-keyword">
         <pre>UX research</pre>
         <pre>Data visualization</pre>
@@ -100,8 +107,8 @@
 <!-- Marketing project row-->
 <br>
 <br>
-<div id="marketing"><h3>Marketing</h3></div>
-<div class=" flex-row">
+
+<div class=" flex-row" id= "marketing-row">
 <!-- Synology2018 project-->
   <div class="project-box">
     <a href="synology2018.html">
@@ -124,8 +131,7 @@
 <!-- psycholinguistics project row-->
 <br>
 <br>
-<div id="psycholinguistics"><h3>Psycholinguistics Research</h3></div>
-<div class=" flex-row">
+<div class=" flex-row" id = "psycholinguistics-row">
 <!-- homophone project-->
   <div class="project-box">
     <a href="homophone.html">

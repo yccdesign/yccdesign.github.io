@@ -7,21 +7,47 @@ function navIconClick() {
         x.className = "topnav";
     }
 }
-/*Graphics page image modal actions*/
-//var modal = document.getElementById('modal-self-portrait');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-//var img = document.getElementById('thumbnail-self-portrait');
-//var modalImg = document.getElementById("img-self-portrait");
-//img.onclick = function(){
-//    modal.style.display = "block";
-//    modalImg.src = this.src;
-//}
+$(document).ready(function(){
+  $("#ux-btn").css({'color':'white', 'background': 'rgb(110,110,110)'
+  });
 
-// Get the <span> element that closes the modal
-//var span = document.getElementsByClassName("close")[0];
+  $("#ux-btn").click(function(){
+    $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+    });
+    $("#marketing-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    });
+    $("#psycholinguistics-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    });
+    $('#ux-row').show(1000);
+    $('#marketing-row').hide(1000);
+    $('#psycholinguistics-row').hide(1000);
+  });
 
-// When the user clicks on <span> (x), close the modal
-//span.onclick = function() {
-//    modal.style.display = "none";
-//}
+  $("#marketing-btn").click(function(){
+    $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+    });
+    $("#ux-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    });
+    $("#psycholinguistics-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    });
+    $('#marketing-row').show(1000);
+    $('#ux-row').hide(1000);
+    $('#psycholinguistics-row').hide(1000);
+  });
+
+  $("#psycholinguistics-btn").click(function(){
+    $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+    });
+    $("#ux-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    });
+    $("#marketing-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    });
+    $('#psycholinguistics-row').show(1000);
+    $('#ux-row').hide(1000);
+    $('#marketing-row').hide(1000);
+  });
+
+
+
+});
