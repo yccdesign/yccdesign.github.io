@@ -1,7 +1,7 @@
 /*styling for the whole body*/
 /*Color palette:
 
-all links: rgba(166, 58, 12, 0.79);rgb(196,17,87) rgba(182, 89, 59, 0.93)
+all links: rgba(166, 58, 12, 0.79);rgb(196,17,87) rgb(240, 130, 95)
 hover: rgb(3,25,30);
 */
 
@@ -32,7 +32,7 @@ img{
 }
 
 p a{
-  color: rgb(196, 17, 87);
+  color: rgb(240, 130, 95);
   transition: 0.3s ease-in;
 }
 
@@ -284,7 +284,7 @@ main p{
   transition:  0.5s ease-in;
 }
 .project-nav-back>a{
-  color: rgba(182, 89, 59, 0.93);
+  color: rgb(240, 130, 95);
   transition:  0.5s ease-in;
 }
 .project-nav-back>a:hover{
@@ -307,7 +307,7 @@ main p{
   text-align: center;
 }
 .project-description{
-  color:rgb(135,135,135);
+  color:rgb(110,110,110);
 }
 .project-topimg{
   padding: 20px;
