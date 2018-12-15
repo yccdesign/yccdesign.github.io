@@ -32,7 +32,7 @@ img{
 }
 
 p a{
-  color: rgb(240, 130, 95);
+  color: rgb(250,29,115);
   transition: 0.3s ease-in;
 }
 
@@ -352,7 +352,7 @@ main p{
 
 
 #coming-up{
-  color: rgb(250, 122, 29);
+  color: rgb(250, 29, 115);
 }
 
 /*Graphics page - modal*/
