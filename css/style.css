@@ -98,7 +98,7 @@ nav{
 
 /*nav bar*/
 
-nav li{
+nav ul li{
   display:none;
   margin:0% 4%;
   text-align: center;
@@ -143,7 +143,7 @@ nav li{
   display: block;
 }
 
-.topnav-expand > li{
+.topnav-expand > ul > li{
   display: block;
   line-height: 40px;
   float: none;
@@ -426,6 +426,13 @@ a .fab:hover{
 /*for tablets*/
 @media only screen and (min-width : 768px)
 {
+
+  .topnav ul{
+    display:inline-block;
+    line-height: 51px;
+    vertical-align: bottom;
+    width: 70%;
+  }
   .topnav li{
     display:inline-block;
     line-height: 50px;
