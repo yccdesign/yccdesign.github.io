@@ -226,8 +226,8 @@ main p{
   color: rgb(110,110,110);
   background: #ffffff;
   border: solid 1px rgb(110, 110, 110);
-  border-radius: 20px;
-  padding:7px;
+  border-radius: 25px;
+  padding: 4px 8px;
   margin: 10px;
 }
 
