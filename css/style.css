@@ -369,7 +369,7 @@ main p{
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: rgb(250,250,250);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
