@@ -17,7 +17,7 @@ h2 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 400; line-hei
 h3 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; line-height: 28px;}
 h4 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 700; line-height: 28px;}
 h5 { font-family: 'Lato', sans-serif; font-size: 19px; font-weight:400;line-height: 24px;}
-p { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; line-height: 26px;}
+p,button { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; line-height: 26px;}
 blockquote { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; }
 pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
 
@@ -200,11 +200,18 @@ main p{
 }
 
 
+/*grid for Graphics page*/
+.grid-container{
+  display:grid;
+  grid-template-columns: auto auto;
+}
+
+
 
 /*flex-box for and more page*/
 .graphics-img{
-  width:120px;
-  height:120px;
+  width:200px;
+  height:200px;
   margin: 10px 10px;
   object-fit: cover;
   opacity: 0.8;
@@ -361,11 +368,14 @@ main p{
   border: none;
   outline: none;
   transition: 0.4s;
+  font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 400; line-height: 36px;}
+
 }
 
 .active, .accordion:hover {
   background-color: #ccc;
 }
+
 
 .panel {
   padding: 0 18px;
@@ -566,6 +576,12 @@ a .fab:hover{
     width:250px;
     height:250px;
   }
+
+  .grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+  }
+
   iframe{
     width: 80%;
     height: 500px;
@@ -590,6 +606,11 @@ a .fab:hover{
   .flex-column{
     flex:25%;
     max-width: 25%;
+  }
+
+  .grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
   }
 
   .project-box{
