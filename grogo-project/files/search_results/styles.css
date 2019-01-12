@@ -183,8 +183,8 @@
 #u37 {
   border-width:0px;
   position:absolute;
-  left:-1px;
-  top:36px;
+  left:0px;
+  top:37px;
   width:375px;
   height:72px;
   display:flex;
@@ -1696,7 +1696,6 @@
   width:58px;
   height:43px;
   display:flex;
-  opacity:0.6;
 }
 #u87 .text {
   position:absolute;
@@ -1819,7 +1818,6 @@
   width:58px;
   height:43px;
   display:flex;
-  opacity:0.6;
 }
 #u91 .text {
   position:absolute;
@@ -2805,7 +2803,6 @@
   width:94px;
   height:94px;
   display:flex;
-  opacity:0.6;
 }
 #u122 .text {
   position:absolute;
