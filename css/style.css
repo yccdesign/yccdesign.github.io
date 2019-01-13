@@ -42,7 +42,9 @@ p a:hover{
   color:rgb(3,25,30);
 }
 
-
+ul{
+  padding-left: 20px;
+}
 
 .center-aligned{
   text-align: center;
@@ -363,7 +365,7 @@ main p{
   display:block;
   padding: 10px 0px 10px 0px;
   max-width: 100%;
-
+  margin:auto;
 }
 
 
@@ -400,6 +402,9 @@ main p{
 
   /* Hide the images by default */
   .mySlides {
+    display: none;
+  }
+  .mySlidesPersona {
     display: none;
   }
 
@@ -452,7 +457,14 @@ main p{
   .slideimage>img{
       margin:auto;
   }
-
+  .slidepersona{
+    width:80%;
+    padding: 10px 20px 15px 20px;
+    margin:auto;
+  }
+  .slidepersona>img{
+    margin:auto;
+  }
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
@@ -464,8 +476,21 @@ main p{
     display: inline-block;
     transition: background-color 0.6s ease;
   }
+  .dotPersona {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
 
   .active, .dot:hover {
+    background-color: #717171;
+  }
+  .active, .dotPersona:hover {
     background-color: #717171;
   }
 
@@ -530,6 +555,20 @@ main p{
   background: inherit;
 }
 
+.project-step-btn{
+  display:inline-block;
+  color: rgb(110,110,110);
+  background: #ffffff;
+  border: solid 1px rgb(110, 110, 110);
+  width: 60%;
+  border-radius: 25px;
+  padding: 4px 4px;
+  margin: 5px;
+}
+
+#ux-research-row-2, #ux-research-row-3, #ux-research-row-4, #ux-research-row-5{
+  display: none;
+}
 
 #coming-up{
   color: rgb(212, 35, 73);
@@ -691,7 +730,8 @@ a .fab:hover{
     width:auto;
     display: inline-block;
     max-height: 400px;
-    padding:10px 20px 10px 0px;
+    padding:10px 20px 10px 20px;
+    margin:auto;
   }
 
   .project-content-text{
@@ -701,6 +741,7 @@ a .fab:hover{
   }
   .project-content-section-name{
     text-align: left;
+    margin:40px 0px 0px 0px;
   }
   /*slideshow in project page*/
   .slidetext {
@@ -716,10 +757,33 @@ a .fab:hover{
     margin:auto;
     text-align: center;
   }
+
   .slideimage>img{
     padding: 0px;
     box-shadow:  10px 10px 10px 0px rgb(210, 210, 210);
     margin:auto;
+  }
+  .slidepersona{
+    width:80%;
+    padding: 10px 20px 15px 20px;
+    margin:auto;
+    display:block;
+    text-align: center;
+  }
+  .slidepersona>img{
+    margin:auto;
+  }
+
+  /*UX project steps*/
+  .project-step-btn{
+    display:inline-block;
+    color: rgb(110,110,110);
+    background: #ffffff;
+    border: solid 1px rgb(110, 110, 110);
+    width: 45%;
+    border-radius: 25px;
+    padding: 4px 4px;
+    margin: 5px;
   }
 
   /*flex-box for graphics page*/
@@ -813,5 +877,16 @@ a .fab:hover{
   .project-topimg{
     display: inline-block;
     width:48%;
+  }
+  /*UX project steps*/
+  .project-step-btn{
+    display:inline-block;
+    color: rgb(110,110,110);
+    background: #ffffff;
+    border: solid 1px rgb(110, 110, 110);
+    width: 30%;
+    border-radius: 25px;
+    padding: 4px 4px;
+    margin: 5px;
   }
 }
