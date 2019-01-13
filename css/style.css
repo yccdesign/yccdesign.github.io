@@ -257,7 +257,8 @@ main p{
 }
 
 .project-box:hover, .project-box:active{
-  box-shadow: 0px 0px 5px 2px rgb(180, 180, 180);
+  box-shadow: 0px 0px 10px 2px rgb(200, 200, 200);
+  border-radius: 15px;
 }
 
 
@@ -511,11 +512,11 @@ a .fab:hover{
 
   .project-box{
     width: 45%;
-    padding:15px;
+    padding:20px;
   }
   .project-box-img{
     display:block;
-    margin:auto;
+    margin:10px auto;
     width: 95%;
   }
   .project-box-description{
