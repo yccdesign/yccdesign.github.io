@@ -772,6 +772,7 @@ a .fab:hover{
   }
   .slidepersona>img{
     margin:auto;
+
   }
 
   /*UX project steps*/
@@ -884,7 +885,7 @@ a .fab:hover{
     color: rgb(110,110,110);
     background: #ffffff;
     border: solid 1px rgb(110, 110, 110);
-    width: 30%;
+    width: 23%;
     border-radius: 25px;
     padding: 4px 4px;
     margin: 5px;

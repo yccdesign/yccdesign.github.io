@@ -80,13 +80,13 @@ $("#ux-research-btn-1").css({'color':'white', 'background': 'rgb(110,110,110)'
 $("#ux-research-btn-1").click(function(){
   $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
   });
-  $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-4, #ux-research-btn-5").each(function(){
+  $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-4").each(function(){
     $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
       });
   });
 
   $('#ux-research-row-1').show(1000);
-  $('#ux-research-row-2, #ux-research-row-3, #ux-research-row-4, #ux-research-row-5').each(function(){
+  $('#ux-research-row-2, #ux-research-row-3, #ux-research-row-4').each(function(){
     $(this).hide(1000);
       });
 });
@@ -94,13 +94,13 @@ $("#ux-research-btn-1").click(function(){
 $("#ux-research-btn-2").click(function(){
   $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
   });
-  $("#ux-research-btn-1, #ux-research-btn-3, #ux-research-btn-4, #ux-research-btn-5").each(function(){
+  $("#ux-research-btn-1, #ux-research-btn-3, #ux-research-btn-4").each(function(){
     $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
       });
   });
 
   $('#ux-research-row-2').show(1000);
-  $('#ux-research-row-1, #ux-research-row-3, #ux-research-row-4, #ux-research-row-5').each(function(){
+  $('#ux-research-row-1, #ux-research-row-3, #ux-research-row-4').each(function(){
     $(this).hide(1000);
       });
 });
@@ -108,13 +108,13 @@ $("#ux-research-btn-2").click(function(){
 $("#ux-research-btn-3").click(function(){
   $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
   });
-  $("#ux-research-btn-1, #ux-research-btn-2, #ux-research-btn-4, #ux-research-btn-5").each(function(){
+  $("#ux-research-btn-1, #ux-research-btn-2, #ux-research-btn-4").each(function(){
     $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
       });
   });
 
   $('#ux-research-row-3').show(1000);
-  $('#ux-research-row-1, #ux-research-row-2, #ux-research-row-4, #ux-research-row-5').each(function(){
+  $('#ux-research-row-1, #ux-research-row-2, #ux-research-row-4').each(function(){
     $(this).hide(1000);
       });
 });
@@ -122,29 +122,17 @@ $("#ux-research-btn-3").click(function(){
 $("#ux-research-btn-4").click(function(){
   $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
   });
-  $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-1, #ux-research-btn-5").each(function(){
+  $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-1").each(function(){
     $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
       });
   });
 
   $('#ux-research-row-4').show(1000);
-  $('#ux-research-row-2, #ux-research-row-3, #ux-research-row-1, #ux-research-row-5').each(function(){
+  $('#ux-research-row-2, #ux-research-row-3, #ux-research-row-1').each(function(){
     $(this).hide(1000);
       });
 });
-$("#ux-research-btn-5").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
-  });
-  $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-4, #ux-research-btn-1").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
-      });
-  });
 
-  $('#ux-research-row-5').show(1000);
-  $('#ux-research-row-2, #ux-research-row-3, #ux-research-row-4, #ux-research-row-1').each(function(){
-    $(this).hide(1000);
-      });
-});
 
 
 
