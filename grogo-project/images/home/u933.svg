@@ -1,12 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" width="110px" height="64px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" width="112px" height="133px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="0.0200000000000111" y1="62.62" x2="93.95" y2="-1.55" id="LinearGradient62">
-      <stop id="Stop63" stop-color="#d4d4d4" stop-opacity="0.996078431372549" offset="0" />
-      <stop id="Stop64" stop-color="#ff9999" offset="1" />
-    </linearGradient>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter304">
+      <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetInner" />
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetInner" result="shadowGaussian" />
+      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.2 0  " in="shadowComposite" />
+    </filter>
+    <g id="widget305">
+      <path d="M 43.054054054054 129  C 27.0814129978431 129  12.6119367842859 123.526240551127  1.40602791333941 114.327159918515  L 5.22853849094891 107.751838440562  C 15.2713956066174 116.386841417812  28.4527337047782 121.557692307692  43.054054054054 121.557692307692  C 75.2272765072765 121.557692307692  100.506237006237 96.4523076923077  100.506237006237 64.5  C 100.506237006237 32.7896602143332  75.6086910205071 7.82293562500564  43.7837837837838 7.44649851887146  L 43.7838782116908 0.00381414104140085  C 79.8053431844982 0.380560207156015  108 28.6219536655917  108 64.5  C 108 100.62  79.4237837837838 129  43.054054054054 129  Z " fill-rule="nonzero" fill="#fcc62d" stroke="none" transform="matrix(1 0 0 1 143 36 )" />
+    </g>
   </defs>
-  <g transform="translate(-133 -345 )">
-    <path d="M 55 0  C 65.842494230429 0  75.867087154247 3.48971224154025  84.3059787520448 9.57568532085782  C 97.5118905457357 19.0995455023561  106.834623813377 34.9813144323974  109.331809999228 53.7971014492754  L 105.000041416471 53.7970725263908  L 100.010636267108 53.7970392125177  C 96.127743137218 27.6530367447403  77.5190638207544 8.3478260869565  54.5378151260504 8.3478260869565  C 28.655462184874 8.3478260869565  8.31932773109247 32.8347826086956  8.31932858037203 64  L 8.31805147774674 64  L 0 64  C 0 28.16  24.2 0  55 0  Z M 8.31932858037203 64  L 70.2522540793096 64  L 8.31932858037203 64  Z " fill-rule="nonzero" fill="url(#LinearGradient62)" stroke="none" transform="matrix(1 0 0 1 133 345 )" />
+  <g transform="translate(-142 -35 )">
+    <use xlink:href="#widget305" filter="url(#filter304)" />
+    <use xlink:href="#widget305" />
   </g>
 </svg>

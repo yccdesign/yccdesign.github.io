@@ -1,7 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" width="10px" height="10px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(-172 -630 )">
-    <path d="M 177 630  C 179.8 630  182 632.2  182 635  C 182 637.8  179.8 640  177 640  C 174.2 640  172 637.8  172 635  C 172 632.2  174.2 630  177 630  Z " fill-rule="nonzero" fill="#1b9aaa" stroke="none" />
-    <path d="M 177 630.5  C 179.52 630.5  181.5 632.48  181.5 635  C 181.5 637.52  179.52 639.5  177 639.5  C 174.48 639.5  172.5 637.52  172.5 635  C 172.5 632.48  174.48 630.5  177 630.5  Z " stroke-width="1" stroke="#797979" fill="none" />
+<svg version="1.1" width="385px" height="219px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter298">
+      <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetInner" />
+      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetInner" result="shadowGaussian" />
+      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.349019607843137 0  " in="shadowComposite" />
+    </filter>
+    <g id="widget299">
+      <path d="M 0 0  L 375 0  L 375 209  L 0 209  L 0 0  Z " fill-rule="nonzero" fill="#e8f4f2" stroke="none" fill-opacity="0.996078431372549" />
+    </g>
+  </defs>
+  <g transform="translate(5 0 )">
+    <use xlink:href="#widget299" filter="url(#filter298)" />
+    <use xlink:href="#widget299" />
   </g>
 </svg>

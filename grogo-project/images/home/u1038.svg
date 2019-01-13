@@ -1,18 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" width="81px" height="48px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter3824">
-      <feOffset dx="1" dy="0" in="SourceAlpha" result="shadowOffsetInner" />
-      <feGaussianBlur stdDeviation="0.5" in="shadowOffsetInner" result="shadowGaussian" />
-      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.349019607843137 0  " in="shadowComposite" />
-    </filter>
-    <g id="widget3825">
-      <path d="M 611 194  L 690 194  L 690 240  L 611 240  L 611 194  Z " fill-rule="nonzero" fill="#ffffff" stroke="none" fill-opacity="0.996078431372549" />
-    </g>
-  </defs>
-  <g transform="translate(-611 -193 )">
-    <use xlink:href="#widget3825" filter="url(#filter3824)" />
-    <use xlink:href="#widget3825" />
+<svg version="1.1" width="13px" height="13px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(-309 -14 )">
+    <path d="M 9.56521739130435 10  L 0 0.25  C 9.78260869565217 10  9.56521739130435 10  9.56521739130435 10  Z " fill-rule="nonzero" fill="#ffffff" stroke="none" transform="matrix(1 0 0 1 310 15 )" />
+    <path d="M 0 0.25  C 9.78260869565217 10  9.56521739130435 10  9.56521739130435 10  " stroke-width="2" stroke="#797979" fill="none" transform="matrix(1 0 0 1 310 15 )" />
   </g>
 </svg>
