@@ -51,28 +51,109 @@
         <h3 class = "project-description-content">Sep 2018 - Jan 2019</h3>
         <h2 class = "project-description-topic">Tools</h2>
         <h3 class = "project-description-content">Axure RP 9 Beta, ShareX</h3>
-        <button class = "project-type-title">Prototype</button>
       </div>
+      <a href = "http://yichunux.com/grogo-project/start.html#id=quinif&p=start_1&g=1&sc=2" target = "_blank"><button id = "project-demo">Open Prototype</button></a>
     </div>
 
   </div>
   <div class = "project-topimg">
-    <img src="imgs/grogo/grogo-banner.jpg" alt="groGo project photo">
+    <img src="imgs/grogo/grogo-banner.gif" alt="groGo project banner">
   </div>
 </div>
 
 
 <div class = "project-content">
   <div class = "project-content-text">
-    <h2 class = "project-content-section-name">Problem Statement</h2>
-    <p>According to The Time Use Institute (2008) survey, US shoppers spend an hour per week
-doing grocery shopping. However, 92% of shoppers in the US still prefer shopping grocery in-store over online shopping (ICSC,2018). Undoubtedly, shopping in physical stores allows one to have more control of what he/she gets -- you can pick the freshest looking produce, or spot special deals that are not listed online. But what about control over time and budget? <br><br>
-To address the issues in inefficient grocery shopping in physical stores, I am designing a mobile application that streamlines the shopping experience to help in-store shoppers buy fresher food while saving both time and money. </p>
+    <h2 class = "project-content-section-name">The Project</h2>
+    <h3>Developing mobile shopping experience</h3>
     <br>
-    <h2 class = "project-content-section-name">Role</h2>
-    <p>This is an individual design project. However, short discussions and progress sharings have been held in class where feedback from other classmates are given.</p>
+    <p>According to The Time Use Institute (2008) survey, <b>US shoppers spend an hour per week
+shopping groceries.</b> As time-consuming as it seems, <b>in-store grocery shopping is still preferred over online shopping by 92% of shoppers in the US </b> (ICSC,2018). <br><br>
+For the <b>individual final project of the course Interaction Design</b>, I aimed to design a solution that <b>streamlines grocery shopping in physical stores.</b> </p>
     <br>
-    <button class="accordion">User Research</button>
+    <h2 class = "project-content-section-name">The Design</h2>
+    <h3>A planner, a trainer, and a navigator</h3>
+    <br>
+    <p>The final solution is a mobile application -- groGo, which <b>targets in-store grocery shoppers who wish their shopping trips can be more efficient</b>. From grocery planning to expense tracking, the solution will serve as <b>a planner, a trainer, and a navigator throughout the whole grocery journey</b>. Unlike most other products on the market, it <b>does not restrict itself to any specific grocery store</b>, but instead leverages its powerful database that integrates product information across different grocery brands.</p>
+    <br>
+    <br>
+    <p>The application is designed to address multiple pain points with <b>5 key features</b>.</p>
+    <br>
+<!-- Slideshow container -->
+        <div class="slideshow-container">
+<!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="slidetext">
+              <h2>1. Favorites</h2>
+              <h3>Store and organize your favorite or frequently purchased items to efficiently plan for the next shopping trip.
+              </h3>
+            </div>
+            <div class="slideimage">
+              <img alt = "adding all fav items to list" src="imgs/grogo/features/favorites.gif">
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slidetext">
+              <h2>2. In-Store Map</h2>
+              <h3>Generate in-store map and an optimized shopping route from your shopping list.
+              </h3>
+            </div>
+            <div class="slideimage">
+              <img alt = "adding all fav items to list" src="imgs/grogo/features/list.gif">
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slidetext">
+              <h2>3. Go Mode</h2>
+              <h3>Navigate with AR view or traditional map view while you shop in-store.
+              </h3>
+            </div>
+            <div class="slideimage">
+              <img alt = "ar navigation mode" src="imgs/grogo/features/go.gif">
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slidetext">
+              <h2>4. Scan it!</h2>
+              <h3>Nore more squinting! Let the app read food labels for you and warn you about potentially bad choices.
+              </h3>
+            </div>
+            <div class="slideimage">
+              <img alt = "scanning food label" src="imgs/grogo/features/scan.gif">
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slidetext">
+              <h2>5. Gro Point System</h2>
+              <h3>Collect exclusive coupons by reaching your monthly shopping goals or by completing shopping challenges.
+              </h3>
+            </div>
+            <div class="slideimage">
+              <img alt = "challenge notification" src="imgs/grogo/features/challenge.png">
+            </div>
+          </div>
+
+
+
+<!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+<!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    <br>
+    <button class="accordion"><h2>User Research</h2></button>
     <div class="panel">
       <br>
       <p>In order to understand people's pain points doing grocery shopping, I collected and analyzed both quntitative and qualitative data for further ideation.</p><br>
@@ -100,7 +181,7 @@ To address the issues in inefficient grocery shopping in physical stores, I am d
       <img src = "imgs/grogo/persona5.jpg" alt = "anti persona"> <br><br>
     </div>
 <br>
-    <button class="accordion">Design Process</button>
+    <button class="accordion"><h2>Design Process</h2></button>
     <div class="panel">
       <br>
       <h3>1. Brainstorming</h3><br>
@@ -116,7 +197,7 @@ To address the issues in inefficient grocery shopping in physical stores, I am d
       <p>After constructing the story maps, I then moved on to the prototyping stage. Beofre delving into digital prototype, a paper-based prototype model was first created to allow quick user testing and conceptualization. <br><br>
     </div>
   <br>
-  <p id = "coming-up">(Coming up: initial testing results & digital prototype)</p>
+
   </div>
 
 </div>

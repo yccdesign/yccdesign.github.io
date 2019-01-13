@@ -20,7 +20,7 @@ h5 { font-family: 'Lato', sans-serif; font-size: 19px; font-weight: 400;line-hei
 p,button { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; line-height: 26px;}
 blockquote { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; }
 pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
-
+b {color: rgb(20,20,20)}
 
 html, body{
   font-family: 'Lato', sans-serif;
@@ -41,6 +41,7 @@ p a{
 p a:hover{
   color:rgb(3,25,30);
 }
+
 
 
 .center-aligned{
@@ -340,6 +341,20 @@ main p{
   display: block;
 }
 
+#project-demo{
+  display:block;
+  color: rgb(255,255,255);
+  background-color: rgb(212,35,73);
+  border: solid 1px rgb(212, 35, 73);
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin: 20px auto;
+}
+#project-demo:hover,#project-demo:active {
+  color: rgb(212,35,73);
+  background-color: inherit;
+}
+
 .project-content{
   text-align: center;
 }
@@ -375,6 +390,104 @@ main p{
   text-align: left;
 }
 
+/*Slideshow*/
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(110,110,110);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(225,225,225,0.8);
+  }
+
+  /* Caption text */
+  .slidetext {
+    color: rgb(40,40,40);
+    padding: 20px 12px 5px 12px;
+    display:inline-block;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+  }
+  .slideimage{
+    display:inline-block;
+    width:90%;
+    padding: 10px 20px 15px 20px;
+    margin:auto;
+  }
+  .slideimage>img{
+      margin:auto;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
 /* Style the accordion panel. */
 .accordion {
   background-color: #eee;
@@ -401,19 +514,20 @@ main p{
   color: rgb(110,110,110);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .accordion>h2:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
-  float: right;
-  margin-left: 5px;
+  float:right;
+  margin-right: 5px;
 }
 
 .active>h2:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+  background: inherit;
 }
 
 
@@ -492,7 +606,9 @@ a .fab:hover{
 /*for tablets*/
 @media only screen and (min-width : 768px)
 {
-
+  .topnav{
+    padding: 0px 30px;
+  }
   .topnav ul{
     display:inline-block;
     line-height: 51px;
@@ -554,6 +670,9 @@ a .fab:hover{
     text-align: left;
     width: 40%;
   }
+  #project-demo{
+  margin:20px auto;
+  }
   .project-topic.psycholinguistics{
     width:88%;
     text-align: center;
@@ -583,6 +702,26 @@ a .fab:hover{
   .project-content-section-name{
     text-align: left;
   }
+  /*slideshow in project page*/
+  .slidetext {
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    vertical-align: top;
+    padding: 40px;
+  }
+  .slideimage{
+    display:inline-block;
+    width:48%;
+    margin:auto;
+    text-align: center;
+  }
+  .slideimage>img{
+    padding: 0px;
+    box-shadow:  10px 10px 10px 0px rgb(210, 210, 210);
+    margin:auto;
+  }
+
   /*flex-box for graphics page*/
   .graphics-img{
     width:250px;
@@ -662,8 +801,14 @@ a .fab:hover{
     text-align: left;
     width: 59%;
   }
+
   .project-description>p{
     text-align: left;
+  }
+  #project-demo{
+    display:block;
+    text-align: center;
+    margin:30px 10px;
   }
   .project-topimg{
     display: inline-block;
