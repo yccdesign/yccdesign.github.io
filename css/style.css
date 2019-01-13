@@ -244,8 +244,8 @@ main p{
 /*index project cards*/
 .project-box{
   display:block;
-  padding:20px;
-  width:90%;
+  padding:30px;
+  width: 90%;
   margin: auto;
   opacity: 1;
   position: relative;
@@ -257,8 +257,8 @@ main p{
 }
 
 .project-box:hover, .project-box:active{
-  box-shadow: 0px 0px 10px 2px rgb(200, 200, 200);
-  border-radius: 15px;
+  box-shadow: 0px 0px 20px 8px rgb(210, 210, 210);
+  border-radius: 25px;
 }
 
 
@@ -323,7 +323,6 @@ main p{
 .project-topimg{
   padding: 20px;
   display: block;
-  opacity: 0.8;
 }
 
 .project-content{
@@ -440,7 +439,7 @@ main p{
 
 footer{
   width: 100%;
-  margin: 0px auto;
+  margin: 0px auto 10px auto;
   text-align: center;
   color: rgb(111, 111, 110);
   background-color: white;
@@ -448,7 +447,7 @@ footer{
 }
 
 a .fab{
-  color: rgba(182, 89, 59, 0.93);
+  color: rgba(182, 89, 59, 0.3);
   transition:  0.5s ease-in;
 }
 
@@ -512,17 +511,19 @@ a .fab:hover{
 
   .project-box{
     width: 45%;
-    padding:20px;
+    padding: 30px;
   }
   .project-box-img{
     display:block;
     margin:10px auto;
-    width: 95%;
+    padding: 20px 10px 0px 10px;
+    width: 90%;
   }
   .project-box-description{
     display: block;
-    width:95%;
+    width:90%;
     vertical-align: top;
+    padding: 0px 10px 10px 20px;
   }
   .project-top{
     display:flex;
@@ -554,7 +555,6 @@ a .fab:hover{
   }
   .project-topimg{
     display: inline-block;
-    opacity: 0.8;
     width:48%;
   }
   .project-content{
