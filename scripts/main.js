@@ -134,6 +134,69 @@ $("#ux-research-btn-4").click(function(){
 });
 
 
+/*Design process step switches*/
+$("#design-process-btn-1").css({'color':'white', 'background': 'rgb(110,110,110)'
+});
+
+$("#design-process-btn-1").click(function(){
+  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+  });
+  $("#design-process-btn-2, #design-process-btn-3, #design-process-btn-4").each(function(){
+    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
+      });
+  });
+
+  $('#design-process-row-1').show(1000);
+  $('#design-process-row-2, #design-process-row-3, #design-process-row-4').each(function(){
+    $(this).hide(1000);
+      });
+});
+
+$("#design-process-btn-2").click(function(){
+  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+  });
+  $("#design-process-btn-1, #design-process-btn-3, #design-process-btn-4").each(function(){
+    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
+      });
+  });
+
+  $('#design-process-row-2').show(1000);
+  $('#design-process-row-1, #design-process-row-3, #design-process-row-4').each(function(){
+    $(this).hide(1000);
+      });
+});
+
+$("#design-process-btn-3").click(function(){
+  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+  });
+  $("#design-process-btn-1, #design-process-btn-2, #design-process-btn-4").each(function(){
+    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
+      });
+  });
+
+  $('#design-process-row-3').show(1000);
+  $('#design-process-row-1, #design-process-row-2, #design-process-row-4').each(function(){
+    $(this).hide(1000);
+      });
+});
+
+$("#design-process-btn-4").click(function(){
+  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+  });
+  $("#design-process-btn-2, #design-process-btn-3, #design-process-btn-1").each(function(){
+    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
+      });
+  });
+
+  $('#design-process-row-4').show(1000);
+  $('#design-process-row-2, #design-process-row-3, #design-process-row-1').each(function(){
+    $(this).hide(1000);
+      });
+});
+
+
+
+
 
 
 });

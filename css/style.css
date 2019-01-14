@@ -570,7 +570,10 @@ main p{
   margin-bottom: 40px;
 }
 
-#ux-research-row-2, #ux-research-row-3, #ux-research-row-4, #ux-research-row-5{
+#ux-research-row-2, #ux-research-row-3, #ux-research-row-4{
+  display: none;
+}
+#design-process-row-2, #design-process-row-3, #design-process-row-4{
   display: none;
 }
 
