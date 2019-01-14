@@ -247,9 +247,9 @@ main p{
 /*index project cards*/
 .project-box{
   display:block;
-  padding:30px;
+  padding:20px;
   width: 90%;
-  margin: auto;
+  margin: 20px auto;
   opacity: 1;
   position: relative;
   transition:0.2s ease-in;
@@ -261,7 +261,6 @@ main p{
 
 .project-box:hover, .project-box:active{
   box-shadow: 0px 0px 20px 8px rgb(210, 210, 210);
-  border-radius: 25px;
 }
 
 
@@ -687,8 +686,8 @@ a .fab:hover{
   }
 
   .project-box{
-    width: 45%;
-    padding: 30px;
+    width: 48%;
+    padding: 0px;
   }
   .project-box-img{
     display:block;
@@ -837,9 +836,9 @@ a .fab:hover{
   }
 
   .project-box{
-    width: 30%;
+    width: 31%;
     padding:10px;
-    margin: auto;
+    margin: 10px auto;
     display:inline-block;
   }
   .graphics-img{
