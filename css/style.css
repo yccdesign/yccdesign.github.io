@@ -566,6 +566,10 @@ main p{
   margin: 5px;
 }
 
+.project-step-row{
+  margin-bottom: 40px;
+}
+
 #ux-research-row-2, #ux-research-row-3, #ux-research-row-4, #ux-research-row-5{
   display: none;
 }
