@@ -277,6 +277,7 @@ main p{
 }
 .project-box-description p{
   padding:5px 0px;
+  text-align: center;
 }
 
 .project-namebox{
@@ -285,7 +286,7 @@ main p{
 }
 
 .project-box-keyword{
-  text-align: left;
+  text-align: center;
   margin-top:5px;
 }
 
@@ -330,6 +331,7 @@ main p{
 .project-description-topic{
   display:inline-block;
   text-align: left;
+  vertical-align: top;
   width:30%;
 }
 .project-description-content{
@@ -747,7 +749,7 @@ a .fab:hover{
   }
   .project-content-section-name{
     text-align: left;
-    margin:40px 0px 0px 0px;
+    margin:60px 0px 0px 0px;
   }
   /*slideshow in project page*/
   .slidetext {
