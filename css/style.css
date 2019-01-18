@@ -17,7 +17,7 @@ h3 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300; line-hei
 h4 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 700; line-height: 28px;}
 h5 { font-family: 'Lato', sans-serif; font-size: 19px; font-weight: 400;line-height: 24px;}
 p,button { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; line-height: 26px;}
-blockquote { font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; padding: 50px 0px; text-align: center; color: black; line-height: 50px; background-color: #ffffff;}
+blockquote { font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
 pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
 b {color: rgb(20,20,20)}
 
@@ -512,6 +512,16 @@ main p{
     from {opacity: .4}
     to {opacity: 1}
   }
+
+
+/*Pain points*/
+.pain-points{
+  background: white;
+  display:inline;
+  margin: 10px 20px;
+  padding:10px;
+  box-shadow:  10px 10px 10px 0px rgb(210, 210, 210);
+}
 
 
 /* Style the accordion panel. */
