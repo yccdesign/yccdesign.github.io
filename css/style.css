@@ -15,7 +15,7 @@ h1 {font-family: 'Lato', sans-serif; font-size: 42px; font-weight: 900; line-hei
 h2 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 400; line-height: 36px;}
 h3 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300; line-height: 28px;}
 h4 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 700; line-height: 28px;}
-h5 { font-family: 'Lato', sans-serif; font-size: 19px; font-weight: 400;line-height: 24px;}
+h5 { font-family: 'Lato', sans-serif; font-size: 19px; font-weight: 300;line-height: 24px;}
 p,button { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; line-height: 26px;}
 blockquote { font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
 pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
@@ -227,6 +227,8 @@ main p{
 .graphics-img:hover{
   opacity: 1;
 }
+
+
 
 
 
@@ -523,6 +525,27 @@ main p{
   box-shadow:  10px 10px 10px 0px rgb(210, 210, 210);
 }
 
+.third-block{
+  display:block;
+  margin: auto;
+  text-align: center;
+}
+.third-block img{
+  display:block;
+  margin: auto;
+}
+.third-block h4{
+  display:inline-block;
+  text-align: left;
+  width: 30%;
+  vertical-align: top;
+}
+.third-block h5{
+  display:inline-block;
+  text-align: left;
+  width: 68%;
+}
+
 
 /* Style the accordion panel. */
 .accordion {
@@ -816,6 +839,10 @@ a .fab:hover{
     grid-template-columns: auto auto auto;
   }
 
+  .fourth{
+    width: 200px;
+  }
+
   iframe{
     width: 80%;
     height: 500px;
@@ -907,5 +934,30 @@ a .fab:hover{
     border-radius: 25px;
     padding: 4px 4px;
     margin: 5px;
+  }
+  .third-block{
+    display:inline-block;
+    margin: auto;
+    width:31%;
+    text-align: center;
+  }
+  .third-block img{
+    display:block;
+    margin: 0px auto;
+  }
+  .third-block h4{
+    display:block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .third-block h5{
+    display:block;
+    text-align: left;
+    margin:auto;
+    width: 100%;
+  }
+  .fourth{
+    width: 22%;
   }
 }
