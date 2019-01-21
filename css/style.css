@@ -796,13 +796,14 @@ a .fab:hover{
     display:inline-block;
     width:48%;
     margin:auto;
+    padding: 10px;
     text-align: center;
   }
 
   .slideimage>img{
     padding: 0px;
-    box-shadow:  10px 10px 10px 0px rgb(210, 210, 210);
     margin:auto;
+    max-height: 650px;
   }
   .slidepersona{
     width:80%;
