@@ -770,7 +770,7 @@ a .fab:hover{
   .project-content img{
     width:auto;
     display: inline-block;
-    max-height: 400px;
+    max-height: 500px;
     padding:10px 20px 10px 20px;
     margin:auto;
   }
@@ -840,9 +840,6 @@ a .fab:hover{
     grid-template-columns: auto auto auto;
   }
 
-  .fourth{
-    width: 200px;
-  }
 
   iframe{
     width: 80%;
@@ -958,7 +955,5 @@ a .fab:hover{
     margin:auto;
     width: 100%;
   }
-  .fourth{
-    width: 22%;
-  }
+
 }
