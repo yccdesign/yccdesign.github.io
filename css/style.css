@@ -180,6 +180,19 @@ main p{
 
 }
 
+.graphics-bg{
+  border-top: 1px solid rgb(210,210,210);
+  padding: 50px 0px;
+  margin-top:20px;
+}
+.intro{
+  border-bottom: 1px solid rgb(210,210,210);
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+#hello{
+  color: rgb(212,35,73);
+}
 
 /*flex-box in main*/
 
