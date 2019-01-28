@@ -734,8 +734,8 @@ a .fab:hover{
   }
 
   .project-box{
-    width: 48%;
-    padding: 0px;
+    width: 47%;
+    padding: 10px;
   }
   .project-box-img{
     display:block;
@@ -886,9 +886,9 @@ a .fab:hover{
   }
 
   .project-box{
-    width: 32%;
-    padding:10px;
-    margin: 10px auto;
+    width: 45%;
+    padding:5px;
+    margin: 5px auto;
     display:inline-block;
   }
   .graphics-img{
