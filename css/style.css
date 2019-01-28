@@ -358,7 +358,7 @@ main p{
   display: block;
 }
 
-#project-demo{
+.project-demo{
   display:block;
   color: rgb(255,255,255);
   background-color: rgb(212,35,73);
@@ -367,7 +367,7 @@ main p{
   padding: 5px 10px;
   margin: 20px auto;
 }
-#project-demo:hover,#project-demo:active {
+.project-demo:hover,.project-demo:active {
   color: rgb(212,35,73);
   background-color: inherit;
 }
@@ -926,10 +926,10 @@ a .fab:hover{
   .project-description>p{
     text-align: left;
   }
-  #project-demo{
+  .project-demo{
     display:block;
     text-align: center;
-    margin:30px 10px;
+    margin:10px 10px 10px 10px;
   }
   .project-topimg{
     display: inline-block;
