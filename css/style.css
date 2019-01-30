@@ -703,6 +703,15 @@ a .fab:hover{
 .darkblue{
   color: #0a122a;
 }
+.black-bg{
+  background-color: #000000;
+}
+.white-bg{
+  background-color: #ffffff;
+}
+.grey-bg{
+  background-color: rgb(206,206,206); 
+}
 .grogo-title-tag{
   background-color: #0a122a;
   padding: 3px 10px;
