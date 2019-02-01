@@ -20,6 +20,7 @@ p,button { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; l
 blockquote { font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
 pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
 b {color: rgb(20,20,20)}
+sup { vertical-align: super;  font-size: 9px;}
 
 html, body{
   font-family: 'Lato', sans-serif;
@@ -710,7 +711,7 @@ a .fab:hover{
   background-color: #ffffff;
 }
 .grey-bg{
-  background-color: rgb(206,206,206); 
+  background-color: rgb(206,206,206);
 }
 .grogo-title-tag{
   background-color: #0a122a;
