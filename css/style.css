@@ -206,7 +206,6 @@ main p{
 }
 
 
-
 #marketing-row{
   display:none;
   text-align: center;
@@ -713,12 +712,20 @@ a .fab:hover{
 .grey-bg{
   background-color: rgb(206,206,206);
 }
+.grogo-light-blue-bg{
+  background-color: rgba(153,248,250,0.3);
+}
+.grogo-light-green-bg{
+  background-color: rgba(183,238,199,0.3);
+}
+
 .grogo-title-tag{
   background-color: #0a122a;
   padding: 3px 10px;
   color:#ffffff;
   display:inline-block;
 }
+
 
 /*Media queries*/
 
@@ -883,6 +890,9 @@ a .fab:hover{
   iframe{
     width: 80%;
     height: 500px;
+  }
+  .flex-rtl{
+    flex-direction: row-reverse;
   }
 
   #about-content{
