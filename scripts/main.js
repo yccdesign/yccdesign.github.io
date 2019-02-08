@@ -236,34 +236,34 @@ function showSlides(n) {
 
 
 /*Slideshow for persona*/
-var slideIndexPersona = 1;
-showSlidesPersona(slideIndexPersona);
+//var slideIndexPersona = 1;
+//showSlidesPersona(slideIndexPersona);
 
 // Next/previous controls
-function plusSlidesPersona(n) {
-  showSlidesPersona(slideIndexPersona += n);
-}
+//function plusSlidesPersona(n) {
+//  showSlidesPersona(slideIndexPersona += n);
+//}
 
 // Thumbnail image controls
-function currentSlidePersona(n) {
-  showSlidesPersona(slideIndexPersona = n);
-}
+//function currentSlidePersona(n) {
+//  showSlidesPersona(slideIndexPersona = n);
+//}
 
-function showSlidesPersona(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlidesPersona");
-  var dots = document.getElementsByClassName("dotPersona");
-  if (n > slides.length) {slideIndexPersona = 1}
-  if (n < 1) {slideIndexPersona = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndexPersona-1].style.display = "block";
-  dots[slideIndexPersona-1].className += " active";
-}
+//function showSlidesPersona(n) {
+//  var i;
+//  var slides = document.getElementsByClassName("mySlidesPersona");
+//  var dots = document.getElementsByClassName("dotPersona");
+//  if (n > slides.length) {slideIndexPersona = 1}
+//  if (n < 1) {slideIndexPersona = slides.length}
+//  for (i = 0; i < slides.length; i++) {
+//      slides[i].style.display = "none";
+//  }
+//  for (i = 0; i < dots.length; i++) {
+//      dots[i].className = dots[i].className.replace(" active", "");
+//  }
+//  slides[slideIndexPersona-1].style.display = "block";
+//  dots[slideIndexPersona-1].className += " active";
+//}
 
 
 
