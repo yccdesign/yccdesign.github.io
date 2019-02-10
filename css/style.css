@@ -470,6 +470,7 @@ main p{
     padding: 10px 20px 15px 20px;
     margin:auto;
   }
+
   .slideimage>img{
       margin:auto;
   }
@@ -838,6 +839,9 @@ a .fab:hover{
     vertical-align: top;
     padding: 40px;
   }
+  .narrowtext{
+    width:38%;
+  }
   .slideimage{
     display:inline-block;
     width:48%;
@@ -850,6 +854,10 @@ a .fab:hover{
     padding: 0px;
     margin:auto;
     max-height: 650px;
+  }
+  .wideimg{
+    width: 60%;
+    padding: 0px;
   }
   .slidepersona{
     width:80%;
