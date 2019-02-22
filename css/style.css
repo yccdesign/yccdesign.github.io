@@ -188,11 +188,14 @@ main p{
 }
 .intro{
   border-bottom: 1px solid rgb(210,210,210);
-  padding-bottom: 50px;
+  padding: 10px 80px 20px 80px;
   margin-bottom: 20px;
+  text-align: left;
+
 }
 #hello{
   color: rgb(212,35,73);
+  font-size: 34px;
 }
 
 /*flex-box in main*/
