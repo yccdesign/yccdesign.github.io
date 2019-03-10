@@ -35,15 +35,15 @@ $(document).ready(function(){
 
 
 /*project button switches*/
-  $("#ux-btn").css({'color':'white', 'background': '#37123c'
+  $("#ux-btn").css({'color':'rgb(255,255,255)', 'background': '#37123c'
   });
 
   $("#ux-btn").click(function(){
-    $(this).css({'color':'white', 'background': '#37123c'
+    $(this).css({'color':'rgb(255,255,255)', 'background': '#37123c'
     });
-    $("#marketing-btn").css({'color':'#37123c', 'background': 'white'
+    $("#marketing-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
     });
-    $("#psycholinguistics-btn").css({'color':'#37123c', 'background': 'white'
+    $("#psycholinguistics-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
     });
     $('#ux-row').show(1000);
     $('#marketing-row').hide(1000);
@@ -51,11 +51,11 @@ $(document).ready(function(){
   });
 
   $("#marketing-btn").click(function(){
-    $(this).css({'color':'white', 'background': '#37123c'
+    $(this).css({'color':'rgb(255,255,255)', 'background': '#37123c'
     });
-    $("#ux-btn").css({'color':'#37123c', 'background': 'white'
+    $("#ux-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
     });
-    $("#psycholinguistics-btn").css({'color':'#37123c', 'background': 'white'
+    $("#psycholinguistics-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
     });
     $('#marketing-row').show(1000);
     $('#ux-row').hide(1000);
@@ -63,11 +63,11 @@ $(document).ready(function(){
   });
 
   $("#psycholinguistics-btn").click(function(){
-    $(this).css({'color':'white', 'background': '#37123c'
+    $(this).css({'color':'rgb(255,255,255)', 'background': '#37123c'
     });
-    $("#ux-btn").css({'color':'#37123c', 'background': 'white'
+    $("#ux-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
     });
-    $("#marketing-btn").css({'color':'#37123c', 'background': 'white'
+    $("#marketing-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
     });
     $('#psycholinguistics-row').show(1000);
     $('#ux-row').hide(1000);

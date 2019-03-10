@@ -257,7 +257,7 @@ main p{
 .project-type-title{
   display:inline-block;
   color: #37123c;
-  background: #ffffff;
+  background: rgb(255,255,255);
   border: solid 1px #37123c;
   border-radius: 25px;
   padding: 4px 8px;
