@@ -35,15 +35,15 @@ $(document).ready(function(){
 
 
 /*project button switches*/
-  $("#ux-btn").css({'color':'white', 'background': 'rgb(110,110,110)'
+  $("#ux-btn").css({'color':'white', 'background': '#37123c'
   });
 
   $("#ux-btn").click(function(){
-    $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+    $(this).css({'color':'white', 'background': '#37123c'
     });
-    $("#marketing-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    $("#marketing-btn").css({'color':'#37123c', 'background': 'white'
     });
-    $("#psycholinguistics-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    $("#psycholinguistics-btn").css({'color':'#37123c', 'background': 'white'
     });
     $('#ux-row').show(1000);
     $('#marketing-row').hide(1000);
@@ -51,11 +51,11 @@ $(document).ready(function(){
   });
 
   $("#marketing-btn").click(function(){
-    $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+    $(this).css({'color':'white', 'background': '#37123c'
     });
-    $("#ux-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    $("#ux-btn").css({'color':'#37123c', 'background': 'white'
     });
-    $("#psycholinguistics-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    $("#psycholinguistics-btn").css({'color':'#37123c', 'background': 'white'
     });
     $('#marketing-row').show(1000);
     $('#ux-row').hide(1000);
@@ -63,11 +63,11 @@ $(document).ready(function(){
   });
 
   $("#psycholinguistics-btn").click(function(){
-    $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+    $(this).css({'color':'white', 'background': '#37123c'
     });
-    $("#ux-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    $("#ux-btn").css({'color':'#37123c', 'background': 'white'
     });
-    $("#marketing-btn").css({'color':'rgb(110,110,110)', 'background': 'white'
+    $("#marketing-btn").css({'color':'#37123c', 'background': 'white'
     });
     $('#psycholinguistics-row').show(1000);
     $('#ux-row').hide(1000);
@@ -79,10 +79,10 @@ $("#ux-research-btn-1").css({'color':'white', 'background': 'rgb(110,110,110)'
 });
 
 $("#ux-research-btn-1").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+  $(this).css({'color':'white', 'background': '#37123c'
   });
   $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
+    $(this).css({'color':'#37123c', 'background': 'white'
       });
   });
 
@@ -93,10 +93,10 @@ $("#ux-research-btn-1").click(function(){
 });
 
 $("#ux-research-btn-2").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+  $(this).css({'color':'white', 'background': '#37123c'
   });
   $("#ux-research-btn-1, #ux-research-btn-3, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
+    $(this).css({'color':'#37123c', 'background': 'white'
       });
   });
 
@@ -107,10 +107,10 @@ $("#ux-research-btn-2").click(function(){
 });
 
 $("#ux-research-btn-3").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+  $(this).css({'color':'white', 'background': '#37123c'
   });
   $("#ux-research-btn-1, #ux-research-btn-2, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
+    $(this).css({'color':'#37123c', 'background': 'white'
       });
   });
 
@@ -121,10 +121,10 @@ $("#ux-research-btn-3").click(function(){
 });
 
 $("#ux-research-btn-4").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
+  $(this).css({'color':'white', 'background': '#37123c'
   });
   $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-1").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
+    $(this).css({'color':'#37123c', 'background': 'white'
       });
   });
 

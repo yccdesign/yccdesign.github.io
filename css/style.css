@@ -32,10 +32,10 @@ img{
 }
 
 p a{
-  color: rgb(212,35,73);
+  color: #e86800;
   transition: 0.3s ease-in;
   padding:3px;
-  border-bottom: 1px solid rgb(212,35,73);
+  border-bottom: 1px solid #e86800;
 }
 
 p a:hover{
@@ -194,8 +194,11 @@ main p{
 
 }
 #hello{
-  color: rgb(212,35,73);
+  color: #37123c;
   font-size: 34px;
+}
+#hellosub{
+  color:#F18805;
 }
 
 /*flex-box in main*/
@@ -253,9 +256,9 @@ main p{
 
 .project-type-title{
   display:inline-block;
-  color: rgb(110,110,110);
+  color: #37123c;
   background: #ffffff;
-  border: solid 1px rgb(110, 110, 110);
+  border: solid 1px #37123c;
   border-radius: 25px;
   padding: 4px 8px;
   margin: 10px;
@@ -264,7 +267,7 @@ main p{
 /*index project cards*/
 .project-box{
   display:block;
-  padding:20px;
+  padding:0px;
   width: 90%;
   margin: 20px auto;
   opacity: 1;
@@ -283,6 +286,7 @@ main p{
 
 .project-box-img{
   display: block;
+  margin:auto;
 }
 
 .project-box-description{
@@ -293,7 +297,8 @@ main p{
   padding:5px 0px;
 }
 .project-box-description p{
-  padding:5px 0px;
+  padding:0px;
+  margin: 5px auto;
   text-align: center;
 }
 
@@ -364,15 +369,15 @@ main p{
 .project-demo{
   display:block;
   color: rgb(255,255,255);
-  background-color: rgb(212,35,73);
-  border: solid 1px rgb(212, 35, 73);
+  background-color: #e86800;
+  border: solid 1px #e86800;
   border-radius: 25px;
   padding: 5px 10px;
   margin: 20px auto;
 }
 
 .project-demo:hover,.project-demo:active {
-  color: rgb(212,35,73);
+  color: #e86800;
   background-color: inherit;
 }
 
@@ -822,14 +827,15 @@ a .fab:hover{
   }
 
   .project-box{
-    width: 47%;
-    padding: 10px;
+    width: 45%;
+    padding: 0px;
+    text-align: center;
   }
   .project-box-img{
     display:block;
-    margin:10px auto;
-    padding: 20px 10px 0px 10px;
-    width: 90%;
+    margin:0px auto;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
   }
   .project-box-description{
     display: block;
@@ -982,11 +988,14 @@ a .fab:hover{
     display:grid;
     grid-template-columns: auto auto auto auto;
   }
-
+  #ux-row{
+    justify-content: flex-start;
+    padding: 0px 100px;
+  }
   .project-box{
-    width: 45%;
-    padding:5px;
-    margin: 5px auto;
+    width: 29%;
+    padding:0px;
+    margin: 20px auto;
     display:inline-block;
   }
   .graphics-img{
