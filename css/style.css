@@ -738,10 +738,10 @@ a .fab:hover{
   background-color: rgb(206,206,206);
 }
 .grogo-light-blue-bg{
-  background-color: rgba(153,248,250,0.3);
+  background-color: #ddeaf2;
 }
 .grogo-light-green-bg{
-  background-color: rgba(183,238,199,0.3);
+  background-color: #f7fff2;
 }
 
 .grogo-title-tag{
@@ -969,7 +969,7 @@ a .fab:hover{
   }
 }
 /*for laptops*/
-@media only screen and (min-width : 1024px)
+@media only screen and (min-width : 1100px)
 {
   .topnav li{
     margin:0% 5%;
