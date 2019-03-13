@@ -877,9 +877,11 @@ a .fab:hover{
   .project-content img{
     width:auto;
     display: inline-block;
-    max-height: 450px;
-    padding:10px 20px 10px 20px;
     margin:auto;
+  }
+
+  .img-height-450px{
+    max-height: 450px;
   }
 
   .project-content-text{
