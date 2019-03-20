@@ -188,7 +188,7 @@ main p{
 }
 .intro{
   border-bottom: 1px solid rgb(210,210,210);
-  padding: 10px 80px 20px 80px;
+  padding: 10px 20px 20px 20px;
   margin-bottom: 20px;
   text-align: left;
 
@@ -821,7 +821,9 @@ a .fab:hover{
   .nav-icon{
     display:none;
   }
-
+  .intro{
+    padding: 10px 80px 20px 80px;
+  }
   #ux-row{
     justify-content: flex-start;
   }
