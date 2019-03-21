@@ -201,6 +201,10 @@ main p{
   color:#F18805;
 }
 
+#hellotext{
+  width:100%
+}
+
 /*flex-box in main*/
 
 .flex-row{
@@ -751,6 +755,32 @@ a .fab:hover{
   display:inline-block;
 }
 
+.bottom-project-row{
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-project{
+  display: inline-block;
+  color: rgb(255,255,255);
+  background-color: #e86800;
+  border: solid 1px #e86800;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+.bottom-project i{
+  display:inline-block;
+  margin: 5px;
+  color:white;
+}
+.bottom-project p{
+  display:inline-block;
+  color:white;
+}
+
+
+
+
 /*Scenario modals*/
 .scenariomodal {
   display: none; /* Hidden by default */
@@ -824,6 +854,9 @@ a .fab:hover{
   .intro{
     padding: 10px 80px 20px 80px;
   }
+  #hellotext{
+    width:60%;
+  }
   #ux-row{
     justify-content: flex-start;
   }
@@ -890,7 +923,6 @@ a .fab:hover{
     margin-left: 30px;
   }
 
-
   .project-content-text{
     display:inline-block;
     text-align: left;
@@ -952,6 +984,7 @@ a .fab:hover{
     margin: 5px;
   }
 
+
   /*flex-box for graphics page*/
   .graphics-img{
     width:250px;
@@ -988,6 +1021,11 @@ a .fab:hover{
   .other-nav-tab:active{
     background: rgb(250,250,250);
   }
+
+  #hellotext{
+    width:50%;
+  }
+
   .flex-column{
     flex:25%;
     max-width: 25%;
