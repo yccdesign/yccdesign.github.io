@@ -757,26 +757,26 @@ a .fab:hover{
 
 .bottom-project-row{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-.bottom-project{
+.bottom-project>a{
   display: inline-block;
-  color: rgb(255,255,255);
-  background-color: #e86800;
-  border: solid 1px #e86800;
-  border-radius: 25px;
-  padding: 5px 10px;
+  padding: 0px 10px;
+  opacity: 0.2;
+  color: #37123c;
+  transition: 0.3s ease-in;
+}
+.bottom-project>a:hover, .bottom-project>a:active{
+  opacity: 1;
+  transition: 0.3s ease-in;
 }
 
-.bottom-project i{
-  display:inline-block;
-  margin: 5px;
-  color:white;
+.bottom-project-now{
+  display: inline-block;
+  color: #37123c;
+  padding: 0px 10px;
 }
-.bottom-project p{
-  display:inline-block;
-  color:white;
-}
+
 
 
 
