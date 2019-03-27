@@ -38,6 +38,13 @@ p a{
   border-bottom: 1px solid #e86800;
 }
 
+li a{
+  color: #e86800;
+  transition: 0.3s ease-in;
+  padding:3px;
+  border-bottom: 1px solid #e86800;
+}
+
 p a:hover{
   color:rgb(3,25,30);
 }
