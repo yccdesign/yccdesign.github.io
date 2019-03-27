@@ -698,7 +698,7 @@ footer{
 }
 
 a .fab{
-  color: rgba(182, 89, 59, 0.3);
+  color: #F18805;
   transition:  0.5s ease-in;
 }
 
@@ -756,9 +756,20 @@ a .fab:hover{
 }
 
 .bottom-project-row{
+  max-width:100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
+.bottom-project{
+  width:200px;
+  line-height: 20px;
+}
+.bottom-project-now{
+  width:200px;
+  line-height: 20px;
+}
+
 .bottom-project>a{
   display: inline-block;
   padding: 0px 10px;
