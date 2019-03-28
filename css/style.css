@@ -12,11 +12,11 @@ hover: rgb(3,25,30);
 
 /*font styling refernce*/
 h1 {font-family: 'Lato', sans-serif; font-size: 42px; font-weight: 900; line-height: 50px;}
-h2 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 900; line-height: 36px;}
-h3 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300; line-height: 28px;}
-h4 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 700; line-height: 28px;}
-h5 { font-family: 'Lato', sans-serif; font-size: 19px; font-weight: 300;line-height: 24px;}
-p,button { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400; line-height: 26px;}
+h2 {font-family: 'Lato', sans-serif; font-size: 23px; font-weight: 900; line-height: 38px;}
+h3 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; line-height: 30px;}
+h4 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 700; line-height: 30px;}
+h5 { font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300;line-height: 26px;}
+p,button { font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 400; line-height: 30px;}
 blockquote { font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
 pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
 b {color: rgb(20,20,20)}
@@ -420,7 +420,7 @@ main p{
 
 .project-content-text{
   display:block;
-  padding:20px;
+  padding:10px;
 }
 
 .project-content-section-name{
@@ -432,8 +432,8 @@ main p{
   text-align: left;
 }
 .project-content-text li{
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 30px;
   text-align: left;
 }
 
@@ -487,13 +487,22 @@ main p{
 
   /* Caption text */
   .slidetext {
-    color: rgb(40,40,40);
-    padding: 20px 12px 5px 12px;
+    padding: 5px 12px 5px 12px;
     display:inline-block;
     width: 100%;
     margin:auto;
     text-align: center;
   }
+
+  .slidetext h2{
+  color: rgb(40,40,40);
+  }
+
+  .slidetext h4{
+  color: #F18805;
+  text-align: left;
+  }
+
   .slideimage{
     display:inline-block;
     width:90%;
@@ -581,13 +590,13 @@ main p{
 .third-block h4{
   display:inline-block;
   text-align: center;
-  width: 80%;
+  width: 100%;
   vertical-align: top;
 }
 .third-block h5{
   display:inline-block;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 
 
@@ -894,7 +903,7 @@ a .fab:hover{
     display: block;
     width:90%;
     vertical-align: top;
-    padding: 0px 10px 10px 20px;
+    padding: 0px 0px 10px 0px;
   }
   .project-description{
     text-align: center;
@@ -944,7 +953,7 @@ a .fab:hover{
   .project-content-text{
     display:inline-block;
     text-align: left;
-    width: 88%;
+    width: 70%;
   }
   .project-content-section-name{
     text-align: left;
@@ -952,11 +961,15 @@ a .fab:hover{
   }
   /*slideshow in project page*/
   .slidetext {
-    width: 50%;
+    width: 40%;
+    margin:auto;
+    text-align: left;
+    vertical-align: top;
+    padding: 5px 5px;
+  }
+  .slidetext h2{
     margin:auto;
     text-align: center;
-    vertical-align: top;
-    padding: 5px 10px;
   }
   .narrowtext{
     width:38%;
@@ -1029,7 +1042,7 @@ a .fab:hover{
   }
 }
 /*for laptops*/
-@media only screen and (min-width : 1100px)
+@media only screen and (min-width : 1023px)
 {
   .topnav li{
     margin:0% 5%;
@@ -1106,6 +1119,11 @@ a .fab:hover{
   .project-topimg{
     display: inline-block;
     width:48%;
+  }
+  .project-content-text{
+    display:inline-block;
+    text-align: left;
+    width: 60%;
   }
   /*UX project steps*/
   .project-step-btn{
