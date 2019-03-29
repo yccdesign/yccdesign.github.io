@@ -279,6 +279,9 @@ main p{
   opacity: 1;
   position: relative;
   transition:0.2s ease-in;
+  background-color: white;
+  border: solid 1px rgb(242,242,242);
+  border-radius: 5px;
 }
 
 .project-box a{
@@ -1054,7 +1057,7 @@ a .fab:hover{
   }
 
   #hellotext{
-    width:60%;
+    width:70%;
   }
 
   .flex-column{
