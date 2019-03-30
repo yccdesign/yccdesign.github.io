@@ -16,6 +16,7 @@ h2 {font-family: 'Lato', sans-serif; font-size: 23px; font-weight: 900; line-hei
 h3 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; line-height: 30px;}
 h4 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 700; line-height: 30px;}
 h5 { font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300;line-height: 26px;}
+h6 { font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 300;line-height: 26px; color: rgb(140,140,140)}
 p,button { font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 400; line-height: 30px;}
 blockquote { font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
 pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
@@ -511,12 +512,46 @@ main p{
   color: #F18805;
   text-align: left;
   }
-
+  .slidetext-multi {
+    padding: 5px 12px 5px 12px;
+    display:inline-block;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+  }
+  .slidetext-multi h2{
+    color: rgb(40,40,40);
+  }
+  .slidetext-multi h4{
+  color: #F18805;
+  display: inline-block;
+  width:20%;
+  text-align: left;
+  vertical-align: top;
+  }
+  .slidetext-multi p{
+  display:inline-block;
+  text-align: left;
+  width: 78%;
+  }
   .slideimage{
     display:inline-block;
     width:90%;
     padding: 10px 20px 15px 20px;
     margin:auto;
+  }
+
+  .slideimage-multi{
+    display:inline-block;
+    width:96%;
+    margin:auto;
+  }
+  .slideimage-multi-img{
+    display:block;
+    width:100%;
+    padding: 10px;
+    margin:auto;
+    text-align: center;
   }
 
   .slideimage>img{
@@ -776,14 +811,15 @@ a .fab:hover{
 }
 
 .bottom-project-row{
-  max-width:100%;
+  width:100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .bottom-project{
-  width:200px;
+  width:auto;
   line-height: 20px;
+  display: inline-block;
+  padding-top: 40px
 }
 .bottom-project-now{
   width:200px;
@@ -792,13 +828,16 @@ a .fab:hover{
 
 .bottom-project>a{
   display: inline-block;
-  padding: 0px 10px;
-  opacity: 0.2;
+  padding: 10px;
+  opacity: 1;
   color: #37123c;
+  border: solid 2px #37123c;
   transition: 0.3s ease-in;
 }
+
 .bottom-project>a:hover, .bottom-project>a:active{
-  opacity: 1;
+  background-color: #37123c;
+  color: rgb(250,250,250);
   transition: 0.3s ease-in;
 }
 
@@ -976,8 +1015,9 @@ a .fab:hover{
   .project-content-text{
     display:inline-block;
     text-align: left;
-    width: 70%;
+    width: 75%;
   }
+
   .project-content-section-name{
     text-align: left;
     margin:60px 0px 0px 0px;
@@ -1010,6 +1050,7 @@ a .fab:hover{
     margin:auto;
     max-height: 650px;
   }
+
   .wideimg{
     width: 60%;
     padding: 0px;
@@ -1181,5 +1222,8 @@ a .fab:hover{
     margin:auto;
     width: 100%;
   }
-
+  .slideimage-multi-img{
+    display:inline-block;
+    width:49%;
+  }
 }
