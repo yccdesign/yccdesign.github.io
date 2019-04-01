@@ -823,7 +823,7 @@ a .fab:hover{
   width:auto;
   line-height: 20px;
   display: inline-block;
-  padding-top: 40px
+  padding-top: 40px;
 }
 .bottom-project-now{
   width:200px;
@@ -832,7 +832,7 @@ a .fab:hover{
 
 .bottom-project>a{
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
   opacity: 1;
   color: #37123c;
   border: solid 2px #37123c;
