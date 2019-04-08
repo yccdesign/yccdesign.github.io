@@ -34,10 +34,10 @@ img{
 }
 
 p a{
-  color: #e86800;
+  color: #df4527;
   transition: 0.3s ease-in;
   padding:3px;
-  border-bottom: 1px solid #e86800;
+  border-bottom: 1px solid #df4527;
 }
 
 
@@ -379,15 +379,15 @@ main p{
 .project-demo{
   display:block;
   color: rgb(255,255,255);
-  background-color: #e86800;
-  border: solid 1px #e86800;
+  background-color: #df4527;
+  border: solid 1px #df4527;
   border-radius: 25px;
   padding: 5px 10px;
   margin: 20px auto;
 }
 
 .project-demo:hover,.project-demo:active {
-  color: #e86800;
+  color: #df4527;
   background-color: inherit;
 }
 
