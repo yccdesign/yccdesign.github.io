@@ -35,15 +35,15 @@ $(document).ready(function(){
 
 
 /*project button switches*/
-  $("#ux-btn").css({'color':'rgb(255,255,255)', 'background': '#37123c'
+  $("#ux-btn").css({'color':'rgb(255,255,255)', 'background': '#df4527'
   });
 
   $("#ux-btn").click(function(){
-    $(this).css({'color':'rgb(255,255,255)', 'background': '#37123c'
+    $(this).css({'color':'rgb(255,255,255)', 'background': '#df4527'
     });
-    $("#marketing-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
+    $("#marketing-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
     });
-    $("#psycholinguistics-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
+    $("#psycholinguistics-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
     });
     $('#ux-row').show(1000);
     $('#marketing-row').hide(1000);
@@ -51,11 +51,11 @@ $(document).ready(function(){
   });
 
   $("#marketing-btn").click(function(){
-    $(this).css({'color':'rgb(255,255,255)', 'background': '#37123c'
+    $(this).css({'color':'rgb(255,255,255)', 'background': '#df4527'
     });
-    $("#ux-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
+    $("#ux-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
     });
-    $("#psycholinguistics-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
+    $("#psycholinguistics-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
     });
     $('#marketing-row').show(1000);
     $('#ux-row').hide(1000);
@@ -63,11 +63,11 @@ $(document).ready(function(){
   });
 
   $("#psycholinguistics-btn").click(function(){
-    $(this).css({'color':'rgb(255,255,255)', 'background': '#37123c'
+    $(this).css({'color':'rgb(255,255,255)', 'background': '#df4527'
     });
-    $("#ux-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
+    $("#ux-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
     });
-    $("#marketing-btn").css({'color':'#37123c', 'background': 'rgb(255,255,255)'
+    $("#marketing-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
     });
     $('#psycholinguistics-row').show(1000);
     $('#ux-row').hide(1000);
@@ -79,10 +79,10 @@ $("#ux-research-btn-1").css({'color':'white', 'background': 'rgb(110,110,110)'
 });
 
 $("#ux-research-btn-1").click(function(){
-  $(this).css({'color':'white', 'background': '#37123c'
+  $(this).css({'color':'white', 'background': '#df4527'
   });
   $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'#37123c', 'background': 'white'
+    $(this).css({'color':'#df4527', 'background': 'white'
       });
   });
 
@@ -93,10 +93,10 @@ $("#ux-research-btn-1").click(function(){
 });
 
 $("#ux-research-btn-2").click(function(){
-  $(this).css({'color':'white', 'background': '#37123c'
+  $(this).css({'color':'white', 'background': '#df4527'
   });
   $("#ux-research-btn-1, #ux-research-btn-3, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'#37123c', 'background': 'white'
+    $(this).css({'color':'#df4527', 'background': 'white'
       });
   });
 
@@ -107,10 +107,10 @@ $("#ux-research-btn-2").click(function(){
 });
 
 $("#ux-research-btn-3").click(function(){
-  $(this).css({'color':'white', 'background': '#37123c'
+  $(this).css({'color':'white', 'background': '#df4527'
   });
   $("#ux-research-btn-1, #ux-research-btn-2, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'#37123c', 'background': 'white'
+    $(this).css({'color':'#df4527', 'background': 'white'
       });
   });
 
@@ -121,10 +121,10 @@ $("#ux-research-btn-3").click(function(){
 });
 
 $("#ux-research-btn-4").click(function(){
-  $(this).css({'color':'white', 'background': '#37123c'
+  $(this).css({'color':'white', 'background': '#df4527'
   });
   $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-1").each(function(){
-    $(this).css({'color':'#37123c', 'background': 'white'
+    $(this).css({'color':'#df4527', 'background': 'white'
       });
   });
 
