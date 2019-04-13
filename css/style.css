@@ -628,7 +628,7 @@ main p{
 /*Pain points*/
 .pain-points{
   background: white;
-  display:inline;
+  display:inline-block;
   margin: 10px 20px;
   padding:10px;
   box-shadow:  10px 10px 10px 0px rgb(210, 210, 210);
