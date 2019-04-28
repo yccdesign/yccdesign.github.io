@@ -13,12 +13,12 @@ hover: rgb(3,25,30);
 /*font styling refernce*/
 h1 {font-family: 'Lato', sans-serif; font-size: 42px; font-weight: 900; line-height: 50px;}
 h2 {font-family: 'Lato', sans-serif; font-size: 23px; font-weight: 900; line-height: 38px;}
-h3 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; line-height: 30px;}
-h4 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 700; line-height: 30px;}
+h3 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; line-height: 34px;}
+h4 {font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 700; line-height: 34px;}
 h5 { font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300;line-height: 26px;}
-h6 { font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 300;line-height: 26px; color: rgb(140,140,140)}
-h7 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 900; line-height: 30px;}
-p,button { font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 400; line-height: 30px;}
+h6 { font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 300;line-height: 27px;}
+h7 {font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 900; line-height: 32px;}
+p,button { font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 400; line-height: 32px;}
 blockquote { font-family: 'Lato', sans-serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
 pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
 b {}
@@ -133,10 +133,6 @@ nav ul li{
   text-align: center;
 }
 
-.other-nav-tab > a:hover{
-  background-color: rgb(250,250,250);
-}
-
 /*nav icon*/
 .nav-icon{
   text-decoration: none;
@@ -223,7 +219,13 @@ main p{
   align-items: flex-start;
   justify-content: center;
 }
-
+#ux-row{
+  display:flex;
+  flex-wrap:wrap;
+  margin: 0% 5%;
+  justify-content: space-between;
+  text-align: left;
+}
 
 #marketing-row{
   display:none;
@@ -282,9 +284,8 @@ main p{
   display:block;
   padding:0px;
   width: 90%;
-  margin: 20px auto;
+  margin: 20px;
   opacity: 1;
-  position: relative;
   transition:0.2s ease-in;
   /*border: solid 1px rgb(242,242,242);
   border-radius: 5px;*/
@@ -294,27 +295,42 @@ main p{
   color: rgb(0,0,0);
 }
 
-.project-box:hover, .project-box:active{
-  box-shadow: 0px 0px 20px 8px rgb(210, 210, 210);
-}
-
 
 .project-box-img{
   display: block;
   margin:auto;
+  position: relative;
 }
 
 .project-box-description{
   display:block;
-  margin:auto;
 }
-.project-box-description h2{
-  padding:5px 5px;
+.overlay{
+  display:block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
 }
-.project-box-description p{
-  padding:5px;
-  margin: 5px auto;
+
+.overlay-text{
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.project-box-img:hover .overlay {
+  height: 100%;
 }
 
 .project-namebox{
@@ -941,12 +957,10 @@ a .fab:hover{
     text-align: center;
   }
   #hellotext{
-    width:70%;
+    width:85%;
     margin: auto;
   }
-  #ux-row{
-    justify-content: flex-start;
-  }
+
   .top-btn{
     display:block;
   }
@@ -966,9 +980,8 @@ a .fab:hover{
   }
 
   .project-box{
-    width: 45%;
+    width: 43%;
     padding: 0px;
-    text-align: center;
   }
   .project-box-img{
     display:block;
@@ -978,10 +991,11 @@ a .fab:hover{
   }
   .project-box-description{
     display: block;
-    width:90%;
+    text-align: left;
     vertical-align: top;
     padding: 0px 0px 10px 0px;
   }
+
   .project-description{
     text-align: center;
     margin:auto;
@@ -1145,18 +1159,13 @@ a .fab:hover{
     display:grid;
     grid-template-columns: auto auto auto auto;
   }
-  #ux-row{
-    justify-content: flex-start;
-    padding: 0px 50px;
-  }
 
-  /*.project-box{
-    padding:0px;
-    margin: 20px auto;
+
+  .project-box{
+    width: 30%;
+    margin: 10px;
     display:inline-block;
-  }*/
-
-
+  }
 
   .graphics-img{
     width:300px;
