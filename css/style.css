@@ -328,6 +328,9 @@ main p{
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.overlay-text p {
+  text-align: center;
+}
 
 .project-box-img:hover .overlay {
   height: 100%;
@@ -837,6 +840,20 @@ a .fab:hover{
   color:#ffffff;
   display:inline-block;
 }
+.jump-to-btn{
+  display: inline-block;
+  padding: 5px 10px;
+  border: solid 2px  #df4527;
+  border-radius: 5px;
+  background-color: #df4527;
+  color: rgb(250,250,250);
+  transition: 0.3s ease-in;
+}
+.jump-to-btn:hover, .jump-to-btn:active{
+  background-color: rgb(250,250,250);
+  color: #df4527;
+  transition: 0.3s ease-in;
+}
 
 .bottom-project-row{
   width:100%;
@@ -849,23 +866,21 @@ a .fab:hover{
   display: inline-block;
   padding-top: 40px;
 }
-.bottom-project-now{
-  width:200px;
-  line-height: 20px;
-}
 
 .bottom-project>a{
   display: inline-block;
   padding: 10px 20px;
-  opacity: 1;
-  color: #37123c;
   border: solid 2px #37123c;
+  border-radius: 5px;
+  background-color: #37123c;
+  color: rgb(250,250,250);
   transition: 0.3s ease-in;
 }
 
 .bottom-project>a:hover, .bottom-project>a:active{
-  background-color: #37123c;
-  color: rgb(250,250,250);
+  color: #37123c;
+  border: solid 2px #37123c;
+  background-color: rgb(250,250,250);
   transition: 0.3s ease-in;
 }
 
@@ -1232,6 +1247,7 @@ a .fab:hover{
     margin: auto;
     width:31%;
     text-align: center;
+    vertical-align: top;
   }
   .third-block img{
     display:block;
