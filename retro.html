@@ -60,8 +60,7 @@
         <br><br>
       </div>
       <br>
-      <p>*This is an ongoing project</p><br><br>
-      <a href = "imgs/retro/retro.pdf" target = "_blank"><button class = "project-demo">Open PDF Format</button></a>
+      <a href = "https://drive.google.com/file/d/1UOPMZ_fyKuILlKowAlnCwYReuCgUkYLM/preview" target = "_blank"><button class = "project-demo">View project video</button></a>
     </div>
   </div>
   <div class = "project-topimg">
@@ -199,18 +198,26 @@
         <li>Support merges and document them</li>
       </ul>
     <br><br>
-    <p>In the end, we identified 18 violations, with 10 of them rated more than 3 out of 4 scores in severity level.
+    <p>In the end, we identified 18 violations, with 5 of them rated as most severe. <br><br></p>
+
     <div class ="flex-row">
       <img alt = "heuristics results" src = "imgs/retro/heuristics.png"></a>
     </div>
-    </p>
+    <p>Aside from the recurring issues already idnetified in the previous research, we also found that a vote cannot be retracted after the user casted it. This prevents users from recovering from an accidental vote, futher resulting in inaccurate reflection of prioritzation.</p>
+    <div class ="flex-row">
+      <img alt = "vote violation" src = "imgs/retro/unvote.png"></a><br>
+    </div>
+    <div class ="flex-row">
+      <h6>Lack of unvote feature prevents error recovery.</h6>
+    </div>
+
     <br><br>
     <h3 class = "project-content-section-name">USABILITY TESTING</h3>
     <h2>What parts of RetroQuest mobile view and new archive design work well? What do not work so well?</h2><br><br>
     <p>At this point, we have only examined issues on the desktop browser view. To understand how RetroQuest performs on the mobile view, as well as users' experience on the new interface in the archive page, we conducted a series of usability test with 5 users.<br><br>
     </p>
     <br><br>
-    <p>Each session lasted 30-40 minutes. On their own mobile phones, the participants performed 7 common tasks following a standard retrospective procedure. On a desktop browser, the participants perform one task with two subtasks to check historic board details. The whole testing script and task details can be accessed <a href = "imgs/retro/scripts.pdf" target="_blank">here.</a><br><br>
+    <p>Each session lasted 30-40 minutes. On their own mobile phones, the participants performed 7 common tasks following a standard retrospective procedure. On the desktop browser, the participants performed one task with two subtasks to check historic board details. The whole testing script and task details can be accessed <a href = "imgs/retro/scripts.pdf" target="_blank">here.</a><br><br>
     </p><br><br>
     <div class ="flex-row">
       <img alt = "process1" src = "imgs/retro/usability.png"></a>
@@ -218,10 +225,28 @@
     <div class ="flex-row">
       <img alt = "process2" src = "imgs/retro/usabilityprocess.png"></a>
     </div>
+    <p>We found two usability issues specifically related to the mobile view:</p><br><br>
+    <p>First, lack of feedback for card creation and retro ending process confused mobile users. During the test, all users had to double-check to make sure certain action is performed. We recommend adding a pop-up notification to update system status.</p><br><br>
+    <div class ="flex-row">
+      <img alt = "lack of feedback" src = "imgs/retro/mobile1.PNG"></a>
+    </div>
+    <div class ="flex-row">
+      <h6>(Left) Users had to scroll down to make sure a card is created. (Right) Users had to switch to different tabs from action items to make sure all thoughts are cleared after hitting 'End Retro'.</h6>
+    </div><br><br>
+    <p>Second, mobile configuration must be revisited. Four users have been observed to dwell longer on the tasks due to mobile keyboard or browser configurations.</p><br><br>
+    <div class ="flex-row">
+      <img alt = "mobile configurations" src = "imgs/retro/mobile2.PNG"></a>
+    </div>
+    <h6>(Left) After typing a thought, users tend to click the ‘down arrow’ in the extreme bottom left. They attempt to close the keyboard in doing so, thinking a submission button is hidden behind it. (Right) On iOS, ‘Return’ key on the bottom right submits a thought, but users looked for an ‘Enter’ key instead.</h6>
+    <br><br>
+    <h3 class = "project-content-section-name">FINAL VIDEO</h3>
+    <p>Finally, the team presented our project finding and recommendations in a video.</p><br><br>
+    <div class ="flex-row">
+      <iframe width="100%" height="100%" src="https://drive.google.com/file/d/1UOPMZ_fyKuILlKowAlnCwYReuCgUkYLM/preview"></iframe>
+    </div>
 
+<br><br>
 
-<br><br><br>
-<p>Coming up: Results for usability testing</p>
 
 <br><br><br>
     <h3 class = "project-content-section-name">REFERENCES</h3>
