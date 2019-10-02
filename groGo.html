@@ -6,528 +6,399 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--favicon-->
   <link rel="icon" type="image/png" href="imgs/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="imgs/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="imgs/favicon-32x32-1.png" sizes="32x32" />
   <!--css -->
+
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Yi-Chun Chen</title>
   <link rel="stylesheet" type = "text/css" href="lightbox/dist/css/lightbox.min.css">
-  <title>Yi-Chun Chen | Projects</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-
 <body>
 <a href="#content" class="skip">Skip to content</a>
-<!--header includes logo and navigation bar, the default tab is projects-->
+
+
+<div class = "progress">
+  <div class = "progress-bar" id="bar"></div>
+</div>
 <header>
-  <nav class="topnav" id="nav-tabs">
-      <a class="logo" href="index.html"><img src="imgs/logo-170x90.svg" alt="logo image" title="yi-chun chen"></a>
-      <a href = "javascript:void(0);" class = "nav-icon" onclick="navIconClick()" aria-label="navigation menu"><i class="fas fa-bars" ></i></a>
-      <ul>
-      <li class="current-nav-tab"><a href="projects.html">Projects</a></li>
-      <li class="other-nav-tab"><a href="graphics.html">Graphics</a></li>
-      <li class="other-nav-tab"><a href="more.html">...and More</a></li>
-      <li class="other-nav-tab"><a href="about.html">About</a></li>
-      </ul>
+  <nav class="topnav" id="nav-bar">
+    <a href="index.html"><img class="logo" src="imgs/logo16.svg" alt="logo image" title="yi-chun chen"></a>
+    <a href = "javascript:void(0);" class = "nav-icon" onclick="navIconClick()" aria-label="menu"><i class="material-icons">&#xe5d2;</i></a>
+    <ul id = "nav-items" class = "nav-tabs">
+        <li class="other-nav-tab tab-item"><a href="index.html"><h6>Work</h6></a></li>
+        <li class="other-nav-tab tab-item"><a href="about.html"><h6>About</h6></a></li>
+    </ul>
   </nav>
+
 </header>
 
 <!-- main content -->
 <main id = 'content'>
-<div class="top-btn"><a href="#nav-tabs"><i class="fas fa-angle-up"></i></a></div>
-<div class = "project-top">
-  <div class = "project-topic">
-    <h1 class = "project-name">groGo</h1><br>
-    <div class = "project-description">
-      <p>A mobile application that streamlines in-store grocery shopping experience.</p>
-    <br><br>
-      <div class = "project-description">
-        <h4 class = "project-description-topic">Role</h4>
-        <h3 class = "project-description-content">UX Designer</h3>
-        <h4 class = "project-description-topic">Duration</h4>
-        <h3 class = "project-description-content">Sep 2018 - Jan 2019</h3>
-        <h4 class = "project-description-topic">Project Type</h4>
-        <h3 class = "project-description-content">Course individual project</h3>
-        <h4 class = "project-description-topic">Tools</h4>
-        <h3 class = "project-description-content">Axure RP, Premiere Pro</h3>
-      </div>
-      <a href = "https://docs.google.com/presentation/d/1wPd7-AGNwTTYkVfJpIxgzr8mU3nenQeC-Wglyrgloj0/present?usp=sharing" target = "_blank"><button class = "project-demo">Open PDF Format</button></a>
-    </div>
-  </div>
-  <div class = "project-topimg">
-    <img src="imgs/grogo/grogo-banner.gif" alt="groGo project banner">
-  </div>
-</div>
 
-
-<div class = "project-content">
-  <div class = "project-content-text">
-    <h3 class = "project-content-section-name">THE PROBLEM</h3>
-    <h2>How can I help 92% grocery shoppers save time shopping in the store?</h2>
-    <br>
-  </div>
-  <div class = "flex-row">
-    <div class = "pain-points">
-      <h3>I almost always ended up spending much more time than I wanted shopping in the grocery store.</h3>
-    </div><br>
-  </div>
-
-  <div class = "project-content-text">
-    <p>US shoppers spend an hour per week shopping for groceries (The Time Use Institute, 2008). Considering over 92% of shoppers still shop in the store, something needs to be done to facilitate instore shopping time to give shopers back time lost doing such recurring task (ICSC,2018). <br></p>
-  </div>
-  <div class = "project-content-text">
-    <p>As one of the regretting shoppers myself, I took the challenge to design a solution that streamlines grocery shopping expeirence, giving shoppers back time lost during in-store grocery shopping.</p><br><br>
-    <div class = "flex-row">
-      <a href = "#final"><div class = "jump-to-btn">
-        <p>Skip to the final design</p>
-      </div></a>
-    </div>
-    <br><br>
-    <h3 class = "project-content-section-name">THE PROCESS</h3>
-    <h2>From exploring the possibilities to crafting the design</h2>
-
-    <div class ="flex-row">
-      <img src = "imgs/grogo/process.png" alt="process">
-    </div>
-    <div class = "flex-row">
-      <a href = "#synthesis"><div class = "jump-to-btn">
-        <p>Skip to synthesis</p>
-      </div></a>
-    </div>
-
-<!--Research-->
-<h3 class = "project-content-section-name">RESEARCH</h3>
-<h2>Explore the unknown about the in-store grocery shopping processes</h2>
-  <br>
-  <p>To reduce time spent during in-store grocery shopping, I took a step back to explore the root causes and available solutions on the market. My initial research questions were:</p><br>
-  <ul><p>
-    <li>How much time do people spend a week doing grocery shopping? How do they feel about it?</li>
-    <li>What are people's common grocery shopping procedure? What do they spend most time on?</li>
-    <li>What do the current solutions offer that solves the problem? What can't they solve?</li>
-  </p></ul>
-
-  <br><br>
-    <h5 class ="grogo-title-tag">Small Sample Survey</h5><br><br>
-    <p>I conducted a survey with 16 participants to learn their common shopping challenges. I learned that they also spent a long time shopping for grocery. In addition, people who consider spending much time share similar concerns.</p><br><br>
-      <div class = "flex-row">
-        <img class="img-height-450px" src = "imgs/grogo/survey.png" alt = "survey answers"/>
-      </div>
-    <br><br>
-    <p>Not only do they have similar concerns, but they also encounter the following problems when shopping in the store. </p><br><br>
-
-    <div class = "flex-row">
-      <div class = "third-block"><br>
-        <img src = "imgs/grogo/return.png" alt = "return icon"/><br>
-        <h5>Having to return to previous aisles for a forgotten item</h5><br>
-      </div>
-      <div class = "third-block"><br>
-        <img src = "imgs/grogo/cursor.png" alt = "navigation icon"/><br>
-        <h5>Difficulty locating an item in the store</h5><br>
-      </div>
-      <div class = "third-block"><br>
-        <img src = "imgs/grogo/magnifying.png" alt = "magnifying glassicon"/><br>
-        <h5>Comparing similar items for too long</h5><br>
-      </div>
-
-    </div>
-
-    <br><br><br>
-    <h5 class ="grogo-title-tag">User Interviews</h5><br>
-    <div class ="flex-row"><img alt = "interview icon" src = "imgs/grogo/interview.png"></div>
-    <p>I interviewed four different shoppers individually. By having them walk me through their last grocery shopping experience, I uncovered different shoppers' motivations, grocery shopping styles, as well as other pain points related to inefficient shopping. </p><br>
-
-    <div class = "flex-row">
-      <div class = "pain-points">
-        <h3>My husband is vegetarian, so I have to pay extra attention to what I buy.</h3>
-      </div>
-      <div class = "pain-points">
-        <h3>I have trouble finding a particular item.</h3>
-      </div>
-      <div class = "pain-points">
-        <h3>Food labels are too small. I spend too much time reading them.</h3>
-      </div>
-      <div class = "pain-points">
-        <h3>I am buying much more than needed...I wish I could just not spend too much money.</h3>
-      </div>
-    </div><br><br>
-
-    <h5 class ="grogo-title-tag">Comparative Analysis</h5><br>
+  <div class = "flex-container">
+    <div class = "flex-box section-description-left">
+      <p class="full-flex-title"> <span class = "title">groGo</span><br>
+      Developing a mobile application that streamlines in-store grocery shopping experience.<br>
       <br>
-    <div class ="flex-row">
-      <a href="imgs/grogo/competitive.JPG" data-lightbox="competitive" data-title="Competitie Analysis"><img class="img-height-450px" src="imgs/grogo/competitive.JPG" alt="competitive analysis"/></a>
-    </div><br><br>
-    <p>In order to find the white spaces on the market, I also examined existing products, including grocery stores' mobile applications, as well as to-do list and meal prep apps. From the analysis, I noticed that grocery store apps have less sophisticated planning features, while meal prep apps or to-do list apps rarely include specific product information. The results implied a possible solution that includes the good of both application types. </p><br><br>
-<!--Synthesis-->
-    <h3 class = "project-content-section-name" id = "synthesis">SYNTHESIS</h3>
-    <h2>Summarizing research data to answer my initial quesitons</h2>
-    <p>Now it's time to translate data gathered from research into insights! I conceptualized the research findings into a set of personas and scenarios, a causal diagram, and a common storyboard. </p><br><br>
-    <h5 class ="grogo-title-tag">Causal Diagram</h5><br><br>
-    <p>What is taking up much time in a grocery shopping process? I synthesized data from the interview and survey, and mapped out the causes in a diagram below.</p>
-    <div class ="flex-row white-bg">
-      <a href="imgs/grogo/causes.png" target="_blank"><img src="imgs/grogo/causes.png" alt="Scoping the project"/></a>
-    </div><br><br>
-    <p>Clearly, multiple factors could increase decision time and execution time. These causes should be addressed in the solution. I decided not to tackle the traffic time due to solutions readily available on the market.</p>
-    <br><br><br>
-    <h5 class = "grogo-title-tag">Personas</h5><br><br>
-    <p>Who am I designing for? After distilling demographic data from the survey and interviews, I identified the primary and secondary personas that would love to optimize their grocery shopping tasks.</p>
-    <br><br>
-          <div class="flex-row">
-            <a href="imgs/grogo/persona1.jpg" data-lightbox="personas" data-title="Primary persona"><img alt = "primary persona" src="imgs/grogo/persona1.jpg"></a>
-          </div>
-          <div class="flex-row">
-            <a href="imgs/grogo/persona2.jpg" data-lightbox="personas" data-title="Secondayr persona"><img alt = "<s></s>econdary persona" src="imgs/grogo/persona2.jpg"></a>
-          </div>
-    <br><br>
-    <p>Based on different scenarios, these personas have distinct shopping behaviors, as illustrated in the task flow below:</p>
-    <div class="flex-row">
-      <a href="imgs/grogo/taskanalysis.png" data-lightbox="task" data-title="Task flows"><img alt = "task flow" src="imgs/grogo/taskanalysis.png"></a>
+      <button class = "btn-primary"><a href = "https://docs.google.com/presentation/d/1wPd7-AGNwTTYkVfJpIxgzr8mU3nenQeC-Wglyrgloj0/present?slide=id.g564894f6e9_0_0" target = "_blank"><i class="fas fa-desktop"></i> &nbsp;Open PDF</a></button>
+      </p>
+
     </div>
+    <div class = "flex-box">
+      <img class = "project-banner" alt = "project banner" src = "imgs/grogo/grogo-banner.gif"/>
+    </div>
+  </div>
+  <div class = "flex-container bg-light-yellow">
+    <div class = "flex-col-3">
+      <h5>Duration</h5>
+      <h6>One semester</h6>
+      <h6>Sep 2018 - Jan 2019</h6>
+    </div>
+    <div class = "flex-col-3">
+      <h5>Type & Role</h5>
+      <h6>Course individual project</h6>
+      <h6>Product desginer</h6>
+    </div>
+    <div class = "flex-col-3">
+      <h5>Tools</h5>
+      <h6>Photoshop</h6>
+      <h6>Illustrator</h6>
+      <h6>Axure RP</h6>
+    </div>
+    <div class = "flex-col-3">
+      <h5>Methodologies</h5>
+      <h6>User research</h6>
+      <h6>Ideation and brainstorming</h6>
+      <h6>Prototyping</h6>
+      <h6>User testing</h6>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id="1">
+    <div class = "full-section-text">
+      <h6>THE PROBLEM</h6>
+      <h2>How can I help 92% grocery shoppers save time shopping in the store?</h2>
 
-
-<!--Design goals-->
-
-    <h3 class = "project-content-section-name id = "goal"">DESIGN GOALS</h3>
-    <h2>Create a one-stop solution for in-store grocery shoppers to save them shopping time and money</h2>
-    <p>At this point, the user pain points and market opportunity have been clearer. I have reached three design goals that could address in-store shoppers' challenges.</p><br><br>
-    <div class = "flex-row">
-      <div class = "third-block"><br>
-        <img src = "imgs/grogo/piggy-bank.png" alt = "phone icon"/><br>
-        <h4>Saving both time & money</h4><br>
-        <h5>Help shoppers make quick purchase decisions to spend less on grocery.</h5>
+      <blockquote class = "text-darkgrey">
+        I almost always ended up spending much more time than I wanted shopping in the grocery store.
+      </blockquote>
+      <p>
+      US shoppers spend an hour per week shopping for groceries (The Time Use Institute, 2008). Considering over 92% of shoppers still shop in the store, something needs to be done to facilitate instore shopping time to give shopers back time lost doing such recurring task (ICSC,2018).
+      <br><br>
+      As one of the regretting shoppers myself, I took the challenge to design a solution that streamlines grocery shopping expeirence, giving shoppers back time lost during in-store grocery shopping.
+       </p>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id="2">
+    <div class = "full-section-text">
+      <h6>THE PROCESS</h6>
+      <h2>From exploring the possibilities to crafting the design</h2>
+      <br><br>
+     <img class = "project-wide-img" alt= "process" src = "imgs/grogo/process.png"/>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id="3">
+    <div class = "full-section-text">
+      <h6>RESEARCH</h6>
+      <h2>Explore the unknown about the in-store grocery shopping processes</h2>
+      <br><br>
+      <p>
+      I started by taking a step back to list down research questions yet to be explore about in-store grocery shopping.
+      </p>
+      <ol class = "lists">
+      <li>How much time do people spend a week doing grocery shopping? How do they feel about it?</li>
+      <li>What are people's common grocery shopping procedure? What do they spend most time on?</li>
+      <li>What do the current solutions offer that solves the problem? What can't they solve?</li>
+      </ol>
+      <br><br>
+      <h5>Small Sample Survey</h5>
+      <p>
+      I conducted a survey with 16 participants to learn their common shopping challenges. I learned that they also spent a long time shopping for grocery. In addition, people who consider spending much time share similar concerns.
+      </p>
+      <br><br>
+      <img class = "project-wide-img" alt= "survey" src = "imgs/grogo/survey.png"/>
+      <br><br>
+      <p>
+      In addition, there are recurring issues they mentioned.
+      </p>
+      <ol class = "lists">
+      <li>Having to return to previous aisles for a forgotten item.</li>
+      <li>Difficulty locating an item in the store.</li>
+      <li>Comparing similar items for too long.</li>
+      </ol>
+      <br><br>
+      <h5>User Interviews</h5>
+      <p>
+        I interviewed four different shoppers individually. By having them walk me through their last grocery shopping experience, I uncovered different shoppers' motivations, grocery shopping styles, as well as other pain points related to inefficient shopping.
+      </p>
+      <blockquote class = "text-darkgrey">
+        My husband is vegetarian, so I have to pay extra attention to what I buy.
+      </blockquote>
+      <blockquote class = "text-darkgrey">
+        I have trouble finding a particular item.
+      </blockquote>
+      <blockquote class = "text-darkgrey">
+        Food labels are too small. I spend too much time reading them.
+      </blockquote>
+      <br><br>
+      <h5>Comparative Analysis</h5>
+      <p>
+        By comparing grocery-store apps and meal-prep apps, I noticed that grocery store apps have less sophisticated planning features, while meal prep apps or to-do list apps rarely include specific product information. The results implied a possible solution that includes the good of both application types.
+      </p>
+      <br><br>
+      <img class = "project-wide-img" alt= "survey" src = "imgs/grogo/competitive.jpeg"/>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id="4">
+    <div class = "full-section-text">
+      <h6>SYNTHESIS</h6>
+      <h2>Summarizing research data to answer my initial quesitons</h2>
+      <br><br>
+      <p>
+      Now it's time to conceptualize from my research data!
+      </p>
+      <br><br>
+      <h5>Causal Diagram</h5>
+      <p>
+        What is taking up much time in a grocery shopping process? I synthesized data from the interview and survey, and mapped out the causes in a diagram below. I decided not to tackle the traffic time due to solutions readily available on the market.
+      </p>
+      <br><br>
+      <img class = "project-wide-img" alt= "survey" src = "imgs/grogo/causes.png"/>
+      <br><br>
+      <h5>Personas</h5>
+      <p>
+        Who am I designing for? After distilling demographic data from the survey and interviews, I identified the primary and secondary personas that would love to optimize their grocery shopping tasks. The personas have distinct shopping behaviors in the store.
+      </p>
+      <br><br>
+      <img class = "project-wide-img" alt= "primary persona" src = "imgs/grogo/persona1.jpg"/>
+      <div class = "full-section-text align-center">
+        <h6 class = "text-darkgrey">Primary persona</h6>
       </div>
-      <div class = "third-block"><br>
-        <img src = "imgs/grogo/connection.png" alt = "calendar icon"/><br>
-        <h4>One platform for all stores</h4><br>
-        <h5>Incorporate data from different grocery brands instead of a single store.</h5>
+      <br><br>
+      <img class = "project-wide-img" alt= "secondary persona" src = "imgs/grogo/persona2.jpg"/>
+      <div class = "full-section-text align-center">
+        <h6 class = "text-darkgrey">Secondary persona</h6>
       </div>
-      <div class = "third-block"><br>
-        <img src = "imgs/grogo/customer.png" alt = "setting icon"/><br>
-        <h4>User preference recording</h4><br>
-        <h5>Identify suitable choices for individual shopper to reach dietary goals.</h5>
+      <br><br>
+      <img class = "project-wide-img" alt= "secondary persona" src = "imgs/grogo/taskanalysis.png"/>
+      <div class = "full-section-text align-center">
+        <h6 class = "text-darkgrey">Task flow for both personas</h6>
       </div>
-  </div><br><br>
-
-      <h3 class = "project-content-section-name">IDEATE</h3>
+      <br><br>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id="5">
+    <div class = "full-section-text">
+      <h6>DESIGN GOALS</h6>
+      <h2>Create a one-stop solution for in-store grocery shoppers to save them shopping time and money</h2>
+      <br><br>
+      <p>
+      At this point, the user pain points and market opportunity have been clearer. I have reached three design goals that could address in-store shoppers' challenges.
+      </p>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+      <div class = "flex-col-4 align-center">
+        <img class = "" src="imgs/grogo/piggy-bank.png" alt = "piggybank"/>
+        <h5>Saving both time & money</h5>
+        <h6>Help shoppers make quick purchase decisions to spend less on grocery.</h6>
+      </div>
+      <div class = "flex-col-4 align-center">
+        <img src="imgs/grogo/connection.png" alt = "platform"/>
+        <h5>One platform for all stores</h5>
+        <h6>Incorporate data from different grocery brands instead of a single store.</h6>
+      </div>
+      <div class = "flex-col-4 align-center">
+        <img src="imgs/grogo/customer.png" alt = "preference"/>
+        <h5>User preference recording</h5>
+        <h6>Identify suitable choices for individual shopper to reach dietary goals.</h6>
+      </div>
+  </div>
+  <div class = "flex-container aside-target" id="6">
+    <div class = "full-section-text">
+      <h6>IDEATE</h6>
       <h2>How can I empower in-store shoppers with the capability to make informed purchase decisions without spending much time?</h2>
-
-        <br>
-          <h5 class = "grogo-title-tag">Solution brainstorming</h5><br><br>
-          <p>I started to brainstorm as many potential solutions as possible. These include <b>pickup service, hired shopper service, smart shopping cart, digital shelves, and interactive information wall at store</b>. However, none of them completely meets my design goals. <br><br>
-          <h5 class = "grogo-title-tag">Why mobile app?</h5><br><br>
-          <p>In the end, I opted for designing a mobile app to serve in-store shoppers. Not only is a mobile app more accessible during a shopping trip, but itself as a third-party service makes it easier to allow for different store data..</p><br><br>
-          <h5 class = "grogo-title-tag">Feature scoping</h5><br><br>
-          <p>I initially brainstormed <b>eight possible features</b> for the mobile app.</p><br><br>
-        </div>
-          <div class ="flex-row"><img alt = "story board" src = "imgs/grogo/storyboard.png">
-      <div class = "project-content-text">
-          <br><br><br>
-          <p>Considering the major goal of the design and time contrainst, I crossed off 'Food Share Platform' and 'Centralize Membership Card' features, and made sure the rest features do help reduce total shopping time.</p><br><br>
-          <div class ="flex-row">
-            <a href="imgs/grogo/solutions.png" data-lightbox="solutions" data-title="Mobile features"><img alt = "mobile features" src="imgs/grogo/solutions.png"></a>
-          </div>
-          <br><br>
-        </div><br><br>
-        <div class = "project-content-text">
-          <h5 class = "grogo-title-tag">Storymaps</h5><br><br>
-          <br>
-          <p>To visualize important tasks, </b>I developed a storymap for the primary and secondary personas, to lay out important tasks the mobile app should support. <br><br></p>
-          <div class = "flex-row">
-            <a href="imgs/grogo/commonstory.png" data-lightbox="storymap" data-title="Story Map"><img src="imgs/grogo/commonstory.png" alt="Story Map"/></a>
-          </div>
-
-
-          <br><br>
-      <h3 class = "project-content-section-name">PROTOTYPE & TEST</h3>
-      <h2>Translating ideas to assessible design</h2>
-        <br><br>
-            <h5 class = "grogo-title-tag">Usage Flow</h5><br><br>
-            <p>With the <b>story maps</b> as guidance, I systemized the features in the form of an information architecture chart.</p>
-            <div class = "flex-row">
-              <a href="imgs/grogo/flow.png" target="_blank"><img src="imgs/grogo/flow.png"  alt="application flow chart"/></a>
-            </div>
-
-          <h5 class = "grogo-title-tag">Paper Prototype</h5><br><br>
-          <p>Before delving into digital prototype, a <b>paper-based prototype model</b> was first created to allow quick user testing and conceptualization.</p><br><br>
-          <div class ="flex-row black-bg"><img src = "imgs/grogo/paper.gif" class="img-height-450px" alt = "paper prototype"/></div>
-          <br><br><br>
-          <h5 class = "grogo-title-tag">QOC Analysis</h5><br><br>
-          <p>To make design decisions, I adopted the <b>QOC analysis</b> method to reach the most optimal design option by taking important critera into consideration when evaluating options that address a design question.</p><br>
-          <div class ="flex-row white-bg">
-            <a href="imgs/grogo/qoc.png" target="_blank" data-title="QOC Diagram"><img src="imgs/grogo/qoc.png" alt="QOC Diagram"/></a>
-          </div>
-          <br><br><br>
-          <h5 class = "grogo-title-tag">User Testing</h5><br><br>
-          <p>Time to put my first design to test and collect feedback! The paper prototype has undergone 6 user testing sessions.</p>
-          <div class ="flex-row"><img class="img-height-450px" src = "imgs/grogo/testing.png" alt = "user testing"/></div>
-          <br>
-          <p>Based on user feedback, I have made several improvements:
-          <ul>
-          <li><b>Changed the name</b> of some features to avoid confision, e.g., 'item group' --> 'favorites'.</li>
-          <li>Changed design for <b>scalability consideration</b>, e.g., use carousel presentation for frequently visited stores.</li>
-          <li><b>Changed visual affordances</b> such as icon size to improve usability.</li>
-          </ul>
-          </p>
-          <br><br><br>
-
-          <h5 class = "grogo-title-tag">Digital Prototype</h5><br><br>
-          <p>For the digital prototype, I developed a color scheme and style guide for the application's visual elements.</p>
-          <div class ="flex-row white-bg">
-            <a href="imgs/grogo/style_guide.png" data-lightbox="style_guide" data-title="Style Guide"><img src="imgs/grogo/style_guide.png" alt="competitive analysis"/></a>
-          </div>
-          <br><br>
-           <p>The color blue is selected as the parimary hue of the palette, as <b>blue light can activate parts of the brain related to attention and alterness (Lockley et al., 2006; Lehrl et al., 2007)</b>, which may contribute to better efficiency when users perform tasks such as searching for grocery items, planning shopping list and navigation in the store.</p>
-          <br><br><br>
-
-          <h5 class = "grogo-title-tag">Design Changes</h5><br><br>
-          <p>I have iterated multiple times working on the digital prototype, <b>each time followed by a brief user testing on certain task</b> for further feedback and usability check. Some key changes I have made before reaching the final design include:</p>
-          <div class ="flex-row">
-            <a href="imgs/grogo/homeprocess.png" data-lightbox="home process" data-title="Home page dashboard design changes"><img src = "imgs/grogo/homeprocess.png" alt = "homepage iteration process"/></a>
-          </div>
-          <div class="slidetext-multi">
-            <h2>Re-designed the dashboard on the home page</h2><br>
-            <h4>Before: </h4>
-            <p>Plain numeric display for progress, budget and shopping time.</p>
-            <h4>After: </h4>
-            <p>Add progress bar for GO points to motivate users. Display user's own goal at the bottom of current expenses and shopping time, with trend tracking feature to check historic performance.
-            </p>
-          </div>
-
-          <div class ="flex-row">
-            <a href="imgs/grogo/searchprocess.png" data-lightbox="search process" data-title="Search results design changes"><img src = "imgs/grogo/searchprocess.png" alt = "search restuls iteration process"/></a>
-          </div>
-          <div class="slidetext-multi">
-            <h2>Changed the concept of features to match with real world experience</h2><br>
-            <h4>Before: </h4>
-            <p>Same button design for 'add to list' and 'add to group'. Users had problem differentiating both concepts, and they were prone to tap the wrong button.</p>
-            <h4>After: </h4>
-            <p>Change the term 'group' to 'favorites' to avoid misunderstanding. Use a heart-shaped icon to signify it's a long-term, regularly purchsed item.
-            </p>
-          </div>
-          <div class ="flex-row">
-            <a href="imgs/grogo/mapprocess.png" data-lightbox="map" data-title="In-store map design changes"><img src = "imgs/grogo/mapprocess.png" alt = "in-store map iteration process"/></a>
-          </div>
-          <div class="slidetext-multi">
-            <h2>Redesigned the shopping list on in-store map</h2><br>
-            <h4>Before: </h4>
-            <p>Items were presented in a horizontal scroll menu, ordered by aisle number.</p>
-            <h4>After: </h4>
-            <p>Use a minimizable, vertical menu to match the shopping list page design. Allow users to check individual item on the route by tapping the pin icon.
-            </p>
-          </div>
-
-          <br><br>
-          <!--Final-->
-              <br><br>
-              <h3 class = "project-content-section-name" id = "final">FINAL DESIGN</h3>
-              <h2>groGo - A planner, a trainer, and a navigator</h2>
-              <br>
-              <p>The final solution is a mobile application -- groGo, which targets in-store grocery shoppers who wish their shopping trips could be more efficient. From grocery planning to expense tracking, the solution will serve as <b>a planner, a trainer, and a navigator</b> throughout the whole grocery journey.</p>
-              <br>
-
-              <div class="flex-row">
-                <div class="slidetext">
-                  <h2 class = "gunmetal">Favorites</h2><br>
-                  <h4>Pain point: </h4>
-                  <p>Making a well-planned shopping list takes too muchtime.</p>
-                  <br>
-                  <h4>Solution:</h4>
-                  <p>Store and organize your favorite or frequently purchased items to efficiently plan for the next shopping trip.
-                  </p>
-                </div>
-                <div class="slideimage">
-                  <img alt = "adding all fav items to list" src="imgs/grogo/features/favorites1.gif">
-                </div>
-              </div>
-
-              <div class="flex-row">
-                <div class="slidetext">
-                  <h2 class = "gunmetal">In-Store Map</h2><br>
-                  <h4>Pain point:</h4>
-                  <p>Running past the aisle where an item is located</p>
-                  <h4>Solution:</h4>
-                  <p>Generate in-store map and an optimized shopping route from your shopping list.
-                  </p>
-                </div>
-                <div class="slideimage">
-                  <img alt = "adding all fav items to list" src="imgs/grogo/features/list1.gif">
-                </div>
-              </div>
-              <div class="flex-row">
-                <div class="slidetext">
-                  <h2 class = "gunmetal">GO Mode</h2><br>
-                  <h4>Pain point:</h4>
-                  <p>Bad spacial ability results in getting lost in the store.</p>
-                  <h4>Solution:</h4>
-                  <p>Navigate with AR view or traditional map view while you shop in-store.
-                  </p>
-                </div>
-                <div class="slideimage">
-                  <img alt = "ar navigation mode" src="imgs/grogo/features/go1.gif">
-                </div>
-              </div>
-
-              <div class="flex-row">
-                <div class="slidetext">
-                  <h2 class = "gunmetal">Scan it!</h2><br>
-                  <h4>Pain point:</h4>
-                  <p>Reading food labels and comparing similar items are tenious</p>
-                  <h4>Solution: </h4>
-                  <p>No more squinting! Let the app read food labels for you and help you meet your dietary goals.
-                  </p>
-                </div>
-                <div class="slideimage">
-                  <img alt = "scanning food label" src="imgs/grogo/features/scan1.gif">
-                </div>
-              </div>
-
-              <div class="flex-row">
-                <div class="slidetext">
-                  <h2 class ="gunmetal">Gro Point System</h2><br>
-                  <h4>Pain point:</h4>
-                  <p>Lack of motivation to use an app</p>
-                  <h4>Solution:</h4>
-                  <p>Collect exclusive coupons by reaching your monthly shopping goals or by completing shopping challenges.
-                  </p>
-                </div>
-                <div class="slideimage">
-                  <img alt = "challenge notification" src="imgs/grogo/features/challenge1.png">
-                </div>
-              </div>
-
-          <br><br>
-          <h3 class = "project-content-section-name">REFLECTIONS</h3>
-          <h2>If I had more time...</h2>
-          <p><br>Since the project stemmed from my personal painful experience when doing grocery, I would have mistaken my own problem to be everyone else's problem. It is however through user survey and interviews that I gradually delineated possible different users and their journey, as well as their true needs.<br><br>
-          If I had more imte, I would hope to explore users more and explore different possible solutions. I would also love to integrate social sharing feature to create a shopper community, as well as prevent users who try to game the Gro point system. Additionally, I hope to talk to grocery stores to learn more about possible technical and business contraints, as well as possibilities.</p>
-
-          <br><br>
-          <h3 class = "project-content-section-name">REFERENCES</h3>
-          <ul>
-            <li><p>ICSC. (2018). <a href = "https://www.icsc.org/uploads/c68-contacts/Grocery_Shopping_2018_Consumer_Series.pdf" target="_blank">Grocery Shoppers Remain Loyal to Physical Stores.</a></p>
-            </li>
-            <li><p>
-            Lehrl S., Gerstmeyer K., Jacob J. H., Frieling H., Henkel A. W., Meyrer R., et al. (2007). Blue light improves cognitive performance. J. Neural Trans. 114 457–460 10.1007/s00702-006-0621-4</p>
-            </li>
-            <li><p>
-            Lockley S. W., Evans E. E., Scheer F. A., Brainard G. C., Czeisler C. A., Aeschbach D. (2006). Short-wavelength sensitivity for the direct effects of light on alertness, vigilance, and the waking electroencephalogram in humans. Sleep 29 161–168.
-            </p></li>
-            <li><p>The Time Use Institute. (2008). <a href = "http://timeuseinstitute.org/Grocery%20White%20Paper%202008.pdf" target="_blank">Grocery Shopping: Who, Where and When.</a></p>
-            </li>
-          </ul>
-</div>
-
-<br><br>
-<!--Bottom Projects-->
-
-<div class = "bottom-project-row">
-  <!--div class = "bottom-project">
-    <a href="retro.html">
-      <h4>FordLabs RetroQuest</h4>
-    </a>
-  </div>-->
-  <div class = "bottom-project">
-    <a href="retro.html">
-      <p>NEXT PROJECT: FordLabs RetroQuest</p>
-    </a>
-  </div>
-  <!--div class = "bottom-project">
-    <a href="food-bank.html">
-      <p>NEXT PROJECT: NPO Consulting Service</p>
-    </a>
-  </div>-->
-</div>
-
-
-<!-- The Modals for Scenario -->
-<div id="scenarioCon1" class="scenariomodal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="modalclose">&times;</span>
-    <h2>Brianna Brown</h2><br>
-    <h3>Scenario</h3><br>
-    <p>It’s Saturday morning. Brianna wakes up straight at 6 and still feels tired – she had been hanging out with her coworkers all night. She takes a look at her schedule and gets up immediately. ‘Time waits no man,’ she thinks, with strong determination to complete all her chores by lunch.<br><br>While having breakfast, she browses groGo – her grocery shopping helper, and swiftly adds different pre-established item groups to a newly generated list. The App suggests that traffic at her nearby store will be busy at 9:30. Without further due, she quickly changed and leaves her apartment. <br><br>Upon arrival, Brianna activates the GO mode and lets groGo take the lead. Before she starts moving, groGo pops up a challenge ‘Finish shopping in 40 minute, and win a coupon!’ What a piece of cake, Brianna thinks. Within 20 minutes, she already picks up enough food for 12 meals thanks to groGo’s AR map feature. With the help of the ingredient scanner, she also dodges a few high-carb items that are on the list, and opts for lower ones. <br><br> Coming home, Brianna feels happy that she has a good start of the day. She completes her shopping 20 minutes sooner than before, and earns an exciting coupon just because of that. ‘Time is money’, she firmly believes it.</p>
-
-  </div>
-
-</div>
-
-<div id="scenarioCon2" class="scenariomodal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="modalclose">&times;</span>
-    <h2>Kay Lam</h2><br>
-    <h3>Scenario</h3><br>
-    <p>It’s Friday afternoon. Kay has no class and is excited about her yet another weekly grocery shopping trip. A busy student, Kay loves to enjoy her grocery shopping experience. For her, being able to learn all different kinds of food a US supermarket can offer is an amazing feeling – she can browse around and shop on and on, as if the shelves are high-end boutiques at Avenue des Champs-Élysées.<br><br>                          As usual, she does not have in mind what to buy, but a rough idea of what types of food she would need for the next week. ‘Surprise me, my store!’ she thinks.<br><br>After picking up some veggies and meat, she arrives at the international shelf. And suddenly, she spots a brand new product – Thai red curry paste. She loves Thai food and has always thought about making it by herself. Allergic to nuts, however, she isn’t sure whether the paste will be safe. <br><br>She opens her groGo app and activates her ingredient scannr. Within a second, the screen shows that the food is safe for her, based on a customized allergic list she has input before. On the app, she also learns that the product has over 4.5/5 rating by other customers. ‘This must be good!’ she thinks, and puts the item in her cart exciting to see how tasty curry she can make.</p>
-
-
-  </div>
-
-</div>
-
-<div id="scenarioCon3" class="scenariomodal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="modalclose">&times;</span>
-    <h2>Lilian Smith</h2><br>
-    <h3>Scenario</h3><br>
-    <p>It’s Wednesday afternoon. Lilian is preparing for a big dinner tonight because her husband is inviting some friends over. While cooking, she realizes that the tomato sauce is out. Usually, she purchases nonperishable food like tomato sauce online – it’s cheaper, and saves time and effort. Now that since she doesn’t want to let people down by changing the entre menu, she decides to bike to a supermarket.<br><br>            Standing in front of the tomato sauce shelf, she starts to feel confused. ‘This is why I prefer shopping online...the products all look too alike!’ Determined to buy the tomato sauce she used to get, she opens groGo, and types in the name of the product. After activating navigation feature, the product is highlighted on the screen. Lilian goes home relaxed and relieved.
-</p>
-</div>
-
-</div>
-<!-- Modal content -->
-<div id="scenarioCon4" class="scenariomodal">
-    <div class="modal-content">
-      <span class="modalclose">&times;</span>
-      <h2>Samuel Jones</h2><br>
-      <h3>Scenario</h3><br>
-      <p>As a busy breadwinner, Sam is excited about the dinner tonight. It’s his birthday, and instead of going out to a fancy restaurant, his wife Grace suggested to make a candle light dinner for him. ‘My girl is always so romantic!’ he smiles as he thinks about it.<br><br>Knowing that his wife uses groGo for grocery planning, he is rest assured that the app will remind the forgetful Grace of all needed ingredients while keeping her away from those containing beef – something he avoids eating. He also knows that the grocery shopping trip wouldn’t take too long, as Grace has been obsessed with the special deals she can get by shopping within certain time as challenged by the app. <br><br>Suddenly, he sees a push notification on the phone. It’s Grace texting him ‘Sam I just win a few more dollar cashback by completing the groGo challenge!’</p>
-
-
-  </div>
-
-</div>
-<!-- Modal content -->
-<div id="scenarioCon5" class="scenariomodal">
-    <div class="modal-content">
-      <span class="modalclose">&times;</span>
-      <h2>Maria Watson</h2><br>
-      <h3>Scenario</h3><br>
-      <p>After another late night study, Maria wakes up on Saturday at noon. She has nothing to eat, and just as she’s about to open her Meijer app for yet another online ordering, she recalls her friends recommending her of the groGo app while persuading her to go shopping with them. ‘Okay..let me take a look and see what this app is all about. Maybe it’s not a bad idea to go shopping.’ <br><br>Upon opening the app, she is amazed at the AR identifier feature, the ingredient scanner functionality, as well as the challenge mode. ‘This could probably make shipping in store a bit easier.’ she thought.<br><br>However, as she checks the transportation time and in-store traffic at the closest supermarket, she gives up. Without a car, she is not going to risk waiting for the bus, in the snow, and possibly coming home in an hour. She resorts to her online grocery shopping app in no time. </p>
+      <br><br>
+      <h5>Solution brainstorming</h5>
+      <p>
+        I started to brainstorm as many potential solutions as possible. These include pickup service, hired shopper service, smart shopping cart, digital shelves, and interactive information wall at store. However, none of them completely meets my design goals.
+      </p>
+      <br><br>
+      <h5>Why mobile app?</h5>
+      <p>
+        In the end, I opted for designing a mobile app to serve in-store shoppers. Not only is a mobile app more accessible during a shopping trip, but itself as a third-party service makes it easier to allow for different store data.
+      </p>
+      <br><br>
+      <h5>Feature scoping</h5>
+      <p>
+        I initially brainstormed eight possible features for the mobile app. Considering the major goal of the design and time contrainst, I crossed off 'Food Share Platform' and 'Centralize Membership Card' features, and made sure the rest features do help reduce total shopping time.
+      </p>
     </div>
-</div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "project-wide-img" alt= "storyboard for different ideas" src = "imgs/grogo/storyboard.png"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">Eight initially brainsotrmed ideas</h6>
+    </div>
+    <img class = "project-wide-img" alt= "final solutions" src = "imgs/grogo/solutions.png"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">Final features that solves the identified problems</h6>
+    </div>
+    <br><br>
+  </div>
+  <div class = "flex-container-short">
+    <div class = "full-section-text">
+      <h5>Storymaps</h5>
+      <p>
+        To visualize important tasks, I developed a storymap for the primary and secondary personas, to lay out important tasks the mobile app should support.
+      </p>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+      <a href = "imgs/grogo/commonstory.png" target = "_blank"><img class = "project-wide-img" alt= "storymaps" src = "imgs/grogo/commonstory.png"/></a>
+  </div>
+  <div class = "flex-container aside-target" id="7">
+    <div class = "full-section-text">
+      <h6>PROTOTYPE & TEST</h6>
+      <h2>Translating ideas to assessible design</h2>
+      <br><br>
+      <h5>Information architecture</h5>
+      <p>
+        I systemized the features in the form of an information architecture chart.
+      </p>
+    </div>
+    <div class = "flex-container-short">
+        <img class = "project-wide-img" alt= "information architecture" src = "imgs/grogo/flow.png"/>
+    </div>
+    <br><br>
+    <!--div class = "full-section-text">
+      <h5>Paper prototype</h5>
+      <p>
+        Before delving into digital prototype, a paper-based prototype model was first created to allow quick user testing and conceptualization.
+      </p>
+      <div class = "flex-container-short">
+          <img class = "project-wide-img" alt= "paper prototype" src = "imgs/grogo/paper.gif"/>
+      </div>
+    </div-->
+    <div class = "full-section-text">
+      <h5>Design decisions, tests, and iterations</h5>
 
-
-
+      <p>
+        I tested different versions consistently, both with paper prototypes and digital prototypes.
+        <br><br>
+      </p>
+      <div class = "flex-container-short">
+          <img class = "project-wide-img" alt= "user testing" src = "imgs/grogo/testing.png"/>
+      </div>
+      <br><br>
+      <p>
+        Throughout the iterations, I have made some key changes before reaching the final design.
+      </p>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "project-wide-img" alt= "key change 1" src = "imgs/grogo/homeprocess.png"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">Add progress bar for GO points to motivate users. Display user's own goal at the bottom of current expenses and shopping time, with trend tracking feature to check historic performance.</h6>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "project-wide-img" alt= "key change 2" src = "imgs/grogo/searchprocess.png"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">Change the term 'group' to 'favorites' to avoid misunderstanding. Use a heart-shaped icon to signify it's a long-term, regularly purchsed item.</h6>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "project-wide-img" alt= "key change 3" src = "imgs/grogo/mapprocess.png"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey"> Use a minimizable, vertical menu to match the shopping list page design. Allow users to check individual item on the route by tapping the pin icon.</h6>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <div class = "full-section-text">
+      <p>
+        I also used QOC analysis method to reach the most optimal design option by taking important critera into consideration when evaluating options that address a design question.
+      </p>
+      <div class = "flex-container-short">
+          <img class = "project-wide-img" alt= "QOC analysis" src = "imgs/grogo/qoc.png"/>
+      </div>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id="8">
+    <div class = "full-section-text">
+      <h6>FINAL DESIGN</h6>
+      <h2>groGo - A planner, a trainer, and a navigator</h2>
+      <br><br>
+      <p>
+        From grocery planning to expense tracking, groGo is an application that serves as a planner, a trainer, and a navigator throughout user's whole grocery journey.
+      </p>
+      <br><br>
+      <h5>Favorites</h5>
+      <p>
+        Store and organize your favorite or frequently purchased items to efficiently plan for the next shopping trip.</p>
+      <br><br>
+      <img class = "project-wide-img middle" alt= "favorites" src = "imgs/grogo/favorites1.gif"/>
+      <br><br>
+      <h5>In-Store Map</h5>
+      <p>Generate optimized route from your shopping list to see estimated shopping time.</p>
+      <br><br>
+      <img class = "project-wide-img middle" alt= "in-store map" src = "imgs/grogo/list1.gif"/>
+      <br><br>
+      <h5>GO Mode</h5>
+      <p>Follow the navigation in GO Mode to quickly find items on your list.</p>
+      <br><br>
+      <img class = "project-wide-img middle" alt= "go mode" src = "imgs/grogo/go1.gif"/>
+      <br><br>
+      <h5>Scan it!</h5>
+      <p>No more squinting! Let the app read food labels for you and help you meet your dietary goals.</p>
+      <br><br>
+      <img class = "project-wide-img middle" alt= "scan" src = "imgs/grogo/scan1.gif"/>
+      <h5>Gro Points</h5>
+      <p>Collect exclusive coupons by reaching your monthly shopping goals or by completing shopping challenges.</p>
+      <br><br>
+      <img class = "project-wide-img middle" alt= "scan" src = "imgs/grogo/challenge1.png"/>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id="9">
+    <div class = "full-section-text">
+      <h6>REFLECTIONS</h6>
+      <h2>If I had more time...</h2>
+      <br><br>
+      <p>
+        If I had more time, I would hope to explore users more and explore different possible solutions. I would also love to integrate social sharing feature to create a shopper community, as well as prevent users who try to game the Gro point system. Additionally, I hope to talk to grocery stores to learn more about possible technical and business contraints, as well as possibilities.
+      </p>
 
 </main>
 
-
-
-
-
-
+<!--side nav-->
+<aside id = "side-nav">
+    <nav>
+        <a href="#1" class="active"><h6>THE PROBLEM</h6></a>
+        <a href="#2"><h6>THE PROCESS</h6></a>
+        <a href="#3"><h6>RESEARCH</h6></a>
+        <a href="#4" class="active"><h6>SYNTHESIS</h6></a>
+        <a href="#5"><h6>DESIGN GOALS</h6></a>
+        <a href="#6"><h6>IDEATE</h6></a>
+        <a href="#7" class="active"><h6>PROTOTYPE & TEST</h6></a>
+        <a href="#8"><h6>FINAL SOLUTION</h6></a>
+        <a href="#9"><h6>REFLECTIONS</h6></a>
+    </nav>
+</aside>
 
 <!--footer area-->
-<footer>
-  <p>© Yi-Chun Chen</p>
-  <a href = "https://github.com/phoebe7979" aria-label="link to github" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-  <a href = "https://dribbble.com/yichunux" aria-label="link to dribbble" target="_blank"><i class="fab fa-dribbble-square fa-2x"></i></i></a>
-  <a href = "https://www.linkedin.com/in/yi-chun-phoebe-chen" aria-label="link to linkedin" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-  <a href = "https://www.facebook.com/chenyichun7979" aria-label="link to facebook" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+<footer class = "flex-container-short align-center bg-lightpurple text-white">
+  <p class = "middle">designed and coded by Yi-Chun Chen @ 2019</p>
 </footer>
 
-
-
-
-
 <script src="scripts/main.js"></script>
-<script src="scripts/modal.js"></script>
 <script src="lightbox/dist/js/lightbox.min.js"></script>
 </body>
+
 </html>

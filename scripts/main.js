@@ -1,15 +1,16 @@
+
+
+
+
 /*Top navigation toggle menu*/
 function navIconClick() {
-    var x = document.getElementById("nav-tabs");
+    var x = document.getElementById("nav-bar");
     if (x.className === "topnav") {
         x.className += " topnav-expand";
     } else {
         x.className = "topnav";
     }
 }
-
-
-
 
 
 
@@ -32,255 +33,51 @@ $(document).ready(function(){
       }).focus(); // focus on the content container
   });
 
+  /*side-nav*/
 
-
-/*project button switches*/
-  $("#ux-btn").css({'color':'rgb(255,255,255)', 'background': '#df4527'
-  });
-
-  $("#ux-btn").click(function(){
-    $(this).css({'color':'rgb(255,255,255)', 'background': '#df4527'
+    $('#side-nav').hide(); // inidially hide the side nav
+    var topOfMainContent = $('#1').offset().top;
+    $(window).scroll(function(){
+      if($(window).scrollTop() > topOfMainContent){
+        $('#side-nav').show();
+      } else {
+        $('#side-nav').hide();
+      }
     });
-    $("#marketing-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
+
+    $('#side-nav nav a').on('click', function(event) {
+        $(this).parent().find('a').removeClass('active');
+        $(this).addClass('active');
     });
-    $("#psycholinguistics-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
+
+    $(window).on('scroll', function() {
+        $('.aside-target').each(function() {
+            if($(window).scrollTop() >= $(this).offset().top - 80) {
+                var id = $(this).attr('id');
+                $('#side-nav nav a').removeClass('active');
+                $('#side-nav nav a[href = "#'+ id +'"]').addClass('active');
+            }
+        });
     });
-    $('#ux-row').show(1000);
-    $('#marketing-row').hide(1000);
-    $('#psycholinguistics-row').hide(1000);
-  });
-
-  $("#marketing-btn").click(function(){
-    $(this).css({'color':'rgb(255,255,255)', 'background': '#df4527'
-    });
-    $("#ux-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
-    });
-    $("#psycholinguistics-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
-    });
-    $('#marketing-row').show(1000);
-    $('#ux-row').hide(1000);
-    $('#psycholinguistics-row').hide(1000);
-  });
-
-  $("#psycholinguistics-btn").click(function(){
-    $(this).css({'color':'rgb(255,255,255)', 'background': '#df4527'
-    });
-    $("#ux-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
-    });
-    $("#marketing-btn").css({'color':'#df4527', 'background': 'rgb(255,255,255)'
-    });
-    $('#psycholinguistics-row').show(1000);
-    $('#ux-row').hide(1000);
-    $('#marketing-row').hide(1000);
-  });
-
-/*UX Research step switches*/
-$("#ux-research-btn-1").css({'color':'white', 'background': 'rgb(110,110,110)'
-});
-
-$("#ux-research-btn-1").click(function(){
-  $(this).css({'color':'white', 'background': '#df4527'
-  });
-  $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'#df4527', 'background': 'white'
-      });
-  });
-
-  $('#ux-research-row-1').show(1000);
-  $('#ux-research-row-2, #ux-research-row-3, #ux-research-row-4').each(function(){
-    $(this).hide(1000);
-      });
-});
-
-$("#ux-research-btn-2").click(function(){
-  $(this).css({'color':'white', 'background': '#df4527'
-  });
-  $("#ux-research-btn-1, #ux-research-btn-3, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'#df4527', 'background': 'white'
-      });
-  });
-
-  $('#ux-research-row-2').show(1000);
-  $('#ux-research-row-1, #ux-research-row-3, #ux-research-row-4').each(function(){
-    $(this).hide(1000);
-      });
-});
-
-$("#ux-research-btn-3").click(function(){
-  $(this).css({'color':'white', 'background': '#df4527'
-  });
-  $("#ux-research-btn-1, #ux-research-btn-2, #ux-research-btn-4").each(function(){
-    $(this).css({'color':'#df4527', 'background': 'white'
-      });
-  });
-
-  $('#ux-research-row-3').show(1000);
-  $('#ux-research-row-1, #ux-research-row-2, #ux-research-row-4').each(function(){
-    $(this).hide(1000);
-      });
-});
-
-$("#ux-research-btn-4").click(function(){
-  $(this).css({'color':'white', 'background': '#df4527'
-  });
-  $("#ux-research-btn-2, #ux-research-btn-3, #ux-research-btn-1").each(function(){
-    $(this).css({'color':'#df4527', 'background': 'white'
-      });
-  });
-
-  $('#ux-research-row-4').show(1000);
-  $('#ux-research-row-2, #ux-research-row-3, #ux-research-row-1').each(function(){
-    $(this).hide(1000);
-      });
-});
-
-
-/*Design process step switches*/
-$("#design-process-btn-1").css({'color':'white', 'background': 'rgb(110,110,110)'
-});
-
-$("#design-process-btn-1").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
-  });
-  $("#design-process-btn-2, #design-process-btn-3, #design-process-btn-4").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
-      });
-  });
-
-  $('#design-process-row-1').show(1000);
-  $('#design-process-row-2, #design-process-row-3, #design-process-row-4').each(function(){
-    $(this).hide(1000);
-      });
-});
-
-$("#design-process-btn-2").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
-  });
-  $("#design-process-btn-1, #design-process-btn-3, #design-process-btn-4").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
-      });
-  });
-
-  $('#design-process-row-2').show(1000);
-  $('#design-process-row-1, #design-process-row-3, #design-process-row-4').each(function(){
-    $(this).hide(1000);
-      });
-});
-
-$("#design-process-btn-3").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
-  });
-  $("#design-process-btn-1, #design-process-btn-2, #design-process-btn-4").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
-      });
-  });
-
-  $('#design-process-row-3').show(1000);
-  $('#design-process-row-1, #design-process-row-2, #design-process-row-4').each(function(){
-    $(this).hide(1000);
-      });
-});
-
-$("#design-process-btn-4").click(function(){
-  $(this).css({'color':'white', 'background': 'rgb(110,110,110)'
-  });
-  $("#design-process-btn-2, #design-process-btn-3, #design-process-btn-1").each(function(){
-    $(this).css({'color':'rgb(110,110,110)', 'background': 'white'
-      });
-  });
-
-  $('#design-process-row-4').show(1000);
-  $('#design-process-row-2, #design-process-row-3, #design-process-row-1').each(function(){
-    $(this).hide(1000);
-      });
-});
-
-
-
-
 
 
 });
 
+// When the user scrolls the page, execute myFunction//
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {scrollbarFunction()};
 
-/*Slideshow in project page*/
-var slideIndex = 1;
-showSlides(slideIndex);
+function scrollbarFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("bar").style.width = scrolled + "%";
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav-whole").style.top = "5px";
+  } else {
+    document.getElementById("nav-whole").style.top = "-77px";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-
-
-/*Slideshow for persona*/
-//var slideIndexPersona = 1;
-//showSlidesPersona(slideIndexPersona);
-
-// Next/previous controls
-//function plusSlidesPersona(n) {
-//  showSlidesPersona(slideIndexPersona += n);
-//}
-
-// Thumbnail image controls
-//function currentSlidePersona(n) {
-//  showSlidesPersona(slideIndexPersona = n);
-//}
-
-//function showSlidesPersona(n) {
-//  var i;
-//  var slides = document.getElementsByClassName("mySlidesPersona");
-//  var dots = document.getElementsByClassName("dotPersona");
-//  if (n > slides.length) {slideIndexPersona = 1}
-//  if (n < 1) {slideIndexPersona = slides.length}
-//  for (i = 0; i < slides.length; i++) {
-//      slides[i].style.display = "none";
-//  }
-//  for (i = 0; i < dots.length; i++) {
-//      dots[i].className = dots[i].className.replace(" active", "");
-//  }
-//  slides[slideIndexPersona-1].style.display = "block";
-//  dots[slideIndexPersona-1].className += " active";
-//}
-
-
-
-
-
-/*Accoridan in project page*/
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
+  prevScrollpos = currentScrollPos;
 }

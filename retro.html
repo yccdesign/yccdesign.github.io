@@ -6,325 +6,309 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--favicon-->
   <link rel="icon" type="image/png" href="imgs/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="imgs/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="imgs/favicon-32x32-1.png" sizes="32x32" />
   <!--css -->
+
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type = "text/css" href="lightbox/dist/css/lightbox.min.css">
-  <title>Yi-Chun Chen | Projects</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <title>Yi-Chun Chen</title>
+  <link rel="stylesheet" type = "text/css" href="lightbox/dist/css/lightbox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-
 <body>
 <a href="#content" class="skip">Skip to content</a>
-<!--header includes logo and navigation bar, the default tab is projects-->
+
+
+<div class = "progress">
+  <div class = "progress-bar" id="bar"></div>
+</div>
 <header>
-  <nav class="topnav" id="nav-tabs">
-      <a class="logo" href="index.html"><img src="imgs/logo-170x90.svg" alt="logo image" title="yi-chun chen"></a>
-      <a href = "javascript:void(0);" class = "nav-icon" onclick="navIconClick()" aria-label="navigation menu"><i class="fas fa-bars" ></i></a>
-      <ul>
-      <li class="current-nav-tab"><a href="projects.html">Projects</a></li>
-      <li class="other-nav-tab"><a href="graphics.html">Graphics</a></li>
-      <li class="other-nav-tab"><a href="more.html">...and More</a></li>
-      <li class="other-nav-tab"><a href="about.html">About</a></li>
-      </ul>
+  <nav class="topnav" id="nav-bar">
+    <a href="index.html"><img class="logo" src="imgs/logo16.svg" alt="logo image" title="yi-chun chen"></a>
+    <a href = "javascript:void(0);" class = "nav-icon" onclick="navIconClick()" aria-label="menu"><i class="material-icons">&#xe5d2;</i></a>
+    <ul id = "nav-items" class = "nav-tabs">
+        <li class="other-nav-tab tab-item"><a href="index.html"><h6>Work</h6></a></li>
+        <li class="other-nav-tab tab-item"><a href="about.html"><h6>About</h6></a></li>
+    </ul>
   </nav>
+
 </header>
 
 <!-- main content -->
 <main id = 'content'>
 
-<!--<p class = "project-nav-back"><a href = "index.html" >Project</a>>  <a href = "index.html#ux">UX</a><br></p>
--->
-<div class="top-btn"><a href="#nav-tabs"><i class="fas fa-angle-up"></i></a></div>
-<div class = "project-top">
-  <div class = "project-topic">
-    <h1 class = "project-name">FordLabs <br>RetroQuest</h1><br>
-    <div class = "project-description">
-      <p>Needs assessment and usability evaluation for the productivity tool.</p>
-    <br><br>
-      <div class = "project-description">
-        <h4 class = "project-description-topic">Type</h4>
-        <h3 class = "project-description-content">Course consulting project</h3>
-        <h4 class = "project-description-topic">Client</h4>
-        <h3 class = "project-description-content">FordLabs</h3>
-        <h4 class = "project-description-topic">Role</h4>
-        <h3 class = "project-description-content">UX researcher</h3>
-        <h4 class = "project-description-topic">Team</h4>
-        <h3 class = "project-description-content">4 HCI students</h3>
-        <h4 class = "project-description-topic">Duration</h4>
-        <h3 class = "project-description-content">Jan 2019 - Apr 2019</h3>
-        <br><br>
-      </div>
+  <div class = "flex-container">
+    <div class = "flex-box section-description-left">
+      <p class="full-flex-title"> <span class = "title">FordLabs RetroQuest</span><br>
+      For a course project, I worked in a team of four UX-focused students to provide usability consulting service for RetroQuest, a retrospective meeting-facilitating web application used at FordLabs.  <br>
       <br>
-      <a href = "https://drive.google.com/file/d/1UOPMZ_fyKuILlKowAlnCwYReuCgUkYLM/preview" target = "_blank"><button class = "project-demo">Watch project video</button></a>
-      <!--a href = "https://docs.google.com/presentation/d/1TxyPwMhUimHKNIwEWqawF497oLPN_RqRG-032Q0oLFo/present?usp=sharing" target = "_blank"><button class = "project-demo">Presentation deck</button></a-->
+      <button class = "btn-primary"><a href = "https://drive.google.com/file/d/1UOPMZ_fyKuILlKowAlnCwYReuCgUkYLM/preview"><i class="fas fa-film"></i>  &nbsp;Watch project video</a></button>
+      </p>
 
+    </div>
+    <div class = "flex-box">
+      <img class = "project-banner" alt = "project banner" src = "imgs/retro/retro-banner.png"/>
     </div>
   </div>
-  <div class = "project-topimg">
-    <img src="imgs/retro/retro-banner.jpg" alt="project image">
+  <div class = "flex-container bg-lightbluegreen">
+    <div class = "flex-col-3">
+      <h5>Duration</h5>
+      <h6>One semester</h6>
+      <h6>Sep - Dec 2018</h6>
+    </div>
+    <div class = "flex-col-3">
+      <h5>Type & Role</h5>
+      <h6>Course project</h6>
+      <h6>Design consultant</h6>
+    </div>
+    <div class = "flex-col-3">
+      <h5>Teammates</h5>
+      <h6>Alex Fidel</h6>
+      <h6>Jenny Sun</h6>
+      <h6>Valorie Zhang</h6>
+    </div>
+    <div class = "flex-col-3">
+      <h5>Methodologies</h5>
+      <h6>Affinity diagramming</h6>
+      <h6>Competitive analysis</h6>
+      <h6>Contextual inquiry</h6>
+      <h6>Solution brainstorming and prioritization</h6>
+      <h6>Presentation</h6>
+    </div>
+    </div>
   </div>
-</div>
-
-
-<div class = "project-content">
-  <div class = "project-content-nav">
+  <div class = "flex-container aside-target" id="1">
+    <div class = "full-section-text">
+      <h6>THE CHALLENGE</h6>
+      <h2>Enhancing post-mortem meeting efficiency for 170 development teams at Ford</h2>
+      <p>
+      <br>
+       RetroQuest is a web application used to run retrospective meetings at Ford. On a weekly basis, 90-170 internal development teams run their retrospecitve meetings on RetroQuest. With only one designer in charge of the user experience of the application, the development team is seeking UX consulting service from our team to boost retro efficiency for internal employees.
+       <br><br>
+       Following the course syllabus at 'Needs Assessment and Usability Evalution', our team evaluated the application using diverse research methodologies.
+       <br><br>
+       </p>
+    </div>
   </div>
-  <div class = "project-content-text">
-    <h3 class = "project-content-section-name">THE PROJECT</h3>
-    <h2>Enhancing meeting efficiency for 170 development teams at Ford by closely examining the productivity tool</h2>
-    <br>
-    <p>
-      For a course project, I worked in a team of four UX-focused students to provide usability consulting service for RetroQuest -- an open source web application developed by FordLabs for running weekly retrospecitves. <br><br>
-      The web application’s current target users are internal teams at Ford. On a weekly basis, <b>90-170 teams</b> at Ford run their retrospecitve meetings on RetroQuest. With only one designer in charge of the UX of the application, the development team is seeking consulting from our team to help them thoroughly evaluate the application's usability to <b>boost retro efficiency for internal employees.</b>
-      <br><br></p>
-    <h3 class = "project-content-section-name">THE METHODOGY</h3>
-    <h2>Examining the web application via seven different approaches</h2><br>
-    <p>We assessed RetroQuest comprehensively using different methods according to different research questions, gathering both quantitative and qualitative data to help us generate key recommendations for our clients.</p> <br><br>
-    <div class ="flex-row">
-      <img alt = "process" src = "imgs/retro/process.png"></a>
+  <div class = "flex-container aside-target" id="2">
+    <div class = "full-section-text">
+      <h6>THE PROCESS</h6>
+      <h2>Examining the web application via different approaches</h2>
+      <p>
+      <br>
+       <p>According to different research questions, each of us were assigned the project manager of at least one study. Throughout the semester, we gathered both quantitative abd qualitative data to help us generate key recommendations for our clients.
+       <br><br>
+       <img class = "project-wide-img" alt= "process" src = "imgs/retro/process.png"/>
+       </p>
+       <h5>1. Interaction Map</h5>
+       <p>First, to better understand the application, we started by visualizting all possible interactions on the interface to learn how users can engage with the system in different ways.
+       <br><br>
+       <a href = "imgs/retro/interactionmap.pdf" target = "_blank"><img class = "project-wide-img" alt= "process" src = "imgs/retro/interactionmapcopy.png"/></a>
+       </p>
+       <div class = "full-section-text align-center">
+         <h6 class = "text-darkgrey">Interaction map of RetroQuest.</h6>
+       </div>
+      <br><br>
     </div>
-    <br><br>
-    <h3 class = "project-content-section-name">INTERACTION MAP</h3>
-    <h2>What are all possible interactions on RetroQuest?</h2><br>
-    <p>To better understand the application, we started by visualizing all possible interactions on the interface to learn how users can engage with the system in different ways.</p>
-    <br><br>
-    <div class ="flex-row">
-      <a href = "imgs/retro/interactionmap.pdf" target = "_blank"><img alt = "interaction map" src = "imgs/retro/interactionmap.PNG"></a>
-    </div><br><br>
-    <p>While the application worked smoothly for the most part, we did find two apparent issues.</p>
-    <div class="slideimage-multi">
-      <div class = "slideimage-multi-img">
-        <img alt = "edit" src="imgs/retro/editerror.png">
-        <h6>Clicking 'cancel' in the edit mode does not cancel the edit work.</h6>
-      </div>
-      <div class = "slideimage-multi-img">
-        <img alt = "download csv" src="imgs/retro/download.png"></a>
-        <h6>Clicking 'Download CSV' button opens a blank page, only right-click works.</h6>
-      </div>
-    </div>
-<br><br>
-    <h3 class = "project-content-section-name">COMPARATIVE ANALYSIS</h3>
-    <h2>How do the competitors approach similar features?</h2><br><br>
-    <p>Next, we conducted a thorough analysis with 6 direct (FunRetro, GoReflect, ScatterSpoke) and partial (Trello, Basecamp, Airtable) competitors to see what they did well that can be receommended to RetroQuest.</br>
-      <div class ="flex-row">
-        <a href = "imgs/retro/comparative_lg.png" target = "_blank"><img alt = "comparative analysis" src = "imgs/retro/comparative.png"></a>
-      </div>
-    <p>We identified 6 great features that the competitors have and recommended them to RetroQuest:</p>
-    <br><br>
-    <div class="slideimage-multi">
-      <div class = "slideimage-multi-img">
-        <img alt = "accountsys" src="imgs/retro/accountcom.png">
-        <h6>Instead of logging to board, use an account system for all members to centralize board access.</h6>
-      </div>
-      <div class = "slideimage-multi-img">
-        <img alt = "votelimit" src="imgs/retro/votecount.png"></a>
-        <h6>Scatterspoke uses vote count limit per board member to help better identify most urgent issues.</h6>
-      </div>
-    </div>
-    <div class="slideimage-multi">
-      <div class = "slideimage-multi-img">
-        <img alt = "edit" src="imgs/retro/groupcard.png">
-        <h6>Allow for some grouping for thematically similar cards by moving cards, adding tags, merging cards, or append to another card.</h6>
-      </div>
-      <div class = "slideimage-multi-img">
-        <img alt = "cardname" src="imgs/retro/cardname.png"></a>
-        <h6>Showing card creator's identity avoids the 'silent moment' when the creator forgets about adding a card in discussion.</h6>
-      </div>
-    </div>
-    <div class="slideimage-multi">
-      <div class = "slideimage-multi-img">
-        <img alt = "edit" src="imgs/retro/analytics.png">
-        <h6>Use visualized analytics to reflect team sentiments, top contributors, progress status, and other trends.</h6>
-      </div>
-      <div class = "slideimage-multi-img">
-        <img alt = "cardname" src="imgs/retro/csv.png"></a>
-        <h6>Move the 'Download CSV' feature to a less prominent location to minimize elements on the board.</h6>
-      </div>
-    </div>
-    <h3 class = "project-content-section-name">USER INTERVIEWS</h3>
-    <h2>Who are the users? How do they use RetroQuest? What are their motivations and frustrations?</h2><br><br>
-    <p>In order to understand how users feel using RetroQuest, we conducted 5 semi-structured interviews with current users of different roles at Ford. The interview protocol can be found <a href = "imgs/retro/protocol.pdf" target="_blank ">here </a>. <br><br></p>
-    <p>From these interviews, we learned how users normally use RetroQuest in a retro. We also learned about the edge cases of the application.</p>
-    <p>We were excited to find that some user frustrations aligned with our previous findings from the interaction map and comparative analysis studies. The interviewees expressed their frustrations as follows, with starred ones being similar findings we have had from the past research:</p>
-    <div class ="flex-row">
-      <a href="imgs/retro/quotes.png" data-lightbox="user quotes" data-title="User quotes"><img class="img-height-450px" src="imgs/retro/quotes.png" alt="user quotes"/></a>
-    </div>
-    <p>From the qualitative data collected from the interviews, we developed personas and scenarios to illustrate the major user archetypes, their motivations, frustrations, and interaction flows in the best case scenario.</b></p>
-    <br><br>
-    <div class ="flex-row">
-      <a href = "imgs/retro/persona.png" target = "_blank"><img alt = "persona" src = "imgs/retro/persona.png"></a>
-    </div><br>
-    <h3 class = "project-content-section-name">SURVEY</h3>
-    <h2>What are users’ attitude about RetroQuest and proposed features?</h2><br><br>
-    <p>With findings from the previous research, we have gathered several theories and assumptions that could help improve the application. To see whether these considerations are really needed by the majority of the users and their attitudes about them, we distributed a survey to employees at Ford. <br><br>
-    Within 5 days, we received 81 responses. Using Tableau and excel, we visualized the data to easily interpret the results.
-    </b></p><br>
-    <div class ="flex-row">
-      <img alt = "chart" src = "imgs/retro/charts.png"></a>
-    </div><br><br><br>
-    <p>From the results, we have a better learning about the users:</p>
-    <ul>
-      <li>Respondents that currently use RetroQuest are active on 1.41 team boards on average</li>
-      <li>Most respondents do not like to show their names on their cards, claiming that they do not have difficulty remembering creating a card.</li>
-      <li>Users prefer RetroQuest to be simple, without having too many features.</li>
-    </ul>
-    <br><br>
-    <p>We have also identified 4 most requested features by RetroQuest users:</p>
-    <ul>
-      <li>Be able to set a timer for each card to be aware of time</li>
-      <li>Sort all columns by clicking one button</li>
-      <li>Drag and drop cards across different columns and positions</li>
-      <li>Track team performance and sentiment with visual analytics</li>
-    </ul>
-    <h3 class = "project-content-section-name">HEURISTICS EVALUATION</h3>
-    <h2>How many, if any, usability problems does RetroQuest have?</h2><br><br>
-    <p>We constructed a set of 13 heuristics from Nielsen(1995), Farooq et al. (2008), and Hermann (2009) to examine RetroQuest from general user interface design point of view, and it's effectiveness in computer-supported cooperative work. The heuristics are:</p>
-    <br><br>
-      <ul>
-        <li>Visibility of system status</li>
-        <li>Match between system and the real world</li>
-        <li>Communication around shared work should be able to happen in real time as the work is done</li>
-        <li>User control and freedom</li>
-        <li>Consistency and standards</li>
-        <li>Error prevention</li>
-        <li>Recognition rather than recall</li>
-        <li>Support flexibility in the granularity of planning</li>
-        <li>Aesthetic and minimalist design</li>
-        <li>Help users recognize, diagnose, and recover from errors</li>
-        <li>Help and documentation</li>
-        <li>Support the big picture and visualization of rich material</li>
-        <li>Support merges and document them</li>
-      </ul>
-    <br><br>
-    <p>In the end, we identified 18 violations, with 5 of them rated as most severe. <br><br></p>
-
-    <div class ="flex-row">
-      <img alt = "heuristics results" src = "imgs/retro/heuristics.png"></a>
-    </div>
-    <p>Aside from the recurring issues already idnetified in the previous research, we also found that a vote cannot be retracted after the user casts it. This prevents users from recovering from an accidental vote, futher resulting in inaccurate reflection of prioritzation.</p>
-    <div class ="flex-row">
-      <img alt = "vote violation" src = "imgs/retro/unvote.png"></a><br>
-    </div>
-    <div class ="flex-row">
-      <h6>Lack of unvote feature prevents error recovery.</h6>
-    </div>
-    <br><br>
-    <h3 class = "project-content-section-name">PREFERENCE TEST</h3>
-    <h2>Evaluating the usability of two proposed desgin changes</h2><br><br>
-    <p>So far, we have identified a number of UX issues and come up with design recommendations for them. Without putting these ideas into test, however, we wouldn't know if the proposed changes address users' desires and improve usability. Therefore, we took the chance of a four-day period to conduct a small preference test for two proposed changes:<br><br>
-    </p>
-    <br><br>
-    <div class ="flex-row">
-      <img alt = "change1" src = "imgs/retro/change1.PNG"></a>
-      <h6>(Left) The old design: users cannot take off a vote. (Right) The proposed design: added undo feature for the upvote button. </h6>
-    </div><br><br>
-    <div class ="flex-row">
-      <img alt = "change2" src = "imgs/retro/change2.PNG"></a>
-      <h6>(Left) The old design: no salient way to infer meeting progress. (Right) The proposed design: added undo feature for the upvote button. </h6>
-    </div><br><br>
-    <p>By using a set of modified SUS (System Usability Scale) questions, we gauged users' preference between the two design options.
-    </p><br><br>
-    <p>Different from other studies we have done, the results were rather confusing -- we found no strong preference for one version over another, for both questions! At first, we were stunned and clueless, because our versions were designed exactly based on collected user needs. After referring to the free text entries and reexamining our methodology, we found that users were mostly critiquing the aesthetics of the designs, instead of the features usability of them.<br><br>
-    Although we did not succssfully validate our assumptions, we have learned a lot from this experience. If we had the chance to do the test again, we would:<br><br>
-    </p>
-    <ul>
-      <li>Use lower-fi mockups so participants focus less on the visual elements</li>
-      <li>Distribute the survey to more participants for more precise data</li>
-      <li>Conduct face-to-face interviews as well to ask more follow-up questions for deeper understanding</li>
-    </ul>
-    <br><br>
-
-
-
-    <br><br>
-    <h3 class = "project-content-section-name">USABILITY TESTING</h3>
-    <h2>What parts of RetroQuest mobile view and new archive design work well? What do not work so well?</h2><br><br>
-    <p>At this point, we have only examined issues on the desktop browser view. To understand how RetroQuest performs on the mobile view, as well as users' experience on the new interface in the archive page, we conducted a series of usability test with 5 users.<br><br>
-    </p>
-    <br><br>
-    <p>Each session lasted 30-40 minutes. On their own mobile phones, the participants performed 7 common tasks following a standard retrospective procedure. On the desktop browser, the participants performed one task with two subtasks to check historic board details. The whole testing script and task details can be accessed <a href = "imgs/retro/scripts.pdf" target="_blank">here.</a><br><br>
-    </p><br><br>
-    <div class ="flex-row">
-      <img alt = "process1" src = "imgs/retro/usability.png"></a>
-    </div>
-    <div class ="flex-row">
-      <img alt = "process2" src = "imgs/retro/usabilityprocess.png"></a>
-    </div>
-    <p>We found two usability issues specifically related to the mobile view:</p><br><br>
-    <p>First, lack of feedback for card creation and retro ending process confused mobile users. During the test, all users had to double-check to make sure certain action is performed. We recommend adding a pop-up notification to update system status.</p><br><br>
-    <div class ="flex-row">
-      <img alt = "lack of feedback" src = "imgs/retro/mobile1.PNG"></a>
-    </div>
-    <div class ="flex-row">
-      <h6>(Left) Users had to scroll down to make sure a card is created. (Right) Users had to switch to different tabs from action items to make sure all thoughts are cleared after hitting 'End Retro'.</h6>
-    </div><br><br>
-    <p>Second, mobile configuration must be revisited. Four users have been observed to dwell longer on the tasks due to mobile keyboard or browser configurations.</p><br><br>
-    <div class ="flex-row">
-      <img alt = "mobile configurations" src = "imgs/retro/mobile2.PNG"></a>
-    </div>
-    <h6>(Left) After typing a thought, users tend to click the ‘down arrow’ in the extreme bottom left. They attempt to close the keyboard in doing so, thinking a submission button is hidden behind it. (Right) On iOS, ‘Return’ key on the bottom right submits a thought, but users looked for an ‘Enter’ key instead.</h6>
-    <br><br>
-    <h3 class = "project-content-section-name">FINAL VIDEO</h3>
-    <h2>Our research project in a nutshell</h2><br><br>
-    <p>Finally, the team presented our project findings and recommendations in a video.</p><br><br>
-    <div class ="flex-row">
-      <iframe width="100%" height="100%" src="https://drive.google.com/file/d/1UOPMZ_fyKuILlKowAlnCwYReuCgUkYLM/preview"></iframe>
-    </div>
-    <!--h3 class = "project-content-section-name">REFLECTION</h3>
-    <h2>Be empathetic, collaborative, and flexible</h2><br><br>
-    <p>As one of my favorite UX projects, I have felt myself evolving a lot thoughout the course of the project, towards a better UX researcher.<br><br>
-    Without prior experience working in an agile environment, I had the valuable opportunity to learn and empathize with the users
-
-    enjoyed the most learning about the users, their terminologieshave learn to understand and empathize with users using different methods. Working with three other brilliant members from various backgrounds, I also learned to </p><br><br>
-    <p>As one of my favorite UX projects, I have felt myself evolving a lot thoughout the course of the project.</p><br><br-->
-
-<br><br>
-
-
-<br><br><br>
-    <h3 class = "project-content-section-name">REFERENCES</h3>
-    <ul>
-      <li>Farooq, U., Carroll, J. M., & Canoe, C. H. (2008). Designing for Creativity in Computer-Supported Cooperative Work. International Journal of E-Collaboration (IJeC), 4(4), 51–75. https://doi.org/10.4018/jec.2008100104</li>
-      <li>Herrmann, T. (2009). Design Heuristics for Computer Supported Collaborative Creativity. 2009 42nd Hawaii International Conference on System Sciences, 1–10. https://doi.org/10.1109/HICSS.2009.144</li>
-      <li>Nielsen, J. (1995). 10 usability heuristics for user interface design. Nielsen Norman Group, 1(1).</li>
-    </ul>
-<!--Bottom Projects-->
-<div class = "bottom-project-row">
-  <div class = "bottom-project">
-    <a href="ppp.html">
-      <p>NEXT PROJECT: Urban Data Visualization</p>
-    </a>
   </div>
-</div>
+  <div class = "flex-container">
+    <div class = "full-section-text">
+       <h5>2. Comparative Analysis</h5>
+       <p>Next, I led the team to conduct a thorough analysis with 6 direct (FunRetro, GoReflect, ScatterSpoke) and partial (Trello, Basecamp, Airtable) competitors to see what they did well that can be receommended to RetroQuest.
+       <br><br>
+       After the analysis, we identified six great features from the competitors: adding an account system, implement vote limit, group similar cards, display creator name, include visual analytics.
+       </p>
+      <br><br>
+       <img class = "project-wide-img" src = "imgs/retro/comparative.png" alt = "comparative analysis"/>
+       <div class = "full-section-text align-center">
+         <h6 class = "text-darkgrey">Comparative analysis results.</h6>
+       </div>
+       <br><br>
+    </div>
+  </div>
+  <div class = "flex-container">
+    <div class = "full-section-text">
+       <h5>3. User Interviews</h5>
+       <p>In order to understand how users feel using RetroQuest, we conducted 5 semi-structured interviews with different roles at Ford. The interview protocol can be found <a href="imgs/retro/protocol.pdf" target="_blank">here</a>.
+       <br><br>
+       We were excited to find that some user frustrations aligned with our previous findings from interaction map and comparative analysis.
+       </p>
+       <img class = "project-wide-img" src = "imgs/retro/quotes.png" alt = "quotes from users"/>
+       <div class = "full-section-text align-center">
+         <h6 class = "text-darkgrey">Highlighted quotes from the interviewees.</h6>
+       </div>
+       <br><br>
+       <p>
+       We also developed personas to illustrate the major user using the application, their motivations and frustrations.
+       </p>
+     </div>
+   </div>
+  <div class = "flex-container-short align-center">
+         <a class = "middle" href = "imgs/retro/persona.png" target = "_blank"><img class = "project-wide-img " src = "imgs/retro/persona.png" alt = "personas"/></a>
+         <div class = "full-section-text align-center">
+           <h6 class = "text-darkgrey">A set of personas derived from interview analysis.</h6>
+         </div>
+  </div>
+  <div class = "flex-container">
+    <div class = "full-section-text">
+      <h5>4. Survey</h5>
+       <p>With findings from previous research, we have gathered several theories and assumptions that could help improve the application. To see whether these considerations are really needed by the majority of the users and their attitudes about them, we distributed a survey to employees at Ford.
+      <br><br>
+       Within 5 days, we received 81 responses. I then visualized the survey data using Tableau and excel to help interpret the results.
+       </p>
+    </div>
+    <img class = "middle" src = "imgs/retro/charts.png" alt = "charts generated from survey data"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">I used Tableau to generate 5 of the above charts from survey data.</h6>
+    </div>
+  </div>
 
+  </div>
+  <div class = "flex-container">
+    <div class = "full-section-text">
+      <h5>6. Heuristic evaluation</h5>
+      <p>
+      <br>
+      We constructed a set of 13 heuristics selected from Nielsen(1995), Farooq et al. (2008), and Hermann (2009) for user interface and computer-supported cooperated work to examine RetroQuest. The heuristics are:
+      </p>
 
-
-
+      <ol class = "lists">
+      <li>Visibility of system status.</li>
+      <li>Match between system and the real world.</li>
+      <li>Communication around shared work should be able to happen in real time as the work is done.</li>
+      <li>User control and freedom.</li>
+      <li>Visibility of system status.</li>
+      <li>Consistency and standards.</li>
+      <li>Error prevention.</li>
+      <li>Recognition rather than recall.</li>
+      <li>Support flexibility in the granularity of planning.</li>
+      <li>Aesthetic and minimalist design.</li>
+      <li>Help users recognize, diagnose, and recover from errors.</li>
+      <li>Help and documentation.</li>
+      <li>Support the big picture and visualization of rich material.</li>
+      <li>Support merges and document them.</li>
+      </ol>
+      <br><br>
+      <p>
+      <br>
+      In the end, we identified 18 violations, with 5 of them rated as most severe.
+      </p>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "middle" src = "imgs/retro/heuristics.png" alt = "heuristics"/><br>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">Results of the heuristics evaluation.</h6>
+    </div>
+  </div>
+  <div class = "flex-container">
+    <div class = "full-section-text">
+      <h5>7. Preference Test</h5>
+       <p>So far, we have identified a number of UX issues and come up with design recommendations for them. Without putting these ideas into test, however, we wouldn't know if the proposed changes address users' desires and improve usability. Therefore, we took the chance of a four-day period to conduct a small preference test for two proposed changes:
+       <br><br>
+       </p>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "middle" src = "imgs/retro/change1.png" alt = "proposed design change - taking off a vote"/> <br>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">(Left) The old design: users cannot take off a vote. (Right) The proposed design: added undo feature for the upvote button.</h6>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "middle" src = "imgs/retro/change2.png" alt = "proposed design change - visualize meeting progress"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">(Left) The old design: no salient way to infer meeting progress. (Right) The proposed design: added undo feature for the upvote button.</h6>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <div class = "full-section-text">
+       <p>By use of modified SUS (System Usability Scale) questions, we gauged users' preference between the two design options.
+       <br><br>
+       Different from other studies we have done, the results were rather confusing -- we found no strong preference for one version over another, for both questions! After referring to the free text entries and reexamining our methodology, we found that users were mostly critiquing the aesthetics of the designs, instead of the features usability of them.
+       <br><br>
+       Although we did not succssfully validate our assumptions, we have learned a lot from this experience. If we had the chance to do the test again, we would:
+       <ol class = "lists">
+       <li>Use lower-fi mockups so participants focus less on the visual elements.</li>
+       <li>Distribute the survey to more participants for more precise data.</li>
+       <li>Conduct face-to-face interviews as well to ask more follow-up questions for deeper understanding.</li>
+       </ol>
+       <br><br>
+       </p>
+    </div>
+  </div>
+  <div class = "flex-container">
+    <div class = "full-section-text">
+      <h5>8. Usability Test</h5>
+       <p>At this point, we have only examined issues on the desktop browser view. To understand how RetroQuest performs on the mobile view, as well as users' experience on the new interface in the archive page, we conducted a series of usability test with 5 users.
+      <br><br>
+       Each session lasted 30-40 minutes. On their own mobile phones, the participants performed 7 common tasks following a standard retrospective procedure. On the desktop browser, the participants performed one task with two subtasks to check historic board details. The whole testing script and task details can be accessed <a href="imgs/retro/scripts.pdf" target="_blank">here</a>.
+       </p>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "middle" src = "imgs/retro/usability.png" alt = "usability test process"/>
+    <img class = "width-70 middle" src = "imgs/retro/usabilityprocess.png" alt = "usability test process - continue"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">We followed the aboved process to conduct usablity tests.</h6>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <div class = "full-section-text">
+     <p>
+     We found two usability issues specifically related to the mobile view:
+     </p>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+    <img class = "middle" src = "imgs/retro/mobile1.png" alt = "usability test finding - 1"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">(Left) Users had to scroll down to make sure a card is created. (Right) Users had to switch to different tabs from action items to make sure all thoughts are cleared after hitting 'End Retro'.</h6>
+    </div>
+    <img class = "middle" src = "imgs/retro/mobile2.png" alt = "usability test finding - 2"/>
+    <div class = "full-section-text align-center">
+      <h6 class = "text-darkgrey">(Left) After typing a thought, users tended to click the ‘down arrow’ in the extreme bottom left. They attempted to close the keyboard in doing so, thinking a submission button is hidden behind it. (Right) On iOS, ‘Return’ key on the bottom right submits a thought, but users looked for an ‘Enter’ key instead.</h6>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id="3">
+    <div class = "full-section-text">
+      <h6>FINAL DELIVERABLE</h6>
+      <h2>Our research project in a nutshell</h2>
+      <p>
+      <br>
+       At the end of the project, we created a video summarizing our key research findings and a spreadsheet of actionable items derived from the eight studies that we have conducted. I am excited to see RetroQuest become more usable and evolve to improve meeting efficiecy within the company!
+       <br><br>
+       </p>
+      <iframe width="100%" height="500px" src="https://drive.google.com/file/d/1UOPMZ_fyKuILlKowAlnCwYReuCgUkYLM/preview"></iframe>
+    </div>
+  </div>
 
 
 </main>
 
-
-
-
-
+<!--side nav-->
+<aside id = "side-nav">
+    <nav>
+        <a href="#1" class="active"><h6>THE CHALLENGE</h6></a>
+        <a href="#2"><h6>THE PROCESS</h6></a>
+        <a href="#3"><h6>FINAL DELIVERABLE</h6></a>
+    </nav>
+</aside>
 
 
 <!--footer area-->
-<footer>
-  <p>© Yi-Chun Chen</p>
-  <a href = "https://github.com/phoebe7979" aria-label="link to github" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-  <a href = "https://dribbble.com/yichunux" aria-label="link to dribbble" target="_blank"><i class="fab fa-dribbble-square fa-2x"></i></i></a>
-  <a href = "https://www.linkedin.com/in/yi-chun-phoebe-chen" aria-label="link to linkedin" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-  <a href = "https://www.facebook.com/chenyichun7979" aria-label="link to facebook" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+<footer class = "flex-container-short align-center bg-lightpurple text-white">
+  <p class = "middle">designed and coded by Yi-Chun Chen @ 2019</p>
 </footer>
 
 <script src="scripts/main.js"></script>
 <script src="lightbox/dist/js/lightbox.min.js"></script>
 </body>
+
 </html>
