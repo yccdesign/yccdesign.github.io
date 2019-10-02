@@ -33,35 +33,38 @@ $(document).ready(function(){
       }).focus(); // focus on the content container
   });
 
-  /*side-nav*/
+/*side-nav*/
 
-    $('#side-nav').hide(); // inidially hide the side nav
-    var topOfMainContent = $('#1').offset().top;
-    $(window).scroll(function(){
-      if($(window).scrollTop() > topOfMainContent){
-        $('#side-nav').show();
-      } else {
-        $('#side-nav').hide();
-      }
-    });
+  $('#side-nav').hide(); // inidially hide the side nav
+  var topOfMainContent = $('#1').offset().top;
+  if(window.matchMedia("(min-width: 800px)").matches) {
+  $(window).scroll(function(){
+    if($(window).scrollTop() > topOfMainContent){
+      $('#side-nav').show();
+    } else {
+      $('#side-nav').hide();
+    }
+  });
 
-    $('#side-nav nav a').on('click', function(event) {
-        $(this).parent().find('a').removeClass('active');
-        $(this).addClass('active');
-    });
+  $('#side-nav nav a').on('click', function(event) {
+      $(this).parent().find('a').removeClass('active');
+      $(this).addClass('active');
+  });
 
-    $(window).on('scroll', function() {
-        $('.aside-target').each(function() {
-            if($(window).scrollTop() >= $(this).offset().top - 80) {
-                var id = $(this).attr('id');
-                $('#side-nav nav a').removeClass('active');
-                $('#side-nav nav a[href = "#'+ id +'"]').addClass('active');
-            }
-        });
-    });
+  $(window).on('scroll', function() {
+      $('.aside-target').each(function() {
+          if($(window).scrollTop() >= $(this).offset().top - 80) {
+              var id = $(this).attr('id');
+              $('#side-nav nav a').removeClass('active');
+              $('#side-nav nav a[href = "#'+ id +'"]').addClass('active');
+          }
+      });
+  });
+  };
 
 
 });
+
 
 // When the user scrolls the page, execute myFunction//
 var prevScrollpos = window.pageYOffset;
