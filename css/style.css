@@ -436,7 +436,7 @@ main{
 .project-wide-img{
   display:block;
   height:auto;
-  width: 100%;
+  width: auto;
   max-width: 100%;
 }
 
