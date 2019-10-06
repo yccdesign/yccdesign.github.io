@@ -258,10 +258,12 @@ main{
 
 
 #welcome{
+  width: 100%;
   max-width: 100%;
 }
 .welcomeimg{
   width:100%;
+  max-width: 100%;
   margin: 0;
   text-align: right;
   background-color: none;
@@ -545,9 +547,16 @@ main{
     max-width: 100%;
   }
 
+  #toprow{
+    background-image: url('../imgs/welcome1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 60%;
+  }
+
   #welcome{
-    padding: 0;
-    max-width: 350px;
+    display:none;
   }
 
 
