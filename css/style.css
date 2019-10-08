@@ -257,14 +257,7 @@ main{
 }
 
 
-#toprow{
-  background-image: url('../imgs/welcome1.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-  background-size: auto 100%;
-  background-size: 60%;
-}
+
 
 #welcome{
   width: 100%;
@@ -557,12 +550,17 @@ main{
   }
 
 
+  #toprow{
+    background-image: url('../imgs/welcome1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 50%;
+    background-size: 60%;
+  }
 
   #welcome{
     display:none;
-
   }
-
 
   .roundbox{
     background-color: #FFFFFF;
