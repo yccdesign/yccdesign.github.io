@@ -257,6 +257,15 @@ main{
 }
 
 
+#toprow{
+  background-image: url('../imgs/welcome1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: auto 100%;
+  background-size: 60%;
+}
+
 #welcome{
   width: 100%;
   max-width: 100%;
@@ -547,16 +556,11 @@ main{
     max-width: 100%;
   }
 
-  #toprow{
-    background-image: url('../imgs/welcome1.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
-    background-size: 60%;
-  }
+
 
   #welcome{
     display:none;
+
   }
 
 
