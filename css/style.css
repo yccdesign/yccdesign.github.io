@@ -14,7 +14,7 @@ blue-grey: rgb(217,227,228)
 /*font styling refernce*/
 h1 {font-family: 'Merriweather Sans', sans-serif; font-size: 28px; font-weight: 900; line-height: 42px;}
 h2 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 700; line-height: 42px;}
-h3 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 300; line-height: 40px;}
+h3 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 900; line-height: 40px;}
 h4 {font-family: 'Merriweather Sans', sans-serif; font-size: 20px; font-weight: 300; line-height: 36px;}
 h5 { font-family: 'Merriweather Sans', sans-serif; font-size: 17px; font-weight: 700;line-height: 30px;}
 h6 { font-family: 'Merriweather Sans', sans-serif; font-size: 14px; font-weight: 300;line-height: 26px;}
@@ -252,6 +252,12 @@ main{
   display:inline-block;
 }
 
+.flex-col-6-wrapped{
+  width:100%;
+  margin:none;
+  display:inline-block;
+}
+
 .full-flex-title{
   text-align: center;
 }
@@ -437,6 +443,13 @@ main{
   max-width:690px;
 }
 
+.full-section-text-wrapped{
+  display:block;
+  margin: none;
+  width:100%;
+  max-width: 100%;
+}
+
 .project-wide-img{
   display:block;
   height:auto;
@@ -541,7 +554,11 @@ main{
     text-align:center;
   }
 
-
+  .flex-col-6-wrapped{
+    width:49%;
+    margin:20px 0px;
+    text-align:center;
+  }
 
   .full-flex-title{
     text-align: left;
@@ -645,6 +662,11 @@ main{
     display:block;
 
   }
+  .full-section-text-wrapped{
+    margin:20px auto;
+    width:690px;
+    display:block;
+  }
 
 
 
@@ -681,7 +703,9 @@ main{
         display: block;
         position: fixed;
         top:30%;
-        left:20px;
+        left:0px;
+        padding:20px;
+        padding-right:10px;
         background-color: rgba(255,255,255,0.5);
     }
 
@@ -702,7 +726,7 @@ main{
     }
 
     #side-nav nav a.active {
-        border-left: 5px dotted #CBADFF;
+        border-left: 5px dotted #EFF4F6;
         margin-left: 0px;
         color: #898989;
     }
@@ -937,9 +961,16 @@ main{
   text-align: center;
 }
 
+.align-left{
+  text-align: left;
+}
 
 .align-top{
   display:block;
+}
+
+.align-vertical-top{
+  vertical-align: top;
 }
 
 .middle{

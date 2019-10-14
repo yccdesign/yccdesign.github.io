@@ -42,7 +42,6 @@
 
 <!-- main content -->
 <main id = 'content'>
-
   <div class = "flex-container">
     <div class = "flex-box section-description-left">
       <p class="full-flex-title"> <span class = "title">Urban Data Visualization.</span><br>
@@ -53,7 +52,7 @@
       <img class = "project-banner" alt = "project banner" src = "imgs/ppp/ppp-banner.png"/>
     </div>
   </div>
-  <div class = "flex-container bg-orange-tint">
+  <div class = "flex-container bg-light-grey">
     <div class = "flex-col-4">
       <h5>Product Duration</h5>
       <h6>1 semester</h6>
@@ -76,11 +75,11 @@
       <h2>How might we help code enforcement officers leverage Dynamo Metrics' data power for their daily inspection work?</h2>
       <p>
       <br>
-       As a data-visualization and consulting company, Dynamo Metrics' has been in the making of a tailor-made data visualization application for the code enforcement team at the City of Jackson. With little UX resources, the company was in need of professioal insights to deliver an optimal solution. Our team was tasked with understanding user needs and translating them into design solutions for the application.
+       As a data-visualization and consulting company, Dynamo Metrics has been in the making of a tailor-made data visualization application for the code enforcement team at the City of Jackson. With little UX resources, the company was in need of deeper understanding of user needs and a mid-fidelity prototype that helps code enforcement officers better access their urban data.
        <br><br>
        </p>
        <img class = "project-wide-img" src = "imgs/ppp/org.png" alt = "project overview"/>
-       <div class = "full-section-text align-center">
+       <div class = "full-section-text-wrapped align-center">
          <h6 class = "text-darkgrey">Our team was tasked to help our client design a platform for the City of Jackson.</h6>
        </div>
     </div>
@@ -94,60 +93,251 @@
        <br><br>
        </p>
        <img class = "project-wide-img" src = "imgs/ppp/findings.png" alt = "key findings"/>
+     </div>
   </div>
   <div class = "flex-container aside-target" id="3">
     <div class = "full-section-text">
-      <h6>THE SOLUTION: NEIGHBORHOOD DATA</h6>
-      <h2>Streamlined experinece viewing urban data on a single web application</h2>
+      <h6>SOLUTION OVERVIEW</h6>
+      <h2>Neightborhood Data: helping officers easily interpret district-level data</h2>
       <p>
-        I was solely responsible for redesigning the neighborhood data feature of the application. By keeping only the most important elements while adding necessary functionality based on the results of research, I created a series of mockups and interactions for the redesigned UI.
+        I was solely responsible for redesigning the neighborhood data feature of the application.
        <br><br>
       </p>
       <br><br>
-      <h5>Neighborhood Summary</h5>
-      <p>
-        <b>Pain Point</b><br>
-        Officers switched between different pages on their previous platform, and rely on other department's analytics to aggregate neightborhood data. They could not quickly prioritize patroling resource.
-        <br>
-        <b>Solution</b><br>
-        Officers can check instant summary of an area on the map. A newly added 'changeability index' notifies officers of how easy an area's code violations can be effectively reduced. This can help the code enforcement team allocate thei resources efficiently.
-      </p>
+      <h5>1. Neighborhood Summary</h5>
+
+      <div class = "flex-col-6-wrapped align-left align-vertical-top">
+
+          <b>Pain Points</b>
+          <ul class = "lists">
+            <li>Switching between different pages on the platform was tedious.</li>
+            <li>Having to rely on other department to visualize neighborhood data for further analysis.</li>
+            <li>Not knowing how to quickly identify regions the team should focus on.</li>
+          </ul>
+
+       </div>
+       <div class = "flex-col-6-wrapped align-left align-vertical-top">
+
+          <b>Solution</b>
+          <ul class = "lists">
+            <li>Check instant summary of an area on the map.</li>
+            <li>An added 'changeability index' that visualizes the most urgently manpower-needed areas within the city.</li>
+          </ul>
+
+       </div>
       <br><br>
       <img class = "project-wide-img middle" alt= "changeability" src = "imgs/ppp/changeability.png"/>
-      <div class = "full-section-text align-center">
-        <h6 class = "text-darkgrey">A neeighborhood summary panel shows up when the user mouses over or taps on an area on the map.</h6>
+      <div class = "full-section-text-wrapped align-center middle">
+        <h6 class = "text-darkgrey">A neighborhood summary panel shows up when the user mouses over or taps on an area on the map.</h6>
       </div>
       <br><br>
-      <h5>New Layer Adding Process</h5>
-      <p>
-        <b>Pain Point</b><br>
-        The old UI from our client requires the user to add data layer by selecting from a long list of checkboxes. Users have to manually uncheck and recheck an item in order to move a layer to the top.
-        <br>
-        <b>Solution</b><br>
-        Data types are added with a separated layer building process. Data layers are now draggable for reorder, with feature to toggle visibility for quick data interpretation.
-      </p>
+    </div>
+    <div class = "full-section-text">
+      <h5>2. New Layer Adding Process</h5>
+      <div class = "flex-col-6-wrapped align-left align-vertical-top">
+
+        <b>Pain Points</b>
+        <ul class = "lists">
+          <li>Adding layers on a long checklist menu requires much mental effort.</li>
+          <li>Users have to manually uncheck and recheck an item in order to move a layer to the top.</li>
+        </ul>
+
+      </div>
+      <div class = "flex-col-6-wrapped align-left align-vertical-top">
+
+        <b>Solution</b>
+        <ul class = "lists">
+          <li>Data types are added on a separated layer building panel.</li>
+          <li>Easily toggle and drag-and-drop layers to manipulate layer display.</li>
+        </ul>
+      </div>
+      <img class = "project-wide-img middle" alt= "laying" src = "imgs/ppp/layer_old.jpg"/>
+      <div class = "full-section-text-wrapped align-center middle">
+        <h6 class = "text-darkgrey">Old layer adding process does not come with .</h6>
+      </div>
       <br><br>
-      <img class = "project-wide-img middle" alt= "locating" src = "imgs/ppp/layer_old.jpg"/>
-      <div class = "full-section-text align-center">
-        <h6 class = "text-darkgrey">The old layer adding menu includes a long scrolling checklist, without a clear display of layer adding status.</h6>
+    </div>
+    <div class = "full-section-text">
+      <h5>3. Locate and pin</h5>
+      <div class = "flex-col-6-wrapped align-left align-vertical-top">
+        <b>Pain Points</b>
+        <ul class = "lists">
+          <li>Officers were not able to save an observed location for future reference.</li>
+        </ul>
+      </div>
+      <div class = "flex-col-6-wrapped align-left align-vertical-top">
+        <b>Solution</b>
+        <ul class = "lists">
+          <li>Locate and pin an area to easily go back to where you left off.</li>
+        </ul>
+      </div>
+      <img class = "project-wide-img middle" alt= "locating" src = "imgs/ppp/locate.gif"/>
+      <div class = "full-section-text-wrapped align-center middle">
+        <h6 class = "text-darkgrey">Locate and pin an area to easily go back to where you left off.</h6>
+      </div>
+    </div>
+
+     <div class = "full-section-text">     <br><br>
+        <h5>4. Redesigned playback panel</h5>
+        <div class = "flex-col-6-wrapped align-left align-vertical-top">
+        <p>
+          <b>Pain Points</b>
+          <ul class = "lists">
+            <li>Not able to tell the starting and ending points in time in historic trend timeline.</li>
+          </ul>
+         </p>
+        </div>
+        <div class = "flex-col-6-wrapped align-left align-vertical-top">
+         <p>
+          <b>Solution</b>
+          <ul class = "lists">
+            <li>Set starting and ending points, and easily observe changes on the map view.</li>
+          </ul>
+        </p>
+      </div>
+      <img class = "project-wide-img middle" alt= "locating" src = "imgs/ppp/playback_old.jpg"/>
+      <div class = "full-section-text-wrapped align-center middle">
+        <h6 class = "text-darkgrey">Old playback design.</h6>
       </div>
       <br>
-      <img class = "project-wide-img middle" alt= "locating" src = "imgs/ppp/layer_new.gif"/>
+      <img class = "project-wide-img middle" alt= "locating" src = "imgs/ppp/playback_new.jpg"/>
+      <div class = "full-section-text-wrapped align-center middle">
+        <h6 class = "text-darkgrey">The new design with clear start and end points and lengthened playback bar.</h6>
+      </div>
+    </div>
+  </div>
+  <div class = "flex-container bg-light-grey">
+    <h3 class = "middle">THE PROCESS</h3>
+  </div>
+  <div class = "flex-container aside-target" id = "4">
+    <div class = "full-section-text">
+      <h6>UX RESEARCH</h6>
+      <h2>Getting the domain knowledge and understanding users</h2>
+      <p>
+         My teammates and I took several steps to learn about everything that entails the users.
+       <br><br>
+      </p>
+      <h5>Background Research</h5>
+      <p>We conducted a throrough background research by researching the client's past projects, inspecting current software interface, as well as reading governmental webpages and documents to understand the Code Enforcement Department's various code ordinances they are responsible for.
+      </p>
+      <br><br>
+      <img class = "project-wide-img middle" alt= "research" src = "imgs/ppp/bgresearch.png"/>
+      <br><br>
+      <h5>Heuristic Evaluation</h5>
+      <p>I analyzed the current layering and filtering features on the platform, from which I identified three major interaction issues:
+      </p>
+      <ul class = "lists">
+      <li><b>Missing Legend:</b> The missing lengend on map requires users to rely on working memory to infer what data each color represents. </li>
+      <li><b>Excessive Visual Element:</b> Current UI utilizes a long with a total of 8 accordians with 3 radius buttons and 42 checkboxes. A minimalist design could help users navigate more easily.</li>
+      <li><b>Lack of system status display:</b> CThe layer feature does not display layering order of the data. Additionally, the playback interface also lacks clear affordance for starting and ending points in time. Users may feel confused while navigating on the platform.</li>
+      </ul>
+      <img class = "project-wide-img middle" alt= "old ui" src = "imgs/ppp/neighborhoodintel.jpeg"/>
       <div class = "full-section-text align-center">
-        <h6 class = "text-darkgrey">The redesigned payer adding interaction. Users can now clearly see how many layers have been applied, and can also manipulate with different layers when interpreting data.</h6>
+        <h6 class = "text-darkgrey">The original UI of the platform.</h6>
+      </div>
+      <br><br>
+      <h5>Competitive Analysis</h5>
+      <p>We then proceeded with competitive analysis with five code enforcement management applications and one data visuazliation web solution, where we observed two major differences:      </p>
+        <ul class = "lists">
+        <li><b>Data types:</b> Some competitors provide summative data or index. Our client's current application would improve by adding predictive and summative data for users to quickly learn the status of an area. </li>
+        <li><b>Interaction elements:</b> Our clients' curernt design incorporates multiple accordions and checkboxes, which took a lot of space on the screen. On the other hand, two competitors utilized floating blocks or hidden features to dedicate more real estate for the map.</li>
+        </ul>
+        <br>
+        <img class = "project-wide-img middle" alt= "old ui" src = "imgs/ppp/competitive.jpeg"/>
+        <img class = "project-wide-img middle" alt= "old ui" src = "imgs/ppp/competitive2.jpg"/>
+        <div class = "full-section-text align-center">
+          <h6 class = "text-darkgrey">The comeptitors we analyzed.</h6>
+        </div>
+        <br><br>
+      <h5>Field Observations & In-Depth Interviews</h5>
+      <p>We conducted four interviews were conducted at the City of Jackson with the head of the code enforcement team, two code enforcement officers, as well as the code enforcement administrator. A PDF sample of the interview protocol can be found <a href="imgs/ppp/protocol.pdf" target="_blank">here.</a>
+      <br><br>
+      We synthesized interview data into an affinity wall and a set of personas.
+      </p>
+      <img class = "project-wide-img middle" alt= "affinity wall" src = "imgs/ppp/affinitywall.jpg"/>
+      <img class = "project-wide-img middle" alt= "personas" src = "imgs/ppp/personas.png"/>
+      <div class = "full-section-text align-center">
+        <h6 class = "text-darkgrey">Affinity wall and personas.</h6>
+      </div>
+      <br><br>
+      <h5>Task Analysis</h5>
+      <p>I worked with two other designers to map out the daily routines of our users. After a card sorting session internally, we consolidated the design work into three major features.</p>
+      <img class = "project-wide-img middle" alt= "workflow" src = "imgs/ppp/workflow.png"/>
+      <div class = "full-section-text align-center">
+        <h6 class = "text-darkgrey">Task analysis flowchart.</h6>
       </div>
   </div>
-
-
-
+  <div class = "flex-container aside-target" id = "5">
+    <div class = "full-section-text">
+      <h6>DESIGN GOALS</h6>
+      <h2>Creating an accssible and seamless data visualization platform.</h2>
+    </div>
+  </div>
+  <div class = "flex-container-short">
+       <div class = "flex-col-4 align-center">
+          <img class = "" src="imgs/ppp/door.png" alt = "door"/>
+          <h5>Data accessibility</h5>
+          <h6>For officers to access data even on location, the applications should be accessible on tablets.</h6>
+        </div>
+        <div class = "flex-col-4 align-center">
+          <img src="imgs/ppp/graph.png" alt = "graph"/>
+          <h5>One platform for all stores</h5>
+          <h6>Provide summative indeces to help officers prioritize tasks for allocate manpower.</h6>
+        </div>
+        <div class = "flex-col-4 align-center">
+          <img src="imgs/ppp/connections.png" alt = "connections"/>
+          <h5>User preference recording</h5>
+          <h6>Help connect team members and reduce code violations more efficiently.</h6>
+        </div>
+  </div>
+  <div class = "flex-container aside-target" id = "6">
+    <div class = "full-section-text">
+      <h6>ITERATIONS</h6>
+      <h2>Indivdual design, collaborative teamwork</h2>
+      <br><br>
+      <h5>Wireframes & Low-Fi Mockups</h5>
+      <p>The UX team first discussed the general look of the redesign, as well as grouping relevant features. Each designer then started out to provide first mockup sets for the responsible feature. I opted to work on the neighborhood data, which includes three main features: adding layers and filtering, locating a district, and presenting neighbord data on hover.</p><br><br>
+      <img class = "project-wide-img middle" alt= "whiteboard" src = "imgs/ppp/board.jpg"/>
+      <img class = "project-wide-img middle" alt= "low fi" src = "imgs/ppp/lfprototype.jpeg"/>
+      <div class = "full-section-text align-center">
+        <h6 class = "text-darkgrey">Whiteboard sessions mockups.</h6>
+      </div>
+      <br><br>
+      <h5>Higher-fidelity Mockups</h5>
+      <p>The UX teamheld a meeting to critique each other's design and determine the design system for higher fidelity iterations. We opted to use two shades of orange as the primary color to align with the client's brand image.</p><br><br>
+      <img class = "project-wide-img middle" alt= "low fi" src = "imgs/ppp/colorpalette.png"/>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id = "7">
+    <div class = "full-section-text">
+      <h6>THE RESULTS</h6>
+      <h2>Final presentation and feedback from the client</h2>
+      <p>At the end of the semester project, we made a final presentation in front of the client. I was also invited with another designer to help the team with further design and user testing. I am excited to see how the code enforcement officers would react to the designs and learn about their feedback.</p>
+      <br><br>
+      <img class = "project-wide-img middle" alt= "results" src = "imgs/ppp/results.jpg"/>
+      <div class = "full-section-text align-center">
+        <h6 class = "text-darkgrey">The team and our client at the expo.</h6>
+      </div>
+    </div>
+  </div>
 </main>
+
+
+
 
 <!--side nav-->
 <aside id = "side-nav">
     <nav>
+        <h6>PROJECT BRIEF</h6>
         <a href="#1" class="active"><h6>THE CHALLENGE</h6></a>
         <a href="#2"><h6>KEY RESEARCH FINDINGS</h6></a>
-        <a href="#3"><h6>TESTIMONIAL</h6></a>
+        <a href="#3"><h6>SOLUTION OVERVIEW</h6></a>
+        <br>
+        <h6>THE PROCESS</h6>
+        <a href="#4" class="active"><h6>UX RESEARCH</h6></a>
+        <a href="#5"><h6>DESIGN GOALS</h6></a>
+        <a href="#6"><h6>ITERATIONS</h6></a>
+        <a href="#7"><h6>THE RESULTS</h6></a>
     </nav>
 </aside>
 
