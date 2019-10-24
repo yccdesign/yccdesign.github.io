@@ -541,6 +541,7 @@ main{
     width: 30%;
     text-align: left;
     margin:20px 0px;
+    display: inline-block;
   }
 
   .flex-col-3{
@@ -702,7 +703,7 @@ main{
     #side-nav{
         display: block;
         position: fixed;
-        top:30%;
+        top:10%;
         left:0px;
         padding:20px;
         padding-right:10px;
@@ -965,12 +966,20 @@ main{
   text-align: left;
 }
 
+.align-right{
+  text-align: right;
+}
+
 .align-top{
   display:block;
 }
 
 .align-vertical-top{
   vertical-align: top;
+}
+
+.align-vertical-middle{
+  vertical-align: inherit;
 }
 
 .middle{
