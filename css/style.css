@@ -489,7 +489,7 @@ main{
     position:absolute;
     vertical-align: bottom;
     text-align: right;
-    width: 30%;
+    width: 40%;
     right: 0%;
     top:30%;
     z-index:101;
@@ -500,7 +500,7 @@ main{
   .tab-item{
     display:inline-block;
     vertical-align: bottom;
-    padding-left: 15%;
+    padding-left: 13%;
   }
 
   /*main content*/
