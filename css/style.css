@@ -301,8 +301,17 @@ main{
   color:#000000;
 }
 
+
 .subtitle{
   color: #494949;
+}
+
+.subtitle-split{
+  color: #494949;
+  text-align: center;
+  vertical-align: top;
+  margin:20px auto;
+  display:inline-block;
 }
 
 #name{
@@ -522,7 +531,7 @@ main{
     width: 49%;
     max-width: 49%;
     text-align: left;
-    margin: 40px 0px;
+    margin: 30px 0px;
   }
 
   .flex-column{
@@ -634,6 +643,13 @@ main{
     width:350px;
     margin:auto;
   }
+
+  .subtitle-split{
+    width:350px;
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
 
   .project-box-left{
     padding-right:2%;
