@@ -723,7 +723,7 @@ main{
         left:0px;
         padding:20px;
         padding-right:10px;
-        background-color: rgba(255,255,255,0.5);
+        /*background-color: rgba(255,255,255,0.5);*/
     }
 
     #side-nav nav a {
@@ -876,6 +876,10 @@ main{
   background-color: #F4F5FF;
 }
 
+.bg-lineleap-blue{
+  background-color: #E7F2FF;
+}
+
 .bg-lightpink{
   background-color: #FFF2FD;
 }
@@ -894,6 +898,10 @@ main{
 
 .bg-darkbluepurple{
   background-color: #9313E9;
+}
+
+.bg-darkgreypurple{
+  background-color: #523665;
 }
 
 .bg-blue-tint{
@@ -926,6 +934,14 @@ main{
 
 .bg-clinc-lightpurple{
   background-color: #E1DFF8;
+}
+
+.bg-black{
+  background-color: #000000;
+}
+
+.bg-white{
+  background-color: #FFFFFF;
 }
 
 
