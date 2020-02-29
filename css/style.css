@@ -851,6 +851,9 @@ main{
   background: rgba(255,255,255,0.8)
 }
 
+.bg-chai-beige{
+  background:#edddd5;
+}
 
 .bg-light-grey{
   background-color: #EFF4F6;
@@ -942,6 +945,7 @@ main{
 
 .bg-white{
   background-color: #FFFFFF;
+
 }
 
 
