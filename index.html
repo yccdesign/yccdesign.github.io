@@ -16,7 +16,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--favicon-->
   <link rel="icon" type="image/png" href="imgs/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="imgs/favicon-32x32-1.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="imgs/icon-32x32.png" sizes="32x32" />
   <!--css -->
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -41,12 +41,12 @@
 </div>
 <header id = "nav-whole">
   <nav class="topnav" id="nav-bar">
-    <a href="index.html"><img class="logo" src="imgs/logo16.svg" alt="logo image" title="yi-chun chen"></a>
+    <a href="index.html"><img class="logo" src="imgs/logo2021.svg" alt="logo image" title="Back home"></a>
     <a href = "javascript:void(0);" class = "nav-icon" onclick="navIconClick()" aria-label="menu"><i class="material-icons">&#xe5d2;</i></a>
     <ul id = "nav-items" class = "nav-tabs">
-        <li class="current-nav-tab tab-item"><a href="index.html"><h6>Work</h6></a></li>
-        <li class="other-nav-tab tab-item"><a href="about.html"><h6>About</h6></a></li>
-        <li class="other-nav-tab tab-item"><a href="yi-chun_chen_cv_2020.pdf" target="_blank"><h6>CV</h6></a></li>
+        <li class="current-nav-tab tab-item"><a href="index.html"><h6>WORK</h6></a></li>
+        <li class="other-nav-tab tab-item"><a href="about.html"><h6>ABOUT</h6></a></li>
+        <li class="other-nav-tab tab-item"><a href="yi-chun_chen_cv_2021.pdf" target="_blank"><h6>CV</h6></a></li>
     </ul>
   </nav>
 
@@ -57,27 +57,92 @@
 
 <!-- main content -->
 <main id = 'content'>
-  <div class = "flex-container-short bg-topbanner flex-center-align" id= "toprow">
-    <div class = "flex-box roundbox">
-      <p class = "subtitle"> <span id = "name">Hi, I am Yi-Chun.</span>
-      I am a UX designer with IT marketing and cognitive linguistics research background. I tackle user experience problems with business perspectives, data-informed strategies, and interaction design.
+  <div class = "flex-container bg-blue-transparent flex-center-align" id= "toprow">
+    <div class = "flex-box section-description-left">
+      <p class = "subtitle"> <span id = "name">Hi! I am Yi-Chun Chen</span>
+      <br>
+      A product designer at ServiceNow, I build platforms and tools to streamline different workflows and empower builders and creators of all kinds.
+      <br><br>
+      <button class = "btn-primary"><a href = "yi-chun_chen_cv_2020.pdf" target="_blank">Open resume</a></button>
+      <br><br>
+      </p>
+
     </div>
     <div class = "flex-box welcomeimg">
-      <img id = "welcome" src = "imgs/welcome2.png" alt = "welcome image" title = "welcome!"/>
+      <img id = "welcome" src = "imgs/hero_image.svg" alt = "welcome image" title = "welcome!"/>
     </div>
   </div>
 
-<!--design row bg-lightpink-->
-  <div class ="flex-container">
+
+<!--servicenow row bg-lightgreen-->
+  <div class ="flex-container bg-white-transparent">
     <div class = "flex-box section-description-left">
-      <p class = "subtitle"> <span class = "title">End-to-end design</span><span class = "title text-pink">.</span><br>
-       I address user needs with design solutions based on data-informed insights. My end-to-end design projects have covered web, mobile, and IoT connected desktop apps, facing business users and individual consumers. </p>
+      <p class = "subtitle middle"> <span class = "title">ServiceNow</span><span class = "title text-green">.</span><br>
+       At the platform product experience team, I collaborate in highly iterative, cross-functional product teams to build experiences for professional and citizen developers, both internally and externally. </p>
     </div>
     <div class = "flex-box project-box-right">
+      <a href = "data.html">
+        <div class = "project-box-img-container ">
+          <img class="project-box-img rounded-corner" src="imgs/index/artemis.png" alt="screenshot" title="artemis logo"/>
+          <div class = "project-box-overlay bg-white rounded-corner">
+            <div class = "project-box-overlay-text">
+              <p>Creating a next-gen builder for ServiceNow record data</p><br>
+            </div>
+          </div>
+        </div>
+        <div class = "project-box-title">
+          <h5>Data collection and management</h5>
+          <p>Product design <span class="delimiter text-green">|</span> Web app <span class="delimiter text-green">|</span> V1 </p>
+        </div>
+      </a>
+    </div>
+    <div class = "flex-box project-box-left">
+      <a href = "uib.html">
+        <div class = "project-box-img-container rounded-corner">
+          <img class="project-box-img rounded-corner" src="imgs/index/config-500.png" alt="screenshot" title="UIB project"/>
+          <div class = "project-box-overlay bg-white rounded-corner">
+            <div class = "project-box-overlay-text">
+              <p>Design highlights at the UI Builder team</p><br>
+            </div>
+          </div>
+        </div>
+        <div class = "project-box-title">
+          <h5>UI Builder</h5>
+          <p>Product design <span class="delimiter text-green">|</span> Platform thinking <span class="delimiter text-green">|</span> Web app</p>
+        </div>
+      </a>
+    </div>
+    <div class = "flex-box project-box-right">
+      <!--a href = "nds.html"-->
+        <div class = "project-box-img-container rounded-corner">
+          <img class="project-box-img rounded-corner" src="imgs/index/nds-500.png" alt="screenshot" title="Now Component Library project"/>
+          <div class = "project-box-overlay bg-white rounded-corner">
+            <div class = "project-box-overlay-text">
+              <p>Coming soon...</p><br>
+            </div>
+          </div>
+        </div>
+        <div class = "project-box-title">
+          <h5>Pixel-moving projects</h5>
+          <p>Icon design <span class="delimiter text-green">|</span> Component design</p>
+        </div>
+      <!--/a-->
+    </div>
+  </div>
+
+
+<!--previous highlights row bg-lightpink-->
+
+  <div class ="flex-container flex-row-reverse bg-blue-transparent">
+    <div class = "flex-box section-description-right">
+      <p class = "subtitle middle"> <span class = "title">Previous highlights</span><span class = "title text-pink">.</span><br>
+       My previous UX projects cover web, mobile, and IoT interfaces, serving individual and business users. Aside from course projects, I have also worked in startup settings where I evangelize UX methods within the teams and impact product decisions. </p>
+    </div>
+    <div class = "flex-box project-box-left">
       <a href = "lineleap.html">
-        <div class = "project-box-img-container">
-          <img class="project-box-img" src="imgs/index/lineleap.png" alt="screenshot" title="LineLeap project"/>
-          <div class = "project-box-overlay bg-white">
+        <div class = "project-box-img-container ">
+          <img class="project-box-img rounded-corner" src="imgs/index/lineleap.png" alt="screenshot" title="LineLeap project"/>
+          <div class = "project-box-overlay bg-white rounded-corner">
             <div class = "project-box-overlay-text">
               <p>Tackle business problems with a redesgined business-facing CMS backend</p><br>
             </div>
@@ -85,31 +150,92 @@
         </div>
         <div class = "project-box-title">
           <h5>LineLeap Business CMS</h5>
-          <p>UX Research & Web App Design</p>
+          <p>UX research <span class="delimiter text-pink">|</span> Web app design</p>
         </div>
       </a>
     </div>
-    <div class = "flex-box project-box-left">
+    <div class = "flex-box project-box-right">
       <a href = "chai.html">
-        <div class = "project-box-img-container">
-          <img class="project-box-img" src="imgs/index/chai.png" alt="screenshot" title="CHAI project"/>
-          <div class = "project-box-overlay bg-white">
+        <div class = "project-box-img-container rounded-corner">
+          <img class="project-box-img rounded-corner" src="imgs/index/chai.png" alt="screenshot" title="CHAI project"/>
+          <div class = "project-box-overlay bg-white rounded-corner">
             <div class = "project-box-overlay-text">
-              <p>Hardware & software product concept that connects remote workers</p><br>
+              <p>Hardware & software product concept to enhnace the wellbeing and productivity of remote working teams</p><br>
             </div>
           </div>
         </div>
         <div class = "project-box-title">
           <h5>CHAI</h5>
-          <p>Product Research & Interaction Design</p>
+          <p>Product research <span class="delimiter text-pink">|</span> Interaction design</p>
+        </div>
+      </a>
+    </div>
+    <div class = "flex-box project-box-left">
+      <a href = "clinc.html">
+        <div class = "project-box-img-container rounded-corner">
+          <img class="project-box-img rounded-corner" src="imgs/index/clinc.png" alt="clinc logo" title="Internship at Clinc, Inc."/>
+          <div class = "project-box-overlay bg-white rounded-corner">
+            <div class = "project-box-overlay-text">
+              <p>Helping to determine the developemnt roadmap for an enterprise-level conversational AI platform through UX research</p><br>
+            </div>
+          </div>
+        </div>
+        <div class = "project-box-title">
+          <h5>Clinc AI Developer Platform</h5>
+          <p>User research</p>
         </div>
       </a>
     </div>
     <div class = "flex-box project-box-right">
+      <a href = "visual.html">
+        <div class = "project-box-img-container rounded-corner">
+          <img class="project-box-img rounded-corner" src="imgs/index/visual.png" alt="ui & visual" title="UI & Visual projects"/>
+          <div class = "project-box-overlay bg-white rounded-corner">
+            <div class = "project-box-overlay-text">
+              <p>A collection of my previous artwork.</p><br>
+            </div>
+          </div>
+        </div>
+        <div class = "project-box-title">
+          <h5>UI, Motion, & Visual</h5>
+          <p>Project-based design and collateral</p>
+        </div>
+      </a>
+    </div>
+    <div class = "flex-box project-box-left">
+      <a href = "internship.html">
+        <div class = "project-box-img-container rounded-corner">
+          <img class="project-box-img rounded-corner" src="imgs/index/essential.png" alt="essential logo" title="Internship at Essential Products Inc."/>
+          <div class = "project-box-overlay bg-white rounded-corner">
+            <div class = "project-box-overlay-text">
+              <p>Interning as the company's sole UX researcher for a new consumer electronics product category</p><br>
+            </div>
+          </div>
+        </div>
+        <div class = "project-box-title">
+          <h5>Essential Products Inc.</h5>
+          <p>Exploratory research <span class="delimiter text-pink">|</span> Usability studies</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+<!-- something more row
+  <div class ="flex-container  flex-row-reverse ">
+    <div class = "flex-box section-description-right">
+      <p class = "subtitle"> <span class = "title">Something more</span><span class = "title text-coral">.</span><br>
+       This section curates some other projects I have done in the past. I am constantly practicing design and front-end skills, and will be updating moving forward!</p>
+    </div>
+
+    <div class = "flex-box project-box-right">
       <a href = "knightly.html">
-        <div class = "project-box-img-container">
-          <img class="project-box-img" src="imgs/index/nightly.png" alt="screenshot" title="Nightly Knight project"/>
-          <div class = "project-box-overlay bg-white">
+        <div class = "project-box-img-container rounded-corner">
+          <img class="project-box-img rounded-corner" src="imgs/index/nightly.png" alt="screenshot" title="Nightly Knight project"/>
+          <div class = "project-box-overlay bg-white rounded-corner">
             <div class = "project-box-overlay-text">
               <p>Designing for a frictionless night out experience</p><br>
             </div>
@@ -117,127 +243,13 @@
         </div>
         <div class = "project-box-title">
           <h5>Nightly Knight</h5>
-          <p>Mini Mobile App Design Challenge</p>
+          <p>Mini mobile app design challenge</p>
         </div>
       </a>
     </div>
 
-    <!--div class = "flex-box project-box-left">
-      <a href = "ppp.html">
-        <div class = "project-box-img-container">
-          <img class="project-box-img" src="imgs/index/dynamo.png" alt="Screenshot" title="Urban data visualization project"/>
-          <div class = "project-box-overlay bg-white">
-            <div class = "project-box-overlay-text">
-              <p>Redesigning an urban data repository platform</p>
-            </div>
-          </div>
-        </div>
-        <div class = "project-box-title">
-          <h5>Urban Data Visualization</h5>
-          <p>UX Research & Web App Design</p>
-        </div>
-      </a>
-    </div-->
-    <!--div class = "flex-box project-box-right">
-      <a href = "grogo.html">
-        <div class = "project-box-img-container">
-          <img class="project-box-img" src="imgs/index/grogo.png" alt="screenshot" title="groGo project"/>
-          <div class = "project-box-overlay bg-white">
-            <div class = "project-box-overlay-text">
-              <p>Streamlining grocery shopping experience</p><br>
-            </div>
-          </div>
-        </div>
-        <div class = "project-box-title">
-          <h5>groGo</h5>
-          <p>UX Research & Mobile App Design</p>
-        </div>
-      </a>
-    </div-->
   </div>
-
-
-  <!-- research row bg-lightblue-->
-    <div class ="flex-container  flex-row-reverse">
-      <div class = "flex-box section-description-right">
-        <p class = "subtitle"> <span class = "title">UX research</span><span class = "title text-blue">.</span><br>
-         I enjoy discovering user motivations and evaluating the usability of different designs. Aside from course projects, I have also worked in startup settings where I evangelize UX methods within the teams and impact product decisions.</p>
-      </div>
-      <div class = "flex-box project-box-left">
-        <a href = "clinc.html">
-          <div class = "project-box-img-container">
-            <img class="project-box-img" src="imgs/index/clinc.png" alt="clinc logo" title="Internship at Clinc, Inc."/>
-            <div class = "project-box-overlay bg-white">
-              <div class = "project-box-overlay-text">
-                <p>Helping to determine the developemnt roadmap for an enterprise-level conversational AI platform through UX research</p><br>
-              </div>
-            </div>
-          </div>
-          <div class = "project-box-title">
-            <h5>Clinc AI Developer Platform</h5>
-            <p>Exploratory User Research</p>
-          </div>
-        </a>
-      </div>
-      <div class = "flex-box project-box-right">
-        <a href = "internship.html">
-          <div class = "project-box-img-container">
-            <img class="project-box-img" src="imgs/index/essential.png" alt="essential logo" title="Internship at Essential Products Inc."/>
-            <div class = "project-box-overlay bg-white">
-              <div class = "project-box-overlay-text">
-                <p>Interning as the company's sole UX researcher for a new consumer electronics product category</p><br>
-              </div>
-            </div>
-          </div>
-          <div class = "project-box-title">
-            <h5>Essential Products Inc.</h5>
-            <p>Exploratory Research & Usability Studies</p>
-          </div>
-        </a>
-      </div>
-      <div class = "flex-box project-box-left">
-        <a href = "retro.html">
-          <div class = "project-box-img-container">
-            <img class="project-box-img" src="imgs/index/retro.png" alt="RetroQuest screenshot" title="FordLabs RetroQuest"/>
-            <div class = "project-box-overlay bg-white">
-              <div class = "project-box-overlay-text">
-                <p>Needs assessment and usability evaluation for a productivity tool at Ford</p><br>
-              </div>
-            </div>
-          </div>
-          <div class = "project-box-title">
-            <h5>FordLabs RetroQuest</h5>
-            <p>Mixed Methods UX Research</p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-
-<!-- something more row -->
-  <div class ="flex-container  flex-row-reverse ">
-    <div class = "flex-box section-description-right">
-      <p class = "subtitle"> <span class = "title">Something more</span><span class = "title text-coral">.</span><br>
-       This section curates some other projects I have done in the past. I am constantly practicing design and front-end skills, and will be updating moving forward!</p>
-    </div>
-    <div class = "flex-box project-box-left">
-      <a href = "visual.html">
-        <div class = "project-box-img-container">
-          <img class="project-box-img" src="imgs/index/visual.png" alt="ui & visual" title="UI & Visual projects"/>
-          <div class = "project-box-overlay bg-white">
-            <div class = "project-box-overlay-text">
-              <p>A collection of my design.</p><br>
-            </div>
-          </div>
-        </div>
-        <div class = "project-box-title">
-          <h5>UI, Motion, & Visual</h5>
-          <p>Self-initiated design and course projects</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
+-->
 </main>
 
 
@@ -248,8 +260,8 @@
 
 
 <!--footer area-->
-<footer class = "flex-container-short align-center bg-lightpurple text-white">
-  <h6 class = "middle">Designed and coded by Yi-Chun Chen</h6>
+<footer class = "flex-container-short align-center bg-neonblue text-darkgrey">
+  <h6 class = "middle">Site designed and developed by Yi-Chun Chen</h6>
 </footer>
 
 <script src="scripts/main.js"></script>
