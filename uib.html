@@ -56,7 +56,7 @@
   <div class = "flex-container">
     <div class = "flex-box section-description-left">
       <p class="full-flex-title"> <span class = "title">UI Builder configuration</span><br>
-      One of the first projects I worked on at the UI Builder team was to enhance the configuration capabilities and experience of the product. The outcomes have benefitted both internal component teams as well as the end user of the product.<br><br>
+      One of the first projects I worked on at the UI Builder team was to enhance the configuration experience of the product. The outcomes have benefitted both internal component teams as well as the end-users of the product.<br><br>
       </p>
     </div>
     <div class = "flex-box">
@@ -100,7 +100,7 @@
       </p>
       <img class = "project-wide-img" src = "imgs/sn/uib_stage.png" alt = "UI Builder"/>
       <div class = "full-section-text-wrapped align-center">
-        <h6 class = "text-darkgrey">UI Builder allows users to build a ServiceNow app with 115+ customizable components in the Rome release.</h6>
+        <h6 class = "text-darkgrey">UI Builder currently supports 115+ customizable components.</h6>
       </div>
      </div>
   </div>
@@ -110,10 +110,10 @@
       <h2>It's more than a design project</h2>
       <p>
         <br>
-        Based on previous research insights, the team identified a few major topics to tackle when it comes to enhancing the component configuration experience:
+        Previously, UI Builder only supported building Workspace pages, with less than 20 components available. For the Quebec release in early 2021, the team planned to add 80+ additional components so that more versatile pages can be built. The increase in components also came with the need for an enhanced configuration experience. Based on previous research insights, the team identified a few major topics to tackle:
         <br><br>
         <ol class = "lists">
-          <li>The input mode switcher needed to be enhanced for usability and scalability</li>
+          <li>The input mode switcher needed to be enhanced to accommodate multiple dynamic input methods</li>
           <li>Users are confused with arbitrary terms and lack of helper experience when configuring components</li>
           <li>There are inconsistencies across different components' configuration</li>
         </ol>
@@ -128,17 +128,62 @@
   <div class = "flex-container aside-target" id = "3">
     <div class = "full-section-text">
       <h6 class = "text-blue">INPUT MODE SWITCHER</h6>
-      <h2>How might we allow users to toggle between static and dynamic input modes seamlessly?</h2>
+      <h2>How might we allow users to input static and dynamic property values seamlessly?</h2>
       <p>
         <br>
-        Originally, all configurations on
-        <br><br>
-        <ol class = "lists">
-          <li>The input mode switcher needed to be enhanced for usability and scalability</li>
-          <li>Users are confused with arbitrary terms and lack of helper experience when configuring components</li>
-          <li>There are inconsistencies across different components' configuration</li>
-        </ol>
-      </p>
+        One major feature in the Quebec release was the introduction of dynamic inputs. By linking property values to data resource outputs and scripts, users can display content dynamically. All configuration properties should thus support three input modes:
+        <br>
+        <ul class = "lists">
+          <li><b>Static input:</b> The input value is provided by typing in the field or selecting from a drop-down list</li>
+          <li><b>Dynamic data-binding:</b> The value is driven by output from a data resource</li>
+          <li><b>Scripting:</b> The value is determined by script output</li>
+        </ul>
+       <br><br>
+     </p>
+      <p>
+       In the earlier development phase, only static input and dynamic data-binding were supported. Binding properties to data could be done through clicking the block icon that is placed next to each property. With inclusion of the scripting option, a new design is needed to accommodate the three entry modes, while addressing usabilities issues discovered in previous research:
+       <br>
+       <ol class = "lists">
+         <li>The buttons were visually overwhelming and sacrificed space for input field</li>
+         <li>The usage of icon has confused users</li>
+         <li>Values provided in one input mode will be erased after switching back from another mode</li>
+       </ol>
+     </p>
+      <br><br>
+      <img class = "project-wide-img" src = "imgs/sn/config_before1.png" alt = "Before and after the addition of a scripting option"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">What the configuration panel looked like before design input, with only dynamic data-binding supported.</h6>
+      </div>
+      <br><br>
+      <img class = "project-wide-img" src = "imgs/sn/config_before2.png" alt = "Before and after the addition of a scripting option"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">Left: Properties with dynamic data-binding; Right: Properties with both dynamic data binding and scripting</h6>
+      </div>
+    </p>
+    <br><br>
+     <p>
+      To address the usability and scalability issues of the inputs, I did a comparative analysis on the treatment by other products, and explored different ways to reimagine property input:
+    </p>
+    <br><br>
+    <img class = "project-wide-img" src = "imgs/sn/config_comps.png" alt = "Before and after the addition of a scripting option"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Comparison between different product's configuration design provded me with inspirations</h6>
+    <br><br>
+    <img class = "project-wide-img" src = "imgs/sn/config_v1.png" alt = "Before and after the addition of a scripting option"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Key exploration 1: button group that shows up on hovering the property area.<br>Feedback: the button size waas too small, making it hard to interact.</h6>
+    </div>
+    <br><br>
+    <img class = "project-wide-img" src = "imgs/sn/config_v2.png" alt = "Before and after the addition of a scripting option"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Key exploration 2: button group that shows up on hovering the property area.<br>Feedback: the button size waas too small, making it hard to interact.</h6>
+    </div>
+    <br><br>
+    <img class = "project-wide-img" src = "imgs/sn/config_v3.png" alt = "Before and after the addition of a scripting option"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Key exploration 2: button group that shows up on hovering the property area.<br>Feedback: the button size waas too small, making it hard to interact.</h6>
+    </div>
+
     </div>
   </div>
 
@@ -157,6 +202,7 @@
         <h6 class = "side-nav-title">Outline</h6>
         <a href="#1" class="active"><h6>BACKGROUND</h6></a>
         <a href="#2"><h6>THE CHALLENGES</h6></a>
+        <a href="#3"><h6>INPUT MODE SWITCHER</h6></a>
     </nav>
 </aside>
 
