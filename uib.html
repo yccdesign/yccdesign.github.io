@@ -114,8 +114,7 @@
         <br><br>
         <ol class = "lists">
           <li>The input mode switcher needed to be enhanced to accommodate multiple dynamic input methods</li>
-          <li>Users are confused with arbitrary terms and lack of helper experience when configuring components</li>
-          <li>There are inconsistencies across different components' configuration</li>
+          <li>There are inconsistencies across different components' configuration; arbitrary terms were used and there's a lack of help experience</li>
         </ol>
         <br><br>
       </p>
@@ -127,7 +126,7 @@
   </div>
   <div class = "flex-container aside-target" id = "3">
     <div class = "full-section-text">
-      <h6 class = "text-blue">INPUT MODE SWITCHER</h6>
+      <h6 class = "text-blue">1. INPUT MODE SWITCHER DESIGN</h6>
       <h2>How might we allow users to input static and dynamic property values seamlessly?</h2>
       <p>
         <br>
@@ -149,6 +148,15 @@
          <li>Values provided in one input mode will be erased after switching back from another mode</li>
        </ol>
      </p>
+     <p>
+      <br><br>
+      Based on research insights, I listed the key experience outcomes for the new design:
+      <br><br>
+      <img class = "project-wide-img" src = "imgs/sn/config_eo.png" alt = "Experience outcomes"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">The key experience outcomes for the input switcher design.</h6>
+      </div>
+     </p>
       <br><br>
       <img class = "project-wide-img" src = "imgs/sn/config_before1.png" alt = "Before and after the addition of a scripting option"/>
       <div class = "full-section-text-wrapped align-center">
@@ -159,34 +167,101 @@
       <div class = "full-section-text-wrapped align-center">
         <h6 class = "text-darkgrey">Left: Properties with dynamic data-binding; Right: Properties with both dynamic data binding and scripting</h6>
       </div>
-    </p>
-    <br><br>
-     <p>
+      <br><br>
+    </div>
+    <div class = "full-section-text">
+    <p>
       To address the usability and scalability issues of the inputs, I did a comparative analysis on the treatment by other products, and explored different ways to reimagine property input:
+
+    <br><br>
+    </p>
+    <img class = "project-wide-img" src = "imgs/sn/config_comps.png" alt = "comparative analysis"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Comparison between different product's configuration design provided me with inspirations</h6>
+    <br><br>
+    </div>
+    <img class = "project-wide-img" src = "imgs/sn/config_v1.png" alt = "Key exploration 1"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Key exploration 1: button group with a different set of icons that shows up on hovering the property area.<br>Feedback: while this did reduce visual clutter, the buttons were too small, making them hard to interact.</h6>
+    </div>
+    <br><br>
+
+    <img class = "project-wide-img" src = "imgs/sn/config_v2.png" alt = "Key exploration 2"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Key exploration 2: dropdown options for toggling between input modes.<br>Feedback: the purpose of the ellipsis wasn't clear upfront, and it requires one extra click to switch input modes.</h6>
+    </div>
+    <br><br>
+    <img class = "project-wide-img" src = "imgs/sn/config_v3.png" alt = "Key exploration 3"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Key exploration 3: button group with a larger clickable area.<br>Feedback: hover state using the color could be too jarring; more explorations could be done to indicate the property area.</h6>
+    </div>
+    <br><br>
+    </div>
+    <div class = "full-section-text">
+    <p>
+      After multiple rounds of iterations and discussions with the cross-functional team, I've come down to the final design that does not visually overwhelm the panel, and could also support more discoverability and interactivity.<br><br>
     </p>
     <br><br>
-    <img class = "project-wide-img" src = "imgs/sn/config_comps.png" alt = "Before and after the addition of a scripting option"/>
+    <img class = "project-wide-img" src = "imgs/sn/config_final.png" alt = "Final design"/>
     <div class = "full-section-text-wrapped align-center">
-      <h6 class = "text-darkgrey">Comparison between different product's configuration design provded me with inspirations</h6>
-    <br><br>
-    <img class = "project-wide-img" src = "imgs/sn/config_v1.png" alt = "Before and after the addition of a scripting option"/>
-    <div class = "full-section-text-wrapped align-center">
-      <h6 class = "text-darkgrey">Key exploration 1: button group that shows up on hovering the property area.<br>Feedback: the button size waas too small, making it hard to interact.</h6>
+      <h6 class = "text-darkgrey">Final design</h6>
     </div>
     <br><br>
-    <img class = "project-wide-img" src = "imgs/sn/config_v2.png" alt = "Before and after the addition of a scripting option"/>
+    <img class = "project-wide-img" src = "imgs/sn/configdemo.gif" alt = "The working feature"/>
     <div class = "full-section-text-wrapped align-center">
-      <h6 class = "text-darkgrey">Key exploration 2: button group that shows up on hovering the property area.<br>Feedback: the button size waas too small, making it hard to interact.</h6>
+      <h6 class = "text-darkgrey">The working feature</h6>
+      <br><br>
     </div>
-    <br><br>
-    <img class = "project-wide-img" src = "imgs/sn/config_v3.png" alt = "Before and after the addition of a scripting option"/>
-    <div class = "full-section-text-wrapped align-center">
-      <h6 class = "text-darkgrey">Key exploration 2: button group that shows up on hovering the property area.<br>Feedback: the button size waas too small, making it hard to interact.</h6>
-    </div>
-
+    <p>
+      Aside from adding the new design for the input switcher, the team have also ensured values entered for one mode could be preserved after toggling back from another mode in order to address user frustration observed in the research sessions. <br><br>
+      What's more, we've also enhanced the experience of editing scripts. Previously, all scripts could only be editing the confined input box located in the configuration panel, which was difficult work on for our users. With the new design and the script editor enabled by the engineers, users can directly edit the script in a larger modal that opens once the scripting mode is turned on.
+    </p>
+   </div>
+  </div>
+  <div class = "flex-container aside-target" id = "4">
+    <div class = "full-section-text">
+      <h6 class = "text-blue">2. ALIGNING CONFIGURATIONS</h6>
+      <h2>How might we provide consistency across different components' configuration experience?</h2>
+      <p>
+      <br>
+      Operating under a contribution model, we have observed more inconsistencies between different component's configurations with the increase of 400+% components. These included different naming and UI for the same configuration property. To understand the root causes and pinpoint the main issues, we chatted with multiple internal component author teams to understand the building process and their pain points:
+      <br><br>
+      <ol class = "lists">
+        <li>Component designers did not know what UIs were available and suitable for different types of properties; </li>
+        <li>Component teams did not know that a name for the same property existed for a different component, resulting in them coming up for another name for the property</li>
+        <li>Users would often have to resort to the documentation site while configuring a component because there is no in-context help</li>
+      </ol>
+      </p>
+      <p>
+        To tackle these issues, I worked with the PM and a technical writer on a series of efforts to align the configuration experience. First, we audited all components on UI Builder, compared similar names and provided recommendations for each component author team.
+        <br><br>
+        Secondly, I created a playbook for the configuration panel and a video to explain best practices and resources. The materials were published on an internal SharePoint site.
+        <br><br>
+        Lastly, working with the PM, we added an in-context popover design to inlcude short descriptions for the property names.
+        <br><br>
+      </p>
+      <img class = "project-wide-img" src = "imgs/sn/config_audit.png" alt = "Auditing file"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">Co-working with technical writer, we aligned different property names across different components and provided tooltip content for each property</h6>
+        <br><br>
+      </div>
+      <img class = "project-wide-img" src = "imgs/sn/config_video.png" alt = "Auditing file"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">Video created for internal component author teams</h6>
+        <br><br>
+      </div>
     </div>
   </div>
-
+  <div class = "flex-container aside-target" id = "5">
+    <div class = "full-section-text">
+      <h6 class = "text-blue">KEY TAKEAWAYS</h6>
+      <h2>Applying platform thinking to the design process</h2>
+      <p>
+      <br>
+      This was one of the first projects that I worked on after joining the team. Compared with other product categories, designing for a platform like UI Builder required additional thinking and mindset. Because each decision made would impact the other teams that rely our product to bring their experiences, the ability to think holistically and design for flexibility while providing the best for the users possible has been what I learned the most throughout the project.
+      </p>
+    </div>
+  </div>
   <div class = "flex-container align-center middle flex-center-align">
     <button class = "btn-primary middle"><a href = "#content">Back to top</a></button>
   </div>
@@ -202,7 +277,9 @@
         <h6 class = "side-nav-title">Outline</h6>
         <a href="#1" class="active"><h6>BACKGROUND</h6></a>
         <a href="#2"><h6>THE CHALLENGES</h6></a>
-        <a href="#3"><h6>INPUT MODE SWITCHER</h6></a>
+        <a href="#3"><h6>1. INPUT MODE SWITCHER DESIGN</h6></a>
+        <a href="#4"><h6>2. ALIGNING CONFIGURATIONS</h6></a>
+        <a href="#5"><h6>KEY TAKEAWAYS</h6></a>
     </nav>
 </aside>
 
