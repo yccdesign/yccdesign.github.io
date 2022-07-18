@@ -1,0 +1,414 @@
+#cursor{
+  filter: drop-shadow(0.2px 1px 1.5px rgb(0 0 0 / 0.5));
+  animation: cursorMove 7s infinite;
+}
+
+#pointer{
+  filter: drop-shadow(0.2px 1px 1.5px rgb(0 0 0 / 0.5));
+  animation: pointerMove 7s linear infinite
+              ;
+}
+
+
+
+
+#binding-path{
+
+  animation: bindingPath 7s infinite
+              ;
+}
+
+#lock-icon{
+  animation: lockShow 7s infinite;
+  stroke-width:0.5;
+  stroke: #637274;
+}
+
+#unlock-icon{
+  stroke-width:0.5;
+  stroke: #01778E;
+}
+
+
+#unlock{
+  animation: unLock 7s infinite;
+}
+
+#switcher{
+  animation: switcher 7s infinite;
+}
+
+#input-box{
+  stroke-width:2px;
+  animation: inputBox 7s infinite;
+}
+
+#big-cir{
+  animation: clickEffectBig 7s infinite;
+}
+
+#small-cir{
+  animation:clickEffectSmall 7s infinite;
+}
+
+#rewind{
+  animation:rewindHover 7s infinite;
+}
+
+#bg-reapply{
+  animation: reapplyHover 7s infinite;
+}
+
+
+@keyframes unLock {
+  0% {
+    opacity: 0;
+  }
+  19%{
+    opacity: 0;
+  }
+  20% {
+    opacity: 100;
+  }
+  32%{
+    opacity: 100;
+    transform: translate(0px,0px);
+  }
+  33%{
+    opacity:0;
+    transform: translate(0px,1px);
+  }
+  34%{
+    opacity:0;
+    transform: translate(0px,0px)
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+
+@keyframes cursorMove {
+  0% {
+    transform: translate(35px, 30px);
+    opacity: 0;
+  }
+  18%{
+    opacity: 100;
+    transform: translate(1px, 1px);
+  }
+  19%{
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  33%{
+    opacity:0;
+
+  }
+  34%{
+    opacity:100;
+  }
+  45%{
+    transform: translate(0px,0px);
+  }
+  64%{
+    opacity:100;
+    transform: translate(34px, -33px);
+  }
+  65%{
+  opacity:0;
+  }
+  79%{
+  opacity:0;
+  transform: translate(35px, -35px);
+  }
+  80%{
+  opacity: 100;
+  }
+  92%{
+  opacity:0;
+  }
+  100%{
+   opacity:0;
+   transform: translate(35px, -35px);
+  }
+
+}
+
+@keyframes pointerMove {
+  0% {
+    opacity: 0;
+  }
+  18%{
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  20%{
+    opacity: 100;
+  }
+  21%{
+    transform: translate(-1px, -1px);
+  }
+
+  33%{
+    opacity:100;
+  }
+  34%{
+    opacity:0;
+    transform: translate(-1px, -1px);
+  }
+
+  45%{
+    opacity:0;
+  }
+
+  64%{
+    opacity:0;
+    transform: translate(35px,-35px);
+  }
+  65%{
+    opacity:100;
+  }
+  67%{
+    transform: translate(36px,-36px);
+  }
+  79%{
+    opacity:100;
+  }
+  80%{
+    opacity:0;
+    transform: translate(36px,-36px);
+  }
+  100%{
+    opacity:0;
+    transform: translate(36px,-36px);
+  }
+}
+
+@keyframes lockShow{
+  0%{
+    opacity:100;
+  }
+  18%{
+    opacity:100;
+  }
+  19%{
+    opacity:0;
+  }
+  79%{
+    opacity:0;
+  }
+  80%{
+    opacity:100;
+  }
+}
+
+@keyframes bindingPath {
+  0%{
+    fill: #879394;
+    stroke:#879394;
+    stroke-width:0.5;
+  }
+  18%{
+    fill: #879394;
+    stroke:#879394;
+    stroke-width:0.5;
+  }
+  19%{
+    fill: #6696AD;
+    stroke:#6696AD;
+    stroke-width:0.5;
+  }
+  31%{
+    fill:#6696AD;
+    stroke:#6696AD;
+    stroke-width:0.5;
+    transform: translate(0px,0px)
+  }
+  32%{
+    transform: translate(0px,1px)
+  }
+  33%{
+    fill:#6696AD;
+    stroke:#6696AD;
+    stroke-width:0.5;
+    transform: translate(0px,0px)
+  }
+  34%{
+    fill:#0E78C4;
+    stroke:#0E78C4;
+    stroke-width:0.5;
+  }
+  79%{
+    fill:#0E78C4;
+        stroke:#0E78C4;
+    stroke-width:0.5;
+  }
+  80%{
+   fill: #879394;
+        stroke:#879394;
+    stroke-width:0.5;
+
+  }
+  100%{
+    fill: #879394;
+        stroke:#879394;
+    stroke-width:0.5;
+  }
+}
+
+@keyframes clickEffectBig {
+  0%{
+    opacity: 0;
+  }
+  31%{
+    opacity:0;
+  }
+  32%{
+    opacity:0.3;
+  }
+  35%{
+    opacity:0;
+    transform:scale(1.1);
+    transform-origin: center;
+  }
+  78%{
+    opacity:0;
+    transform:scale(0,0);
+    transform: translate(38px,-38px);
+  }
+  79%{
+    opacity:0.3;
+    transform:scale(0,0);
+    transform: translate(38px,-38px);
+  }
+  82%{
+    opacity:0;
+    transform:scale(1.1);
+    transform-origin: center;
+  }
+  100%{
+    opacity:0;
+  }
+
+}
+
+
+@keyframes clickEffectSmall {
+  0%{
+    opacity: 0;
+  }
+  31%{
+    opacity:0;
+  }
+  32%{
+    opacity:1;
+  }
+  35%{
+    opacity:0;
+  }
+  77%{
+   transform: translate(0px,0px);
+  }
+  78%{
+    opacity:0;
+    transform: translate(38px,-30px);
+  }
+  79%{
+    opacity:1;
+       transform: translate(38px,-30px);
+  }
+  82%{
+    opacity:0;
+  }
+  100%{
+    opacity:0;
+       transform: translate(38px,-30px);
+  }
+
+}
+
+@keyframes switcher {
+  0%{
+    opacity: 0;
+  }
+  31%{
+    opacity: 0;
+  }
+  32%{
+    opacity: 100;
+  }
+  79%{
+    opacity:100;
+  }
+  80%{
+    opacity:0;
+  }
+  100%{
+    opacity: 0;
+  }
+
+}
+
+@keyframes inputBox {
+  0%{
+    stroke:none;
+    fill:#E4E6E7;
+  }
+  31%{
+    stroke:none;
+    fill:#E4E6E7;
+  }
+  32%{
+    fill:#FFFFFF;
+    stroke:#01778E;
+  }
+  79%{
+     fill:#FFFFFF;
+    stroke:#01778E;
+  }
+  80%{
+    stroke:none;
+    fill:#E4E6E7;
+  }
+  100%{
+    stroke:none;
+    fill:#E4E6E7;
+  }
+
+}
+
+@keyframes rewindHover {
+
+  0%{
+    fill:#161B1C;
+  }
+  64%{
+    fill:#161B1C;
+  }
+  65%{
+    fill:#01778E;
+  }
+
+  100%{
+    fill:#01778E;
+  }
+
+}
+@keyframes reapplyHover {
+
+  0%{
+    opacity:0;
+  }
+  64%{
+    opacity:0;
+  }
+  65%{
+    opacity:100;
+  }
+
+  100%{
+    opacity:100;
+  }
+
+}
