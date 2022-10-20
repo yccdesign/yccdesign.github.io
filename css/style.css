@@ -226,6 +226,12 @@ main{
   width: 90%;
 }
 
+.visual-box{
+  width:32%;
+  text-align:left;
+  display:inline-block;
+}
+
 
 .flex-box{
   max-width: 100%;
@@ -561,6 +567,11 @@ main{
     margin:20px 0px;
   }
 
+  .visual-box{
+    width:23%;
+  }
+
+
   .flex-col-6{
     width:49%;
     margin:20px 0px;
@@ -581,7 +592,7 @@ main{
 
 
   #toprow{
-    background-image: url('../imgs/hero_image.svg');
+    background-image: url('../imgs/hero_image.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 90% 50px;
@@ -741,7 +752,7 @@ main{
   }
 
   #toprow{
-    background-image: url('../imgs/hero_image.svg');
+    background-image: url('../imgs/hero_image.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 85% 50px;
@@ -996,8 +1007,17 @@ main{
 
 /*shape*/
 
-.right-sharp{
-  border-radius: 50px 0px 50px 50px;
+.top-right-round{
+  border-top-right-radius:1rem;
+}
+.top-left-round{
+  border-top-left-radius:1rem;
+}
+.bottom-right-round{
+  border-bottom-right-radius:1rem;
+}
+.bottom-left-round{
+  border-bottom-left-radius:1rem;
 }
 
 .rounded-corner{
