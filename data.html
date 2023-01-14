@@ -55,8 +55,9 @@
 <main id = 'content'>
   <div class = "flex-container">
     <div class = "flex-box section-description-left">
-      <p class="full-flex-title"> <span class = "title">Designing the building experience for a data component</span><br>
-      As the only designer embedded in the product team, I created the V1 of a modernized building tool for a fundamental data component at ServiceNow. <br><br>
+      <p class="full-flex-title"> <span class = "title">Form Builder</span><br>
+      Consolidating building and configuration experiences of ServiceNow tables and forms. <br><br>
+      <span class = "pre text-blue">*Lauched in Mar 2021 in App Engine Studio</span>
       </p>
     </div>
 
@@ -94,63 +95,93 @@
   </div>
   <div class = "flex-container aside-target" id = "1">
     <div class = "full-section-text">
-      <h6 class="text-blue">WHAT I DID</h6>
-      <h2>Contributed to a highly performant, empowered product team</h2>
+      <h6 class="text-blue">BACKGROUND</h6>
+      <h2>Creating a WYSIWYG building experience for ServiceNow forms</h2>
       <p>
       <br>
-       In late 2020, I worked in a product team to build the first version of an end-to-end experience of creating and modifying a fundamental data component on the ServiceNow platform. For this project, my design challenge was to consolidate the building flow from 15 disparate pages to a one-stop shop.
+       Form is a fundamental UI component usable across all ServiceNow apps to display and edit record data. However, the end-to-end experience of building and editing a form required using 15 disparate tools, many of which built upon obsolete tech stack and unintuitive. This led to an confusing and inconsistent experience that impedes app building efficiency in App Engine Studio.<br><br>
+       In late 2020, I joined a product team tasked to build a new editing experience for of creating and modifying ServiceNow forms.
        <br><br>
       </p>
-
-       <img class = "project-wide-img" src = "imgs/sn/different_tools.png" alt = "different tools for building forms on the platform"/>
+      <img class = "project-wide-img" src = "imgs/artemis/aes.png" alt = "App Engine studio"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">Editing a form view is a fundamental task when it comes to building apps in the low-code App Engine Studio</h6>
+      </div>
+      <br><br>
+       <img class = "project-wide-img" src = "imgs/artemis/different_tools.png" alt = "different tools for building forms on the platform"/>
        <div class = "full-section-text-wrapped align-center">
-         <h6 class = "text-darkgrey">The project aimed to consolidate the form building process from different tools on the platform</h6>
+         <h6 class = "text-darkgrey">If a user were to build a form in App Engine Studio, aside from the tool that does not provide an intuitive experience, there are more tools that the users would have to use in order to fully edit it.</h6>
        </div>
-       <p>
-       The team started with a few challenges. Since the team was formed by members coming from a different product, everyone had to learn about the data framework together in order to build a builder for it. In addition, there had not been much usability research for existing building experiences around the component, so most of the data collection had to start from scratch. What's more, the team was also given a short development time frame while dealing with technical constraints.
-
-       <br><br>
-       In order to work efficiently to build a quality V1 product as the only product designer, I helped facilitate an empowered product team. I did the following:
-       <br>
-      </p>
-      <h5><br>1. Be involved, and involve everyone early in the process</h5>
-       <p>
-       <br>
-        Since the start of the development process, I had been very involved in the team by attending technical discussions with the PM and engineers to facilitate design explorations. I also invited the researcher and content designer to recurring team meetings although they were not fully dedicated to the project. This has helped to embed everyone in the team, bridge the information gap, and has made collboaration more seamless.
-        <br><br>
-      </p>
-      <h5><br>2. Embrace different perspectives</h5>
-       <p>
-       <br>
-        As the only product designer in the team, I had been proactive when it comes to communication and feedback elicitation. This was done through co-working sessions, guerilla testing, and workshops with not only the users but also our team members. Many features and enhancements originated from an engineer, the researcher, or the content designer's idea, or even multiple of them together from co-working sessions.
-        <br><br>
-        By creating an environment where everyone can contribute to the design, I was able to get more data points and iterate more rapidly.
-        <br><br>
-      </p>
-      <h5><br>3. Collaborate with researcher to test rapidly and effectively</h5>
-       <p>
-       <br>
-        In a rapidly developing team, we tested frequently and rapidly too. Aside from quick, informal feedback chats and regular design reviews within the design organization, the team has strived to test regularly. By co-planning testing sessions with the researcher and running research in parallel with the design and development proccess, we were able to test not only the initial design ideas but also the revisited topics, in order to achieve a better product outcome.
-        <br><br>
-        During the testing, I invited everyone in the team to participate in the sessions, where we used a separate discussion thread to take notes. This not only reduced the time for team alignment and communication, but also helped achieve a better product outcome.
-      </p>
      </div>
   </div>
   <div class = "flex-container aside-target" id = "2">
     <div class = "full-section-text">
+      <h6 class = "text-blue">RESCOPING THROUGH RESEARCH</h6>
+      <h2>It's more than a form building experience</h2>
+      <p>
+        <br>
+        Through our preliminary research, we learned that the form building experience not only entails forms but also the correlated table component. We've also identified a list of commone configurations that are commonly edited outside of the existing form building tools. This led us to rescope the project to cover the end-to-end building experience of a form component.
+      </p>
+      <br><br>
+    </div>
+    <img class = "project-wide-img" src = "imgs/artemis/two-way.png" alt = "Editing a form encompasses table modification as well"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">From task analysis, we found that users often changes the table structure as they edit a form view</h6>
+    </div>
+  </div>
+  <div class = "flex-container aside-target" id = "3">
+    <div class = "full-section-text">
+      <h6 class = "text-blue">DESIGN & ITERATION</h6>
+      <h2>How might we streamline the table and form building experiences?</h2>
+      <p>
+        <br>
+        Table Builder is an existing tool in App Engine Studio that allows citizen developers to construct data table structures and create fields that will be displayed in form views. Launching another tool just for building forms may lead to disconnected building experiences for userss while missing the opportunity to strengthen the conenction between a table and its form. Therefore, we tested the concept to consolidate table and form building experience, which was well received and set the direction for further iterations.
+      </p>
+      <br><br>
+    </div>
+    <img class = "project-wide-img" src = "imgs/artemis/iterations.png" alt = "Iterations of the product interface"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">Different stages of design iterations</h6>
+      </div>
+    <div class = "full-section-text">
+      <p>
+         <br>
+        This decision has led to a lot of collaboration and alignment work with related product teams. For example, I revisited the creation flow of the table component and proposed redesign to reinforce the connection between table and form in multuple touchpoints. Table editing has also incorporated configuration experiences made avaialble for forms to achieve a consistent experience. Working with the App Engine Studio team, we've also redesigned the representations of forms in the app inventory to match the tooling enhancements.
+      </p>
+    </div>
+      <img class = "project-wide-img" src = "imgs/artemis/creation.png" alt = "Creation flow"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">Redesigned the creation flow of table in App Engine Studio to strengthen the connection between table and form</h6>
+      </div>
+  </div>
+  <div class = "flex-container aside-target" id = "4">
+      <div class = "full-section-text">
+        <h6 class = "text-blue">FINAL DELIVERABLE</h6>
+        <h2>Unified experience consolidated from 15+ disparate tools</h2>
+        <p>
+          <br>
+          The final deliverable for the project was an embedded experience of form building within Table Builder, shipped along with various configuration capabilities that would otherwise be done in multiple different browser tab outside of the App Engine Studio, such as UI Policy, dependent choices, and table inheritance settings. The configured form views can be directly applied in low-code apps within the same studio, resulting in a much consistent and streamlined workflow.
+        </p>
+        <br><br>
+      </div>
+  </div>
+  <img class = "project-wide-img" src = "imgs/artemis/keydesigns.png" alt = "Key final designs"/>
+    <div class = "full-section-text-wrapped align-center">
+      <h6 class = "text-darkgrey">Key frames in final deliverable</h6>
+    </div>
+  <div class = "flex-container aside-target" id = "5">
+    <div class = "full-section-text">
       <h6 class = "text-blue">WHAT I LEARNED</h6>
-      <h2>One team, one dream</h2>
+      <h2>Navigate ambiguities in an empowered product team</h2>
       <p>
         <br>
         With the product team sharing the same goal to create a great product, we were able to navigate ambiguities together. Rapid iteration won't be possible without such embedded team culture.
         <br><br>
         Additionally, I've learned that cross-functional collaboration and deep engagement was the key to better design outcomes. By investigating the technical details with the PM and engineer, participating research sessions, and hosting multiple co-working sessions, I was able to know about the product inside out, and articulate each design decision confidently.
       </p>
-
-      </div>
+      <br><br>
     </div>
   </div>
-
   <div class = "flex-container align-center middle flex-center-align">
     <button class = "btn-primary middle"><a href = "#content">Back to top</a></button>
   </div>
@@ -164,8 +195,11 @@
 <aside id = "side-nav">
     <nav>
         <h6 class = "side-nav-title">Outline</h6>
-        <a href="#1" class="active"><h6>WHAT I DID</h6></a>
-        <a href="#2"><h6>WHAT I LEARNED</h6></a>
+        <a href="#1" class="active"><h6>BACKGROUND</h6></a>
+        <a href="#2"><h6>RESCOPING THROUGH<br>RESEARCH</h6></a>
+        <a href="#3"><h6>DESIGN & ITERATION</h6></a>
+        <a href="#4"><h6>FINAL DELIVERABLE</h6></a>
+        <a href="#5"><h6>WHAT I LEARNED</h6></a>
     </nav>
 </aside>
 
