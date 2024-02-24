@@ -99,19 +99,22 @@
       <h2>Creating a WYSIWYG building experience for ServiceNow forms</h2>
       <p>
       <br>
-       Form is a fundamental UI component usable across all ServiceNow apps to display and edit record data. However, the end-to-end experience of building and editing a form required using 15 disparate tools, many of which using obsolete tech stack and were unintuitive to users to configure. This led to a confusing and inconsistent experience that impedes app building efficiency in App Engine Studio.<br><br>
+       Form is a fundamental UI component utilized across all ServiceNow apps to display and edit record data stored on the ServiceNow cloud platform.
+       <br><br>
+       Despite being a foundational component, the end-to-end experience of building and editing a form required using 15 disparate tools, many of which were still using obsolete tech stack and were unintuitive to use. This led to a combersome experience that impedes app building efficiency in App Engine Studio.
+       <br><br>
        In late 2020, I joined a product team tasked to build a new editing experience for creating and modifying ServiceNow forms.
        <br><br>
       </p>
+      <img class = "project-wide-img" src = "imgs/artemis/form.png" alt = "Form in a Workspace"/>
+      <div class = "full-section-text-wrapped align-center">
+        <h6 class = "text-darkgrey">A form is used in common applications like an agent workspace. An agent can use the form to review and update data stored on the ServiceNow platform. </h6>
+      </div>
+      <br><br>
       <img class = "project-wide-img" src = "imgs/artemis/aes.png" alt = "App Engine studio"/>
       <div class = "full-section-text-wrapped align-center">
         <h6 class = "text-darkgrey">Editing a form view is a fundamental task when it comes to building apps in the low-code App Engine Studio</h6>
       </div>
-      <br><br>
-       <img class = "project-wide-img" src = "imgs/artemis/different_tools.png" alt = "different tools for building forms on the platform"/>
-       <div class = "full-section-text-wrapped align-center">
-         <h6 class = "text-darkgrey">If a user were to build a form in App Engine Studio, aside from the tool that does not provide an intuitive experience, there are more tools that the users would have to use in order to fully edit it.</h6>
-       </div>
      </div>
   </div>
   <div class = "flex-container aside-target" id = "2">
@@ -120,13 +123,15 @@
       <h2>It's more than a form building experience</h2>
       <p>
         <br>
-        Through our preliminary research, we learned that the form-building experience not only entails forms but also the correlated table component. We've also identified a list of common configurations that are commonly edited outside of the existing form-building tools. This led us to rescope the project to cover the end-to-end building experience of a form component.
+        Through our preliminary research by analyzing common user flows, we've realized the original scope might not be viable.
+        <br><br>First of all, our users frequently modifies the data stored in table while building a form. Secondly, we've also identified a list of configurations that are commonly edited together with building a form. These configurations are located in multiple disparate tools external to the App Engine Studio.
+        <br><br>These discoveries led us to rescope the project to provide a seamless end-to-end form building experience.
       </p>
       <br><br>
     </div>
-    <img class = "project-wide-img" src = "imgs/artemis/two-way.png" alt = "Editing a form encompasses table modification as well"/>
+    <img class = "project-wide-img" src = "imgs/artemis/scope.png" alt = "Editing a form encompasses table modification as well"/>
     <div class = "full-section-text-wrapped align-center">
-      <h6 class = "text-darkgrey">From task analysis, we found that users often changes the table structure as they edit a form view</h6>
+      <h6 class = "text-darkgrey">After discovering the common tasks for building a form through contextual inquiries and expert interviews, the team decided to rescope the project to cover the full journey of building a form component, which includes editing table structures.</h6>
     </div>
   </div>
   <div class = "flex-container aside-target" id = "3">
@@ -135,7 +140,8 @@
       <h2>How might we streamline the table and form building experiences?</h2>
       <p>
         <br>
-        Table Builder is an existing tool in App Engine Studio that allows citizen developers to construct data table structures and create fields that will be displayed in form views. Launching another tool just for building forms may lead to disconnected building experiences for users while missing the opportunity to strengthen the connection between a table and its form. Therefore, we tested the concept to consolidate table and form building experience, which was well received and set the direction for further iterations.
+        App Engine Studio treated a table as a separate component from a form. Since we learned that both components are in fact frequently edited together, it's imperative to provide a more seamless building experience. But how might we do so?
+        <br><br> Luckily, the App Engine Studio does have a proprietary table builder. To avoid reinventing the wheel, I proposed merging our to-be-developed product with the table builder into one single buliding experience for the best experience outcome. Through concept testings, we validated the product direction and had the confidence to solicit it with our stakeholders.
       </p>
       <br><br>
     </div>
@@ -146,7 +152,8 @@
     <div class = "full-section-text">
       <p>
          <br>
-        This decision has led to various collaboration and alignment work with related product teams. For example, I revisited the creation flow of the table component and proposed a redesign to reinforce the connection between the table and form components in multiple touchpoints. Table editing has also incorporated configuration experiences made available for forms to achieve a consistent experience. Working with the App Engine Studio team, we've also redesigned the representations of forms in the app inventory to match the tooling enhancements.
+        The merging has led to various collaboration and alignment initiatives with related product teams.
+        <br><br>For example, I revisited the creation flow of the table component and proposed a redesign to reinforce the connection between the table and form components in multiple touchpoints. Table editing has also incorporated configuration experiences made available for forms to achieve a consistent experience. Working with the App Engine Studio team, we've also redesigned the representations of forms in the app inventory to match the tooling enhancements.
       </p>
     </div>
       <img class = "project-wide-img" src = "imgs/artemis/creation.png" alt = "Creation flow"/>
@@ -157,10 +164,10 @@
   <div class = "flex-container aside-target" id = "4">
       <div class = "full-section-text">
         <h6 class = "text-blue">FINAL DELIVERABLE</h6>
-        <h2>Unified experience consolidated from 15+ disparate tools</h2>
+        <h2>Unified experience consolidated from multiple disparate tools</h2>
         <p>
           <br>
-          The final deliverable for the project was an embedded experience of form building within Table Builder, shipped along with various configuration capabilities that would otherwise be done in multiple different browser tabs outside of the App Engine Studio, such as UI Policy, dependent choices, and table inheritance settings. The configured form views can be directly applied in low-code apps within the same studio, resulting in a much more consistent and streamlined workflow.
+          The final deliverable for the project was an embedded experience of form building within Table Builder, shipped along with various configuration features that would have otherwise been aceessed in different tools outside of the App Engine Studio, such as UI Policy, dependent choices, and table inheritance settings. The configured form views can be directly applied in low-code apps within the same studio, resulting in a much more consistent and streamlined workflow.
         </p>
         <br><br>
       </div>
